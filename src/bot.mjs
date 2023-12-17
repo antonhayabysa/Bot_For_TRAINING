@@ -1,8 +1,7 @@
-import dotenv from "dotenv";
+import("dotenv").then((dotenv) => dotenv.config());
+
 import { Bot, Keyboard, InlineKeyboard, GrammyError, HttpError } from "grammy";
 import { getRandomQuestion, getCorrectAnswer } from "../utils.mjs";
-
-dotenv.config();
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
