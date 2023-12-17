@@ -4,7 +4,7 @@ import { getRandomQuestion, getCorrectAnswer } from "../utils.mjs";
 
 dotenv.config();
 
-const bot = new Bot(process.env.BOT_API_KEY);
+const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
 bot.command("start", async (ctx) => {
   const startKeyboard = new Keyboard()
