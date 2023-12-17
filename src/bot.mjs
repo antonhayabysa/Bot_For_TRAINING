@@ -99,3 +99,4 @@ bot.catch((err) => {
 });
 
 export default bot;
+export {bot};
