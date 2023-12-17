@@ -1,4 +1,4 @@
-import questions from "./questions.json" assert { type: "json" };
+import questions from "./questions.mjs";
 
 import { Random } from "random-js";
 
