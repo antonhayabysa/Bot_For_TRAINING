@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "**": {
+      "includeFiles": "*.json"
+    }
+  },
   "outputDirectory": ".",
   "installCommand": "npm i --omit=dev",
   "buildCommand": "node scripts/build.mjs"
