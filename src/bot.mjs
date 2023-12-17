@@ -1,5 +1,3 @@
-import("dotenv").then((dotenv) => dotenv.config());
-
 import { Bot, Keyboard, InlineKeyboard, GrammyError, HttpError } from "grammy";
 import { getRandomQuestion, getCorrectAnswer } from "../utils.mjs";
 
