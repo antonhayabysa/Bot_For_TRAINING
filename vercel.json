@@ -1,5 +1,4 @@
 {
-    "installCommand": "npm i --omit=dev",
-    "buildCommand": "node scripts/build.js"
-  }
-  
+  "installCommand": "npm i --omit=dev",
+  "buildCommand": "node scripts/build.mjs"
+}
