@@ -1,12 +1,8 @@
-require("dotenv").config();
-const {
-  Bot,
-  Keyboard,
-  InlineKeyboard,
-  GrammyError,
-  HttpError,
-} = require("grammy");
-const { getRandomQuestion, getCorrectAnswer } = require("./utils");
+import dotenv from "dotenv";
+import { Bot, Keyboard, InlineKeyboard, GrammyError, HttpError } from "grammy";
+import { getRandomQuestion, getCorrectAnswer } from "../utils.mjs";
+
+dotenv.config();
 
 const bot = new Bot(process.env.BOT_API_KEY);
 
@@ -105,4 +101,4 @@ bot.catch((err) => {
   }
 });
 
-bot.start();
+export default bot;

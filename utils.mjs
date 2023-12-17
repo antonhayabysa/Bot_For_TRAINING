@@ -1,7 +1,8 @@
-const questions = require("./questions.json");
-const { Random } = require("random-js");
+import questions from "./questions.json" assert { type: "json" };
 
-const getRandomQuestion = (topic) => {
+import { Random } from "random-js";
+
+export const getRandomQuestion = (topic) => {
   const random = new Random();
 
   let questionTopic = topic.toLowerCase();
@@ -24,7 +25,7 @@ const getRandomQuestion = (topic) => {
   };
 };
 
-const getCorrectAnswer = (topic, id) => {
+export const getCorrectAnswer = (topic, id) => {
   const question = questions[topic].find((question) => question.id === id);
 
   if (!question.hasOptions) {
@@ -33,5 +34,3 @@ const getCorrectAnswer = (topic, id) => {
 
   return question.options.find((option) => option.isCorrect).text;
 };
-
-module.exports = { getRandomQuestion, getCorrectAnswer };
