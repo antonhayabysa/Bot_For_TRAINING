@@ -1,32 +1,30 @@
 import questions from "./questions.mjs";
 
-import { Random } from "random-js";
+let userLastQuestionIndex = {};
 
-export const getRandomQuestion = (topic) => {
-  const random = new Random();
-
-  let questionTopic = topic.toLowerCase();
-
-  if (questionTopic === "случайный вопрос") {
-    questionTopic =
-      Object.keys(questions)[
-        random.integer(0, Object.keys(questions).length - 1)
-      ];
+export const getRandomQuestion = (topic, userId) => {
+  if (!userLastQuestionIndex[userId]) {
+    userLastQuestionIndex[userId] = {};
   }
 
-  const randomQuestionIndex = random.integer(
-    0,
-    questions[questionTopic].length - 1
-  );
+  if (userLastQuestionIndex[userId][topic] === undefined) {
+    userLastQuestionIndex[userId][topic] = 0;
+  } else {
+    userLastQuestionIndex[userId][topic] =
+      (userLastQuestionIndex[userId][topic] + 1) % questions[topic].length;
+  }
+
+  const questionIndex = userLastQuestionIndex[userId][topic];
+  const question = questions[topic][questionIndex];
 
   return {
-    question: questions[questionTopic][randomQuestionIndex],
-    questionTopic,
+    question: question,
+    questionTopic: topic,
   };
 };
 
 export const getCorrectAnswer = (topic, id) => {
-  const question = questions[topic].find((question) => question.id === id);
+  const question = questions[topic].find((q) => q.id === id);
 
   if (!question.hasOptions) {
     return question.answer;
@@ -34,3 +32,6 @@ export const getCorrectAnswer = (topic, id) => {
 
   return question.options.find((option) => option.isCorrect).text;
 };
+
+// В utils.mjs
+export { questions };
