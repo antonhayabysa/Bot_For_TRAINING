@@ -33,5 +33,4 @@ export const getCorrectAnswer = (topic, id) => {
   return question.options.find((option) => option.isCorrect).text;
 };
 
-// В utils.mjs
 export { questions };

@@ -5,10 +5,26 @@
       "text": "Какой тег используется для создания ссылки?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<link>", "isCorrect": false },
-        { "id": 2, "text": "<a>", "isCorrect": true },
-        { "id": 3, "text": "<href>", "isCorrect": false },
-        { "id": 4, "text": "<anchor>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<link>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<a>",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "<href>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<anchor>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -16,10 +32,26 @@
       "text": "Какой тег используется для вставки изображения?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<img>", "isCorrect": true },
-        { "id": 2, "text": "<picture>", "isCorrect": false },
-        { "id": 3, "text": "<media>", "isCorrect": false },
-        { "id": 4, "text": "<graphic>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<img>",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "<picture>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<media>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<graphic>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -27,10 +59,26 @@
       "text": "Какой тег находится в <html> определяет заголовок документа?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<head>", "isCorrect": true },
-        { "id": 2, "text": "<header>", "isCorrect": false },
-        { "id": 3, "text": "<title>", "isCorrect": false },
-        { "id": 4, "text": "<meta>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<head>",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "<header>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<title>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<meta>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -38,10 +86,26 @@
       "text": "Какой атрибут используется для определения альтернативного текста изображения?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "src", "isCorrect": false },
-        { "id": 2, "text": "alt", "isCorrect": true },
-        { "id": 3, "text": "title", "isCorrect": false },
-        { "id": 4, "text": "href", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "src",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "alt",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "title",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "href",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -49,10 +113,26 @@
       "text": "Какой атрибут позволяет открыть ссылку в новой вкладке?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "target=_blank", "isCorrect": true },
-        { "id": 2, "text": "target=blank", "isCorrect": false },
-        { "id": 3, "text": "target=_self", "isCorrect": false },
-        { "id": 4, "text": "target=_new", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "target=_blank",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "target=blank",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "target=_self",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "target=_new",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -84,10 +164,26 @@
       "text": "Какой тег используется для создания таблицы?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<table>", "isCorrect": true },
-        { "id": 2, "text": "<grid>", "isCorrect": false },
-        { "id": 3, "text": "<row>", "isCorrect": false },
-        { "id": 4, "text": "<column>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<table>",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "<grid>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<row>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<column>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -95,10 +191,26 @@
       "text": "Какой тег используется для создания заголовка таблицы?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<caption>", "isCorrect": false },
-        { "id": 2, "text": "<th>", "isCorrect": false },
-        { "id": 3, "text": "<thead>", "isCorrect": true },
-        { "id": 4, "text": "<title>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<caption>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<th>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<thead>",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "<title>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -106,10 +218,26 @@
       "text": "Какой тег используется для создания строки таблицы?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<td>", "isCorrect": false },
-        { "id": 2, "text": "<row>", "isCorrect": false },
-        { "id": 3, "text": "<line>", "isCorrect": false },
-        { "id": 4, "text": "<tr>", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "<td>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<row>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<line>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<tr>",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -117,10 +245,26 @@
       "text": "Какой тег используется для создания ячейки таблицы?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<cell>", "isCorrect": false },
-        { "id": 2, "text": "<tr>", "isCorrect": false },
-        { "id": 3, "text": "<th>", "isCorrect": false },
-        { "id": 4, "text": "<td>", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "<cell>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<tr>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<th>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<td>",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -134,10 +278,26 @@
       "text": "Какой атрибут используется для установки фонового изображения?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "background", "isCorrect": false },
-        { "id": 2, "text": "background-color", "isCorrect": false },
-        { "id": 3, "text": "bgcolor", "isCorrect": false },
-        { "id": 4, "text": "background-image", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "background",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "background-color",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "bgcolor",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "background-image",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -145,10 +305,26 @@
       "text": "Какой тег используется для создания выпадающего списка?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<dropdown>", "isCorrect": false },
-        { "id": 2, "text": "<list>", "isCorrect": false },
-        { "id": 3, "text": "<select>", "isCorrect": true },
-        { "id": 4, "text": "<option>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<dropdown>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<list>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<select>",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "<option>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -156,10 +332,26 @@
       "text": "Какой тег используется для вставки JavaScript кода в HTML документ?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<javascript>", "isCorrect": false },
-        { "id": 2, "text": "<script>", "isCorrect": true },
-        { "id": 3, "text": "<js>", "isCorrect": false },
-        { "id": 4, "text": "<java>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<javascript>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<script>",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "<js>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<java>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -167,10 +359,26 @@
       "text": "Какой атрибут используется для указания пути к изображению?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "src", "isCorrect": true },
-        { "id": 2, "text": "href", "isCorrect": false },
-        { "id": 3, "text": "path", "isCorrect": false },
-        { "id": 4, "text": "url", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "src",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "href",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "path",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "url",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -196,10 +404,26 @@
       "text": "Какой тег HTML используется для вставки видео?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<media>", "isCorrect": false },
-        { "id": 2, "text": "<video>", "isCorrect": true },
-        { "id": 3, "text": "<movie>", "isCorrect": false },
-        { "id": 4, "text": "<multimedia>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<media>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<video>",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "<movie>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<multimedia>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -207,10 +431,26 @@
       "text": "Какой тег используется для создания главного заголовка на веб-странице?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<h1>", "isCorrect": true },
-        { "id": 2, "text": "<header>", "isCorrect": false },
-        { "id": 3, "text": "<title>", "isCorrect": false },
-        { "id": 4, "text": "<head>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<h1>",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "<header>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<title>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<head>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -224,10 +464,26 @@
       "text": "Какой тег используется для создания упорядоченного списка?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<ul>", "isCorrect": false },
-        { "id": 2, "text": "<ol>", "isCorrect": true },
-        { "id": 3, "text": "<li>", "isCorrect": false },
-        { "id": 4, "text": "<list>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<ul>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<ol>",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "<li>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<list>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -241,10 +497,26 @@
       "text": "Какой атрибут используется для определения стилей элемента на странице?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "style", "isCorrect": true },
-        { "id": 2, "text": "css", "isCorrect": false },
-        { "id": 3, "text": "styles", "isCorrect": false },
-        { "id": 4, "text": "stylesheet", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "style",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "css",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "styles",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "stylesheet",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -252,6 +524,102 @@
       "text": "Что такое атрибут 'alt' в теге <img>?",
       "hasOptions": false,
       "answer": "Он используется для предоставления альтернативного текста, который будет отображаться в случае, если изображение не может быть загружено. Это также может быть полезно для обеспечения доступности, поскольку скрин-ридеры могут использовать этот текст для описания изображения пользователям с ограниченными возможностями."
+    },
+    {
+      "id": 29,
+      "text": "Для чего используется doctype в HTML?",
+      "hasOptions": false,
+      "answer": "Doctype используется в HTML для указания типа документа и версии HTML, что помогает браузеру правильно отображать страницу."
+    },
+    {
+      "id": 30,
+      "text": "Как сделать веб-страницу доступной?",
+      "hasOptions": false,
+      "answer": "Для создания доступной веб-страницы следует использовать семантические теги, управлять фокусом, предоставлять альтернативы мультимедиа, использовать ARIA-роли и метки."
+    },
+    {
+      "id": 31,
+      "text": "В чем разница между блочными и строчными элементами в HTML?",
+      "hasOptions": false,
+      "answer": "Блочные элементы занимают всю доступную ширину и начинаются с новой строки, в то время как строчные элементы занимают только необходимую ширину и не начинают новую строку."
+    },
+    {
+      "id": 32,
+      "text": "Что такое семантические элементы HTML? Приведите примеры.",
+      "hasOptions": false,
+      "answer": "Семантические элементы HTML четко описывают свое назначение и содержимое, например, <header>, <footer>, <article>, <section>."
+    },
+    {
+      "id": 33,
+      "text": "Что делает элемент <canvas> в HTML5?",
+      "hasOptions": false,
+      "answer": "Элемент <canvas> используется для рисования графики с помощью JavaScript. Он может быть использован для рисования графиков, фото-изображений или других визуальных изображений на лету."
+    },
+    {
+      "id": 34,
+      "text": "Что такое Web Workers в HTML5 и для чего они используются?",
+      "hasOptions": false,
+      "answer": "Web Workers позволяют выполнять JavaScript скрипты в фоновом потоке, независимо от других скриптов, не прерывая пользовательский интерфейс и повышая производительность."
+    },
+    {
+      "id": 35,
+      "text": "Какие новые формы ввода были введены в HTML5?",
+      "hasOptions": false,
+      "answer": "HTML5 ввел новые типы ввода, включая 'email', 'url', 'number', 'range', 'date', 'search', 'color' и другие, чтобы упростить сбор и валидацию различных видов данных."
+    },
+    {
+      "id": 36,
+      "text": "Какой элемент используется для встраивания звука в HTML5?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "<audio>",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "<sound>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<mp3>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<music>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "text": "Какой атрибут используется для указания, что форма должна быть проверена перед отправкой?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "validate",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "required",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "novalidate",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "formvalidate",
+          "isCorrect": true
+        }
+      ]
     }
   ],
   "css": [
@@ -265,7 +633,7 @@
       "id": 2,
       "text": "Что такое специфичность селекторов CSS и как она работает?",
       "hasOptions": false,
-      "answer": "Специфичность селектора (еще называют весом) это свойство определяющее приоритет стилевого правила, то есть то, какой стиль будет применен к HTML элементу в итоге. Например, используя какую-нибудь UI библиотеку, элементам этой библиотеки будут применены правила заданные авторами по умолчанию. При необходимости можно поменять стили на свои, «перебив» дефолтные более специфичным селектором.\n\nПодробнее тут: <a href='https://developer.mozilla.org/ru/docs/Web/CSS/Specificity' target='_blank'>Специфичность (MDN)</a>"
+      "answer": "Специфичность селектора (еще называют весом) это свойство определяющее приоритет стилевого правила, то есть то, какой стиль будет применен к HTML элементу в итоге. Например, используя какую-нибудь UI библиотеку, элементам этой библиотеки будут применены правила заданные авторами по умолчанию. При необходимости можно поменять стили на свои, «перебив» дефолтные более специфичным селектором."
     },
     {
       "id": 3,
@@ -296,10 +664,26 @@
       "text": "Какое свойство используется для установки цвета фона?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "color", "isCorrect": false },
-        { "id": 2, "text": "background-color", "isCorrect": true },
-        { "id": 3, "text": "bgcolor", "isCorrect": false },
-        { "id": 4, "text": "background", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "color",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "background-color",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "bgcolor",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "background",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -307,10 +691,26 @@
       "text": "Какое свойство позволяет установить внешние отступы элемента?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "padding", "isCorrect": false },
-        { "id": 2, "text": "border", "isCorrect": false },
-        { "id": 3, "text": "margin", "isCorrect": true },
-        { "id": 4, "text": "spacing", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "padding",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "border",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "margin",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "spacing",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -318,10 +718,26 @@
       "text": "Какое свойство используется для установки шрифта?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "font-weight", "isCorrect": false },
-        { "id": 2, "text": "font-style", "isCorrect": false },
-        { "id": 3, "text": "text-font", "isCorrect": false },
-        { "id": 4, "text": "font-family", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "font-weight",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "font-style",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "text-font",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "font-family",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -329,10 +745,26 @@
       "text": "Какое свойство CSS позволяет контролировать видимость элемента в DOM, но при этом сохраняет его место?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "display: none", "isCorrect": false },
-        { "id": 2, "text": "visibility: hidden", "isCorrect": true },
-        { "id": 3, "text": "is-visible: 0", "isCorrect": false },
-        { "id": 4, "text": "color: transparent", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "display: none",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "visibility: hidden",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "is-visible: 0",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "color: transparent",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -340,10 +772,26 @@
       "text": "Какое свойство CSS используется для установки теней элементов?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "box-shadow", "isCorrect": true },
-        { "id": 2, "text": "text-shadow", "isCorrect": false },
-        { "id": 3, "text": "shadow", "isCorrect": false },
-        { "id": 4, "text": "border-shadow", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "box-shadow",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "text-shadow",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "shadow",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "border-shadow",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -351,10 +799,26 @@
       "text": "Какой селектор выбирает все элементы .child, которые являются непосредственными дочерними элементами .parent?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": ".parent + .child", "isCorrect": false },
-        { "id": 2, "text": ".parent ~ .child", "isCorrect": false },
-        { "id": 3, "text": ".parent > .child", "isCorrect": true },
-        { "id": 4, "text": ".parent .child", "isCorrect": false }
+        {
+          "id": 1,
+          "text": ".parent + .child",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": ".parent ~ .child",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": ".parent > .child",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": ".parent .child",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -362,10 +826,26 @@
       "text": "Какой селектор CSS выбирает все элементы, которые имеют указанный атрибут, начинающийся с определенной строки?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "[attr=value]", "isCorrect": false },
-        { "id": 2, "text": "[attr~=value]", "isCorrect": false },
-        { "id": 3, "text": "[attr|=value]", "isCorrect": false },
-        { "id": 4, "text": "[attr^=value]", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "[attr=value]",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "[attr~=value]",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "[attr|=value]",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "[attr^=value]",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -373,11 +853,93 @@
       "text": "Какой селектор CSS выбирает все элементы, которые имеют указанный атрибут, заканчивающийся определенной строкой?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "[attr=value]", "isCorrect": false },
-        { "id": 2, "text": "[attr~=value]", "isCorrect": false },
-        { "id": 3, "text": "[attr|=value]", "isCorrect": false },
-        { "id": 4, "text": "[attr$=value]", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "[attr=value]",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "[attr~=value]",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "[attr|=value]",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "[attr$=value]",
+          "isCorrect": true
+        }
       ]
+    },
+    {
+      "id": 15,
+      "text": "Как работает CSS Grid Layout?",
+      "hasOptions": false,
+      "answer": "CSS Grid Layout - это двумерная система макета, позволяющая управлять расположением элементов по сетке с рядами и столбцами."
+    },
+    {
+      "id": 16,
+      "text": "Что такое псевдокласс :nth-child в CSS?",
+      "hasOptions": false,
+      "answer": "Псевдокласс :nth-child(n) в CSS выбирает n-й дочерний элемент своего родителя."
+    },
+    {
+      "id": 17,
+      "text": "Что такое CSS-переменные и как их использовать?",
+      "hasOptions": false,
+      "answer": "CSS-переменные (кастомные свойства) позволяют хранить значения, которые можно повторно использовать в документе. Они объявляются с префиксом '--', например, '--main-color: black;'."
+    },
+    {
+      "id": 18,
+      "text": "Какое значение по умолчанию имеет свойство position в CSS?",
+      "hasOptions": false,
+      "answer": "По умолчанию свойство position в CSS имеет значение 'static'."
+    },
+    {
+      "id": 19,
+      "text": "Что такое блочная модель в CSS?",
+      "hasOptions": false,
+      "answer": "Блочная модель в CSS описывает пространство вокруг HTML-элементов, включая margin, border, padding и сам контент."
+    },
+    {
+      "id": 20,
+      "text": "Как работает Flexbox в CSS?",
+      "hasOptions": false,
+      "answer": "Flexbox - это модель макета, предоставляющая эффективный способ выравнивания и распределения пространства между элементами в контейнере."
+    },
+    {
+      "id": 21,
+      "text": "Как работает свойство 'position' в CSS?",
+      "hasOptions": false,
+      "answer": "Свойство 'position' определяет, как элемент располагается в документе, с основными значениями: 'static', 'relative', 'absolute', 'fixed', 'sticky'."
+    },
+    {
+      "id": 22,
+      "text": "Что такое медиазапросы в CSS?",
+      "hasOptions": false,
+      "answer": "Медиазапросы позволяют применять различные стили для разных устройств и размеров экранов."
+    },
+    {
+      "id": 23,
+      "text": "Какие виды позиционирования существуют в CSS?",
+      "hasOptions": false,
+      "answer": "В CSS существуют различные виды позиционирования: 'static', 'relative', 'absolute', 'fixed', 'sticky'."
+    },
+    {
+      "id": 24,
+      "text": "Что такое псевдоклассы и псевдоэлементы в CSS?",
+      "hasOptions": false,
+      "answer": "Псевдоклассы применяют стили к элементам в определенном состоянии, а псевдоэлементы вставляют и стилизуют части содержимого."
+    },
+    {
+      "id": 25,
+      "text": "Как работает наследование стилей в CSS?",
+      "hasOptions": false,
+      "answer": "Некоторые CSS-свойства наследуются от родительских элементов, в то время как другие свойства не наследуются по умолчанию."
     }
   ],
   "javascript": [
@@ -385,19 +947,19 @@
       "id": 1,
       "text": "Что такое чистая функция?",
       "hasOptions": false,
-      "answer": "Это функция, которая возвращает одинаковый результат, когда вызывается с одним и тем же набором аргументов, а также не имеет побочных эффектов (side effects)"
+      "answer": "Это функция, которая возвращает одинаковый результат, когда вызывается с одним и тем же набором аргументов, а также не имеет побочных эффектов (side effects)."
     },
     {
       "id": 2,
       "text": "Что такое замыкание?",
       "hasOptions": false,
-      "answer": "Замыкания – это способность функции запоминать лексическое окружение, в котором она была создана, то есть хранить в себе ссылку на это окружение и обращаться к нему.\n\n<a href='https://youtu.be/mI6Jcfsgma4?si=46DV3mXPF6mDTTPs' target='_blank'>Подробнейшее видео про замыкание</a>"
+      "answer": "Замыкания – это способность функции запоминать лексическое окружение, в котором она была создана, то есть хранить в себе ссылку на это окружение и обращаться к нему."
     },
     {
       "id": 3,
       "text": "let VS const: почему лучше использовать const, когда это возможно?",
       "hasOptions": false,
-      "answer": "Использование const дает два преимущества:\n1) Безопасность: объявление переменных через const защищает от неожиданного изменения значения переменной в коде, что может часто приводит к ошибкам и неожиданному поведению программы.\n2) Читаемость: использование const позволяет читателю кода понимать, что значение переменной не будет изменяться в течение выполнения программы. Это делает код более понятным и уменьшает возможность ошибок.\n\nПодробнее: <a href='https://youtu.be/07FllcTRj84?si=q7v60ZvHYBoRSSen' target='_blank'>Видео про VAR/LET/CONST</a>"
+      "answer": "Использование const дает два преимущества:\n1) Безопасность: объявление переменных через const защищает от неожиданного изменения значения переменной в коде, что может часто приводит к ошибкам и неожиданному поведению программы.\n2) Читаемость: использование const позволяет читателю кода понимать, что значение переменной не будет изменяться в течение выполнения программы. Это делает код более понятным и уменьшает возможность ошибок."
     },
     {
       "id": 4,
@@ -415,7 +977,7 @@
       "id": 6,
       "text": "Что такое стрелочные функции в JavaScript?",
       "hasOptions": false,
-      "answer": "Стрелочные функции — это синтаксически компактный способ записи функций в JavaScript, который не имеет своего собственного 'this'. Они часто используются для создания анонимных функций.\n\n<a href='https://youtu.be/nGVYdna4kq4?si=1k0J9F-MYxWCaq6M' target='_blank'>Подробное видео про функции в JS</a>"
+      "answer": "Стрелочные функции — это синтаксически компактный способ записи функций в JavaScript, который не имеет своего собственного 'this'. Они часто используются для создания анонимных функций."
     },
     {
       "id": 7,
@@ -428,10 +990,26 @@
       "text": "Какой метод используется для добавления элемента в массив?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "splice()", "isCorrect": false },
-        { "id": 2, "text": "pop()", "isCorrect": false },
-        { "id": 3, "text": "shift()", "isCorrect": false },
-        { "id": 4, "text": "push()", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "splice()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "pop()",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "shift()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "push()",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -439,10 +1017,26 @@
       "text": "Какой объект представляет текущее окно браузера?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "document", "isCorrect": false },
-        { "id": 2, "text": "screen", "isCorrect": false },
-        { "id": 3, "text": "window", "isCorrect": true },
-        { "id": 4, "text": "browser", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "document",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "screen",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "window",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "browser",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -450,10 +1044,26 @@
       "text": "Какой оператор используется для сравнения на строгое равенство?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "==", "isCorrect": false },
-        { "id": 2, "text": "===", "isCorrect": true },
-        { "id": 3, "text": "=", "isCorrect": false },
-        { "id": 4, "text": "!==", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "==",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "===",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "=",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "!==",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -461,10 +1071,26 @@
       "text": "Какой метод используется для удаления последнего элемента из массива?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "splice()", "isCorrect": false },
-        { "id": 2, "text": "pop()", "isCorrect": true },
-        { "id": 3, "text": "shift()", "isCorrect": false },
-        { "id": 4, "text": "push()", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "splice()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "pop()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "shift()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "push()",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -472,10 +1098,26 @@
       "text": "Какой метод в JavaScript используется для преобразования объекта в строку JSON?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "JSON.stringify()", "isCorrect": true },
-        { "id": 2, "text": "JSON.parse()", "isCorrect": false },
-        { "id": 3, "text": "JSON.toText()", "isCorrect": false },
-        { "id": 4, "text": "JSON.toString()", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "JSON.stringify()",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "JSON.parse()",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "JSON.toText()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "JSON.toString()",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -483,10 +1125,26 @@
       "text": "Какой объект в JavaScript используется для работы с датой и временем?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "Time", "isCorrect": false },
-        { "id": 2, "text": "Date", "isCorrect": true },
-        { "id": 3, "text": "Calendar", "isCorrect": false },
-        { "id": 4, "text": "DateTime", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "Time",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Date",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Calendar",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "DateTime",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -494,10 +1152,282 @@
       "text": "Какой метод массива в JavaScript используется для фильтрации элементов по определенному критерию?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "map()", "isCorrect": false },
-        { "id": 2, "text": "filter()", "isCorrect": true },
-        { "id": 3, "text": "reduce()", "isCorrect": false },
-        { "id": 4, "text": "forEach()", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "map()",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "filter()",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "reduce()",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "forEach()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Что такое область видимости (Scope) в JavaScript?",
+      "hasOptions": false,
+      "answer": "Область видимости – это контекст в JavaScript, который определяет доступность переменных. Существуют локальная и глобальная области видимости."
+    },
+    {
+      "id": 16,
+      "text": "Чем отличается == от === в JavaScript?",
+      "hasOptions": false,
+      "answer": "== сравнивает значения с приведением типов, в то время как === сравнивает значения и типы без приведения."
+    },
+    {
+      "id": 17,
+      "text": "Как работает метод массива 'map' в JavaScript?",
+      "hasOptions": false,
+      "answer": "Метод 'map' создает новый массив, применяя функцию ко всем элементам исходного массива."
+    },
+    {
+      "id": 18,
+      "text": "Что такое 'this' в JavaScript?",
+      "hasOptions": false,
+      "answer": "'this' – это ссылка на контекст объекта, в рамках которого выполняется текущий код."
+    },
+    {
+      "id": 19,
+      "text": "Как создать объект в JavaScript?",
+      "hasOptions": false,
+      "answer": "Объекты можно создавать с помощью литералов объектов, например: let obj = {}."
+    },
+    {
+      "id": 20,
+      "text": "Что такое всплытие событий (Event Bubbling)?",
+      "hasOptions": false,
+      "answer": "Всплытие событий – это процесс, при котором событие передается от наиболее вложенного элемента к его родителям."
+    },
+    {
+      "id": 21,
+      "text": "Какое значение имеет 'undefined' в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Ошибка", "isCorrect": false},
+        {"id": 2, "text": "Пустая строка", "isCorrect": false},
+        {"id": 3, "text": "Неопределенное значение", "isCorrect": true},
+        {"id": 4, "text": "Ноль", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Какой метод используется для преобразования JSON в объект JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "JSON.parse()", "isCorrect": true},
+        {"id": 2, "text": "JSON.stringify()", "isCorrect": false},
+        {"id": 3, "text": "JSON.toObject()", "isCorrect": false},
+        {"id": 4, "text": "JSON.fromJSON()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Какая функция используется для вывода данных в консоль?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "console.log()", "isCorrect": true},
+        {"id": 2, "text": "document.write()", "isCorrect": false},
+        {"id": 3, "text": "window.print()", "isCorrect": false},
+        {"id": 4, "text": "alert()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Какие типы данных существуют в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "String, Number, Boolean, Object, Undefined, Null, Symbol", "isCorrect": true},
+        {"id": 2, "text": "Integer, Float, Char, Array, Object", "isCorrect": false},
+        {"id": 3, "text": "Numeric, Text, Array, Boolean", "isCorrect": false},
+        {"id": 4, "text": "Data, Time, Sequence, Map", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 25,
+      "text": "Что такое промис (Promise) в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Функция обратного вызова", "isCorrect": false},
+        {"id": 2, "text": "Переменная для хранения данных", "isCorrect": false},
+        {"id": 3, "text": "Объект, представляющий будущее значение или исключение", "isCorrect": true},
+        {"id": 4, "text": "Тип данных для временных значений", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 26,
+      "text": "Как выбрать элемент DOM в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "document.getElement()", "isCorrect": false},
+        {"id": 2, "text": "document.querySelector()", "isCorrect": true},
+        {"id": 3, "text": "window.findElement()", "isCorrect": false},
+        {"id": 4, "text": "browser.selectElement()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Что такое асинхронная функция (async function) в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Функция, которая всегда возвращает промис", "isCorrect": true},
+        {"id": 2, "text": "Функция, выполняющаяся в отдельном потоке", "isCorrect": false},
+        {"id": 3, "text": "Функция, выполняющаяся в фоновом режиме", "isCorrect": false},
+        {"id": 4, "text": "Обычная функция с дополнительными возможностями", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 28,
+      "text": "Как создать прототип объекта в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Использование ключевого слова 'new'", "isCorrect": false},
+        {"id": 2, "text": "С помощью Object.create()", "isCorrect": true},
+        {"id": 3, "text": "Используя классы и конструкторы", "isCorrect": false},
+        {"id": 4, "text": "С помощью JSON.stringify()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Как обработать исключение в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Использование конструкции try...catch", "isCorrect": true},
+        {"id": 2, "text": "С помощью функции alert()", "isCorrect": false},
+        {"id": 3, "text": "Используя метод onError()", "isCorrect": false},
+        {"id": 4, "text": "С помощью console.log()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Какая конструкция позволяет перебирать элементы в массиве?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "while", "isCorrect": false},
+        {"id": 2, "text": "forEach", "isCorrect": true},
+        {"id": 3, "text": "if", "isCorrect": false},
+        {"id": 4, "text": "switch", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 31,
+      "text": "Какое ключевое слово используется для объявления константы в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "var", "isCorrect": false},
+        {"id": 2, "text": "let", "isCorrect": false},
+        {"id": 3, "text": "const", "isCorrect": true},
+        {"id": 4, "text": "static", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 32,
+      "text": "Как в JavaScript объявляется класс?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "function MyClass() {}", "isCorrect": false},
+        {"id": 2, "text": "class MyClass {}", "isCorrect": true},
+        {"id": 3, "text": "new Class(MyClass)", "isCorrect": false},
+        {"id": 4, "text": "create MyClass()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 33,
+      "text": "Какой метод используется для добавления элемента в начало массива?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "push()", "isCorrect": false},
+        {"id": 2, "text": "unshift()", "isCorrect": true},
+        {"id": 3, "text": "append()", "isCorrect": false},
+        {"id": 4, "text": "prepend()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 34,
+      "text": "Что делает метод 'reduce' в массиве?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Уменьшает размер массива", "isCorrect": false},
+        {"id": 2, "text": "Применяет функцию к каждому элементу и возвращает единственное значение", "isCorrect": true},
+        {"id": 3, "text": "Фильтрует массив", "isCorrect": false},
+        {"id": 4, "text": "Сортирует массив", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 35,
+      "text": "Для чего используется 'localStorage' в браузере?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Для временного хранения данных", "isCorrect": false},
+        {"id": 2, "text": "Для постоянного хранения данных", "isCorrect": true},
+        {"id": 3, "text": "Для передачи данных между вкладками", "isCorrect": false},
+        {"id": 4, "text": "Для хранения данных сессии", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 36,
+      "text": "Как можно отловить исключение в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "try...catch", "isCorrect": true},
+        {"id": 2, "text": "if...else", "isCorrect": false},
+        {"id": 3, "text": "while", "isCorrect": false},
+        {"id": 4, "text": "for", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 37,
+      "text": "Какой метод массива используется для поиска элемента в массиве?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "find()", "isCorrect": true},
+        {"id": 2, "text": "search()", "isCorrect": false},
+        {"id": 3, "text": "lookup()", "isCorrect": false},
+        {"id": 4, "text": "indexOf()", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 38,
+      "text": "Что такое 'event bubbling' в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Всплытие события от дочерних элементов к родительским", "isCorrect": true},
+        {"id": 2, "text": "Генерация события при нажатии на элемент", "isCorrect": false},
+        {"id": 3, "text": "Остановка распространения события", "isCorrect": false},
+        {"id": 4, "text": "Погружение события от родительских элементов к дочерним", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 39,
+      "text": "Что такое строгий режим ('use strict') в JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Указывает интерпретатору на использование строгих правил синтаксиса", "isCorrect": true},
+        {"id": 2, "text": "Включает режим отладки скрипта", "isCorrect": false},
+        {"id": 3, "text": "Скрывает код от сторонних библиотек", "isCorrect": false},
+        {"id": 4, "text": "Оптимизирует производительность скрипта", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 40,
+      "text": "Как в JavaScript создается новый объект Date?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "new Date()", "isCorrect": true},
+        {"id": 2, "text": "Date.create()", "isCorrect": false},
+        {"id": 3, "text": "Date.now()", "isCorrect": false},
+        {"id": 4, "text": "createDate()", "isCorrect": false}
       ]
     }
   ],
@@ -506,7 +1436,7 @@
       "id": 1,
       "text": "Что такое React JS?",
       "hasOptions": false,
-      "answer": "React JS, или просто React, это открытая библиотека JavaScript для создания пользовательских интерфейсов, особенно для одностраничных приложений (SPA). Ключевые особенности React:\n1) Компонентный подход: React строится на концепции компонентов, что позволяет разработчикам создавать легко переиспользуемые куски кода;\n2) Виртуальный DOM: React использует виртуальный DOM для отслеживания изменений. Это абстракция реального DOM, что позволяет библиотеке обновлять только те части интерфейса, которые действительно изменились, вместо полного перерендеринга страницы. Это делает React относительно быстрым;\n3) Хуки: Введение хуков позволило использовать состояния и другие возможности классовых компонентов в функциональных компонентах, что сделало код более кратким и чистым;\n4) Сообщество и экосистема: React имеет большое и активное сообщество разработчиков, а также много библиотек и инструментов, созданных сообществом, что облегчает разработку сложных приложений.\n\nПодробнее: <a href='https://youtu.be/R_39q-vdOaE?si=mEKDaYDjEdnojG-N' target='_blank'>Введение в React (видео)</a>"
+      "answer": "React JS, или просто React, это открытая библиотека JavaScript для создания пользовательских интерфейсов, особенно для одностраничных приложений (SPA). Ключевые особенности React:\n1) Компонентный подход: React строится на концепции компонентов, что позволяет разработчикам создавать легко переиспользуемые куски кода;\n2) Виртуальный DOM: React использует виртуальный DOM для отслеживания изменений. Это абстракция реального DOM, что позволяет библиотеке обновлять только те части интерфейса, которые действительно изменились, вместо полного перерендеринга страницы. Это делает React относительно быстрым;\n3) Хуки: Введение хуков позволило использовать состояния и другие возможности классовых компонентов в функциональных компонентах, что сделало код более кратким и чистым;\n4) Сообщество и экосистема: React имеет большое и активное сообщество разработчиков, а также много библиотек и инструментов, созданных сообществом, что облегчает разработку сложных приложений."
     },
     {
       "id": 2,
@@ -518,7 +1448,7 @@
       "id": 3,
       "text": "Как работает проп children?",
       "hasOptions": false,
-      "answer": "Некоторые компоненты не знают своих потомков заранее. Это особенно характерно для таких компонентов, как Sidebar или Dialog, которые представляют из себя как бы «коробку», в которую можно что-то положить. Для таких компонентов можно использовать специальный проп children, который передаст дочерние элементы сразу на вывод.\n\nПодробнее: <a href='https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children' target='_blank'>Документация React (eng)</a>"
+      "answer": "Некоторые компоненты не знают своих потомков заранее. Это особенно характерно для таких компонентов, как Sidebar или Dialog, которые представляют из себя как бы «коробку», в которую можно что-то положить. Для таких компонентов можно использовать специальный проп children, который передаст дочерние элементы сразу на вывод."
     },
     {
       "id": 4,
@@ -547,7 +1477,11 @@
           "text": "Выполнения побочных эффектов",
           "isCorrect": true
         },
-        { "id": 3, "text": "Мемоизации значений", "isCorrect": false },
+        {
+          "id": 3,
+          "text": "Мемоизации значений",
+          "isCorrect": false
+        },
         {
           "id": 4,
           "text": "Создания ссылок на DOM элементы",
@@ -560,14 +1494,26 @@
       "text": "Что будет, если вторым аргументом в useEffect передать пустой массив []?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "Ошибка", "isCorrect": false },
+        {
+          "id": 1,
+          "text": "Ошибка",
+          "isCorrect": false
+        },
         {
           "id": 2,
           "text": "useEffect будет запущен 0 раз",
           "isCorrect": false
         },
-        { "id": 3, "text": "useEffect будет запущен 1 раз", "isCorrect": true },
-        { "id": 4, "text": "Нет верного ответа", "isCorrect": false }
+        {
+          "id": 3,
+          "text": "useEffect будет запущен 1 раз",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "Нет верного ответа",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -575,10 +1521,26 @@
       "text": "Какой хук используется для создания состояния в компоненте?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "useEffect", "isCorrect": false },
-        { "id": 2, "text": "useState", "isCorrect": true },
-        { "id": 3, "text": "useContext", "isCorrect": false },
-        { "id": 4, "text": "useReducer", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "useEffect",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "useState",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "useContext",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "useReducer",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -586,10 +1548,26 @@
       "text": "Какой элемент используется для группировки элементов без добавления дополнительных узлов в DOM?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<Group>", "isCorrect": false },
-        { "id": 2, "text": "<Div>", "isCorrect": false },
-        { "id": 3, "text": "<Fragment> (<>)", "isCorrect": true },
-        { "id": 4, "text": "<List>", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "<Group>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<Div>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<Fragment> (<>)",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "<List>",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -597,10 +1575,26 @@
       "text": "У нас есть массив со строками (arr), каждую из которых мы хотим отразить на странице. Какой метод массива нужно применить в return компонента?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "{arr.forEach(...)}", "isCorrect": false },
-        { "id": 2, "text": "{arr.filter(...)}", "isCorrect": false },
-        { "id": 3, "text": "{arr.for(...)}", "isCorrect": false },
-        { "id": 4, "text": "{arr.map(...)}", "isCorrect": true }
+        {
+          "id": 1,
+          "text": "{arr.forEach(...)}",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "{arr.filter(...)}",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "{arr.for(...)}",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "{arr.map(...)}",
+          "isCorrect": true
+        }
       ]
     },
     {
@@ -608,10 +1602,26 @@
       "text": "Какой элемент используется для обработки ошибок в дереве компонентов?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "ErrorBoundary", "isCorrect": true },
-        { "id": 2, "text": "CatchError", "isCorrect": false },
-        { "id": 3, "text": "ErrorWrapper", "isCorrect": false },
-        { "id": 4, "text": "ErrorCatcher", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "ErrorBoundary",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "CatchError",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "ErrorWrapper",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "ErrorCatcher",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -619,10 +1629,26 @@
       "text": "Какой (какие) аргумент(ы) принимает хук useMemo?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "Функцию и массив зависимостей", "isCorrect": true },
-        { "id": 2, "text": "Функцию и объект опций", "isCorrect": false },
-        { "id": 3, "text": "Функцию", "isCorrect": false },
-        { "id": 4, "text": "Массив зависимостей", "isCorrect": false }
+        {
+          "id": 1,
+          "text": "Функцию и массив зависимостей",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Функцию и объект опций",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Функцию",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Массив зависимостей",
+          "isCorrect": false
+        }
       ]
     },
     {
@@ -645,8 +1671,144 @@
           "text": "Выполнения побочных эффектов",
           "isCorrect": false
         },
-        { "id": 4, "text": "Мемоизации функций", "isCorrect": true }
+        {
+          "id": 4,
+          "text": "Мемоизации функций",
+          "isCorrect": true
+        }
       ]
-    }
+    },
+    {
+      "id": 14,
+      "text": "Что такое контекст (Context) в React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Метод для глобального хранения данных", "isCorrect": false},
+        {"id": 2, "text": "API для передачи данных через дерево компонентов без пропсов", "isCorrect": true},
+        {"id": 3, "text": "Хук для управления состоянием", "isCorrect": false},
+        {"id": 4, "text": "Компонент высшего порядка", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Что такое HOC (Higher-Order Component) в React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Компонент, содержащий другие компоненты", "isCorrect": false},
+        {"id": 2, "text": "Функция, принимающая компонент и возвращающая новый компонент", "isCorrect": true},
+        {"id": 3, "text": "Библиотека для управления состоянием", "isCorrect": false},
+        {"id": 4, "text": "Компонент с более сложной логикой", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Какие методы жизненного цикла есть в классовых компонентах React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "componentDidMount, componentDidUpdate, componentWillUnmount", "isCorrect": true},
+        {"id": 2, "text": "useEffect, useState, useContext", "isCorrect": false},
+        {"id": 3, "text": "render, componentDidMount, componentDidUpdate", "isCorrect": false},
+        {"id": 4, "text": "constructor, getDerivedStateFromProps, shouldComponentUpdate", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Что такое JSX?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "JavaScript XML, синтаксис для описания UI компонентов", "isCorrect": true},
+        {"id": 2, "text": "Библиотека для создания сложных анимаций", "isCorrect": false},
+        {"id": 3, "text": "Специальный вид CSS, используемый в React", "isCorrect": false},
+        {"id": 4, "text": "JavaScript Extension, расширение для Node.js", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Как передать props в компонент React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "С помощью атрибутов HTML", "isCorrect": false},
+        {"id": 2, "text": "Через параметры функции компонента", "isCorrect": true},
+        {"id": 3, "text": "Используя методы жизненного цикла", "isCorrect": false},
+        {"id": 4, "text": "С помощью глобальных переменных", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Как обновить состояние в React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Мутацией состояния напрямую", "isCorrect": false},
+        {"id": 2, "text": "С помощью функции setState", "isCorrect": true},
+        {"id": 3, "text": "Обновлением переменной состояния", "isCorrect": false},
+        {"id": 4, "text": "Перезагрузкой компонента", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Что делает хук useState в React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Подписывает на события DOM", "isCorrect": false},
+        {"id": 2, "text": "Создает локальное состояние в функциональном компоненте", "isCorrect": true},
+        {"id": 3, "text": "Отправляет запрос на сервер", "isCorrect": false},
+        {"id": 4, "text": "Обрабатывает форму", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Как можно оптимизировать производительность React-компонентов?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Использование PureComponent", "isCorrect": false},
+        {"id": 2, "text": "Избегание повторных рендеров", "isCorrect": true},
+        {"id": 3, "text": "Уменьшение размера компонентов", "isCorrect": false},
+        {"id": 4, "text": "Регулярное обновление библиотек", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Какая функция React позволяет передать данные между компонентами без пропсов?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "useState", "isCorrect": false},
+        {"id": 2, "text": "useEffect", "isCorrect": false},
+        {"id": 3, "text": "useContext", "isCorrect": true},
+        {"id": 4, "text": "useReducer", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Чем отличается компонент класса от функционального компонента в React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Методами жизненного цикла", "isCorrect": true},
+        {"id": 2, "text": "Способом рендеринга", "isCorrect": false},
+        {"id": 3, "text": "Использованием JSX", "isCorrect": false},
+        {"id": 4, "text": "Способом управления состоянием", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Что такое Prop Drilling в React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "Передача пропсов от родителя к потомку", "isCorrect": false},
+        {"id": 2, "text": "Передача пропсов через несколько уровней компонентов", "isCorrect": true},
+        {"id": 3, "text": "Использование defaultProps", "isCorrect": false},
+        {"id": 4, "text": "Применение High Order Components", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 25,
+      "text": "Какой хук используется для глобального управления состоянием в приложении React?",
+      "hasOptions": true,
+      "options": [
+        {"id": 1, "text": "useState", "isCorrect": false},
+        {"id": 2, "text": "useContext", "isCorrect": true},
+        {"id": 3, "text": "useEffect", "isCorrect": false},
+        {"id": 4, "text": "useReducer", "isCorrect": false}
+      ]
+    }    
   ]
 }

@@ -1,4 +1,11 @@
-import { Bot, Keyboard, InlineKeyboard, GrammyError, HttpError } from "grammy";
+import {
+  Bot,
+  Keyboard,
+  InlineKeyboard,
+  GrammyError,
+  HttpError,
+  InputFile,
+} from "grammy";
 import { getRandomQuestion, getCorrectAnswer, questions } from "../utils.mjs";
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
@@ -25,7 +32,8 @@ bot.command("start", async (ctx) => {
     .row()
     .text("📈 Ваша статистика")
     .resized();
-
+  const photo = new InputFile("./src/img/bot.png");
+  await ctx.replyWithPhoto(photo);
   await ctx.reply(
     `Привет, ${userName}! Я - Frontend Interview Prep Bot 🤖 \nЯ помогу тебе подготовиться к интервью по фронтенду.`
   );
