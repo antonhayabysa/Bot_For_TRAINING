@@ -50,8 +50,6 @@ bot.command("start", async (ctx) => {
     .row()
     .text("📈 Ваша статистика")
     .resized();
-  const photo = new InputFile("./src/img/bot.png");
-  await ctx.replyWithPhoto(photo);
   await ctx.reply(
     `Привет, ${userName}! Я - Frontend Interview Prep Bot 🤖 \nЯ помогу тебе подготовиться к интервью по фронтенду.`
   );
@@ -94,8 +92,7 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
 
     await ctx.reply(question.text, { reply_markup: inlineKeyboard });
   } catch (error) {
-    // В этом блоке обрабатывается ошибка, связанная с необходимостью ввода пароля
-    await ctx.reply(error.message); // Отправить сообщение об ошибке пользователю
+    await ctx.reply(error.message);
   }
 });
 
@@ -177,12 +174,10 @@ bot.on("message", async (ctx) => {
   const userId = ctx.from.id.toString();
   const enteredText = ctx.message.text;
 
-  // Проверяем, является ли текст паролем
   if (enteredText.trim() === PASSWORD) {
     authorizedUsers[userId] = PASSWORD;
     await ctx.reply("Пароль принят. Теперь вы можете продолжить.");
   } else {
-    // Обрабатываем другие текстовые сообщения (если нужно)
   }
 });
 
