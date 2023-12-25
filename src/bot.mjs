@@ -50,6 +50,10 @@ bot.command("start", async (ctx) => {
     .row()
     .text("📈 Ваша статистика")
     .resized();
+
+  const imageUrl =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO2T03NfMHwiRCOlG9RdASOXDkigs3TTIVfaH5B5Iv698_fwGhTXvWc3jQ9LDuVd2n0FY&usqp=CAU"; // Замените на вашу ссылку
+  await ctx.replyWithPhoto(imageUrl);
   await ctx.reply(
     `Привет, ${userName}! Я - Frontend Interview Prep Bot 🤖 \nЯ помогу тебе подготовиться к интервью по фронтенду.`
   );
