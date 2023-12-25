@@ -6,11 +6,29 @@ import {
   HttpError,
   InputFile,
 } from "grammy";
-import { getRandomQuestion, getCorrectAnswer, questions } from "../utils.mjs";
+import {
+  getRandomQuestion,
+  getCorrectAnswer,
+  questions,
+  authorizedUsers,
+  PASSWORD,
+} from "../utils.mjs";
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
 let userStats = {};
+
+bot.command("password", async (ctx) => {
+  const userId = ctx.from.id.toString();
+  const enteredPassword = ctx.message.text.split(" ")[1];
+
+  if (enteredPassword === PASSWORD) {
+    authorizedUsers[userId] = PASSWORD;
+    await ctx.reply("Пароль принят. Теперь вы можете продолжить.");
+  } else {
+    await ctx.reply("Неверный пароль. Попробуйте снова.");
+  }
+});
 
 const getTotalQuestionsByTopic = () => {
   const totalQuestions = {};
@@ -45,34 +63,40 @@ bot.command("start", async (ctx) => {
 bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
   const topic = ctx.message.text.toLowerCase();
   const userId = ctx.from.id.toString();
-  const { question, questionTopic } = getRandomQuestion(topic, userId);
 
-  let inlineKeyboard = new InlineKeyboard();
+  try {
+    const { question, questionTopic } = getRandomQuestion(topic, userId);
 
-  if (question.hasOptions) {
-    question.options.forEach((option) => {
-      inlineKeyboard = inlineKeyboard
-        .text(
-          option.text,
-          JSON.stringify({
-            type: `${questionTopic}-option`,
-            isCorrect: option.isCorrect,
-            questionId: question.id,
-          })
-        )
-        .row();
-    });
-  } else {
-    inlineKeyboard = inlineKeyboard.text(
-      "Узнать ответ",
-      JSON.stringify({
-        type: questionTopic,
-        questionId: question.id,
-      })
-    );
+    let inlineKeyboard = new InlineKeyboard();
+
+    if (question.hasOptions) {
+      question.options.forEach((option) => {
+        inlineKeyboard = inlineKeyboard
+          .text(
+            option.text,
+            JSON.stringify({
+              type: `${questionTopic}-option`,
+              isCorrect: option.isCorrect,
+              questionId: question.id,
+            })
+          )
+          .row();
+      });
+    } else {
+      inlineKeyboard = inlineKeyboard.text(
+        "Узнать ответ",
+        JSON.stringify({
+          type: questionTopic,
+          questionId: question.id,
+        })
+      );
+    }
+
+    await ctx.reply(question.text, { reply_markup: inlineKeyboard });
+  } catch (error) {
+    // В этом блоке обрабатывается ошибка, связанная с необходимостью ввода пароля
+    await ctx.reply(error.message); // Отправить сообщение об ошибке пользователю
   }
-
-  await ctx.reply(question.text, { reply_markup: inlineKeyboard });
 });
 
 bot.hears("📈 Ваша статистика", async (ctx) => {
@@ -121,6 +145,11 @@ bot.on("callback_query:data", async (ctx) => {
     userStats[userId][topic].completed += 1;
   }
 
+  if (userStats[userId][topic].total >= questions[topic].length) {
+    userStats[userId][topic].total = 0;
+    userStats[userId][topic].completed = 0;
+  }
+
   if (!callbackData.type.includes("option")) {
     const answer = getCorrectAnswer(callbackData.type, callbackData.questionId);
     await ctx.reply(answer, {
@@ -133,16 +162,28 @@ bot.on("callback_query:data", async (ctx) => {
 
   if (callbackData.isCorrect) {
     await ctx.reply("Верно ✅");
-    await ctx.answerCallbackQuery();
-    return;
+  } else {
+    const answer = getCorrectAnswer(
+      callbackData.type.split("-")[0],
+      callbackData.questionId
+    );
+    await ctx.reply(`Неверно ❌ Правильный ответ: ${answer}`);
   }
 
-  const answer = getCorrectAnswer(
-    callbackData.type.split("-")[0],
-    callbackData.questionId
-  );
-  await ctx.reply(`Неверно ❌ Правильный ответ: ${answer}`);
   await ctx.answerCallbackQuery();
+});
+
+bot.on("message", async (ctx) => {
+  const userId = ctx.from.id.toString();
+  const enteredText = ctx.message.text;
+
+  // Проверяем, является ли текст паролем
+  if (enteredText.trim() === PASSWORD) {
+    authorizedUsers[userId] = PASSWORD;
+    await ctx.reply("Пароль принят. Теперь вы можете продолжить.");
+  } else {
+    // Обрабатываем другие текстовые сообщения (если нужно)
+  }
 });
 
 bot.catch((err) => {
