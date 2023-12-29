@@ -13,6 +13,7 @@ import {
   authorizedUsers,
   PASSWORD,
 } from "../utils.mjs";
+import { connectToMongoDB, registerNewUser } from "../db.mjs";
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
@@ -39,8 +40,18 @@ const getTotalQuestionsByTopic = () => {
 };
 
 bot.command("start", async (ctx) => {
+  const userId = ctx.from.id.toString();
   const userName = ctx.from.first_name || "Пользователь";
+  const userUsername = ctx.from.username || "";
 
+  console.log(
+    `Пользователь: ${userId}, Имя: ${userName}, Username: ${userUsername}`
+  );
+
+  // Регистрируем нового пользователя в MongoDB
+  await registerNewUser(userId, userName, userUsername);
+
+  // Инициализация клавиатуры для ответа пользователю
   const startKeyboard = new Keyboard()
     .text("HTML")
     .text("CSS")
@@ -51,12 +62,17 @@ bot.command("start", async (ctx) => {
     .text("📈 Ваша статистика")
     .resized();
 
+  // URL изображения для ответа
   const imageUrl =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO2T03NfMHwiRCOlG9RdASOXDkigs3TTIVfaH5B5Iv698_fwGhTXvWc3jQ9LDuVd2n0FY&usqp=CAU"; // Замените на вашу ссылку
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO2T03NfMHwiRCOlG9RdASOXDkigs3TTIVfaH5B5Iv698_fwGhTXvWc3jQ9LDuVd2n0FY";
+
+  // Отправляем приветственное сообщение с фото
   await ctx.replyWithPhoto(imageUrl);
   await ctx.reply(
     `Привет, ${userName}! Я - Frontend Interview Prep Bot 🤖 \nЯ помогу тебе подготовиться к интервью по фронтенду.`
   );
+
+  // Отправляем сообщение с выбором темы
   await ctx.reply("С чего начнем? Выбери тему вопроса в меню 👇", {
     reply_markup: startKeyboard,
   });
