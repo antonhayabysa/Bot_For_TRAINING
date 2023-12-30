@@ -194,6 +194,11 @@ bot.on("callback_query:data", async (ctx) => {
     return;
   }
 
+  bot.on("message:photo", async (ctx) => {
+    await ctx.forwardMessage(admin);
+    await ctx.reply("все ок фото есть");
+  });
+
   const topic = callbackData.type.split("-")[0];
 
   if (!ctx.session.stats) {

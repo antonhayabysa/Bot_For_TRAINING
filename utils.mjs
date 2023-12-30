@@ -20,9 +20,7 @@ export const getRandomQuestion = (topic, userId, ctx) => {
     userLastQuestionIndex[userId][topic] = 0;
   } else {
     if (userLastQuestionIndex[userId][topic] >= 4 && !isAuthorized(ctx)) {
-      throw new Error(
-        "Требуется ввод пароля для доступа к следующим вопросам."
-      );
+      throw new Error(" Вот карт : + скрин оплаты ");
     }
     userLastQuestionIndex[userId][topic] =
       (userLastQuestionIndex[userId][topic] + 1) % questions[topic].length;
