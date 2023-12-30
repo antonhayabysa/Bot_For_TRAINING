@@ -22,9 +22,7 @@ const db = await connectToMongoDB();
 const collection = db.collection("Sessions");
 const admin = 305515622;
 
-bot.command("test", async (ctx) => {
-  ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`);
-});
+bot.command("test", async (ctx) => {});
 
 bot.use(
   session({
@@ -131,6 +129,15 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
     await ctx.reply(question.text, { reply_markup: inlineKeyboard });
   } catch (error) {
     await ctx.reply(error.message);
+    await ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`, {
+      reply_markup: new InlineKeyboard().text(
+        " купить подписку ",
+        JSON.stringify({
+          userID: ctx.chat.id,
+          command: "purchaseSubscription",
+        })
+      ),
+    });
   }
 });
 
@@ -162,6 +169,31 @@ bot.hears("📈 Ваша статистика", async (ctx) => {
 
 bot.on("callback_query:data", async (ctx) => {
   const callbackData = JSON.parse(ctx.callbackQuery.data);
+
+  if (callbackData.command === "purchaseSubscription") {
+    const currentDate = new Date();
+    const dateIn30Days = new Date(
+      currentDate.getTime() + 30 * 24 * 60 * 60 * 1000
+    );
+
+    await collection.updateOne(
+      {
+        key: callbackData.userID.toString(),
+      },
+      {
+        $set: {
+          "value.paidAntil": dateIn30Days,
+        },
+      }
+    );
+    await ctx.api.sendMessage(callbackData.userID, `ура ты купил курс`);
+    await ctx.answerCallbackQuery({
+      text: "У тебя купили курс ! Ура ! ",
+      show_alert: true,
+    });
+    return;
+  }
+
   const topic = callbackData.type.split("-")[0];
 
   if (!ctx.session.stats) {
