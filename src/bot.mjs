@@ -243,17 +243,6 @@ bot.on("callback_query:data", async (ctx) => {
   await ctx.answerCallbackQuery();
 });
 
-bot.on("message", async (ctx) => {
-  const userId = ctx.from.id.toString();
-  const enteredText = ctx.message.text;
-
-  if (enteredText.trim() === PASSWORD) {
-    authorizedUsers[userId] = PASSWORD;
-    await ctx.reply("Пароль принят. Теперь вы можете продолжить.");
-  } else {
-  }
-});
-
 bot.catch((err) => {
   const ctx = err.ctx;
   console.error(`Error while handling update ${ctx.update.update_id}:`);
