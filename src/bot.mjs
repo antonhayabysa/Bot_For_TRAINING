@@ -1,11 +1,4 @@
-import {
-  Bot,
-  Keyboard,
-  InlineKeyboard,
-  GrammyError,
-  HttpError,
-  InputFile,
-} from "grammy";
+import { Bot, Keyboard, InlineKeyboard, GrammyError, HttpError } from "grammy";
 import {
   getRandomQuestion,
   getCorrectAnswer,
@@ -13,7 +6,7 @@ import {
   authorizedUsers,
   PASSWORD,
 } from "../utils.mjs";
-import { connectToMongoDB, registerNewUser } from "../db.mjs";
+import { registerNewUser } from "../db.mjs";
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
