@@ -157,6 +157,19 @@ bot.hears("📈 Ваша статистика", async (ctx) => {
 
   await ctx.reply(message, { parse_mode: "HTML" });
 });
+bot.on("message:photo", async (ctx) => {
+  await ctx.reply("все ок фото есть");
+  await ctx.forwardMessage(admin);
+  await ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`, {
+    reply_markup: new InlineKeyboard().text(
+      " купить подписку ",
+      JSON.stringify({
+        userID: ctx.chat.id,
+        command: "purchaseSubscription",
+      })
+    ),
+  });
+});
 
 bot.on("callback_query:data", async (ctx) => {
   const callbackData = JSON.parse(ctx.callbackQuery.data);
@@ -184,20 +197,6 @@ bot.on("callback_query:data", async (ctx) => {
     });
     return;
   }
-
-  bot.on("message:photo", async (ctx) => {
-    await ctx.forwardMessage(admin);
-    await ctx.reply("все ок фото есть");
-    await ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`, {
-      reply_markup: new InlineKeyboard().text(
-        " купить подписку ",
-        JSON.stringify({
-          userID: ctx.chat.id,
-          command: "purchaseSubscription",
-        })
-      ),
-    });
-  });
 
   const topic = callbackData.type.split("-")[0];
 
