@@ -129,15 +129,6 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
     await ctx.reply(question.text, { reply_markup: inlineKeyboard });
   } catch (error) {
     await ctx.reply(error.message);
-    await ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`, {
-      reply_markup: new InlineKeyboard().text(
-        " купить подписку ",
-        JSON.stringify({
-          userID: ctx.chat.id,
-          command: "purchaseSubscription",
-        })
-      ),
-    });
   }
 });
 
@@ -197,6 +188,15 @@ bot.on("callback_query:data", async (ctx) => {
   bot.on("message:photo", async (ctx) => {
     await ctx.forwardMessage(admin);
     await ctx.reply("все ок фото есть");
+    await ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`, {
+      reply_markup: new InlineKeyboard().text(
+        " купить подписку ",
+        JSON.stringify({
+          userID: ctx.chat.id,
+          command: "purchaseSubscription",
+        })
+      ),
+    });
   });
 
   const topic = callbackData.type.split("-")[0];
