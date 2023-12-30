@@ -27,3 +27,5 @@ try {
   console.error("Ошибка при установке webhook:", error);
   process.exit(1);
 }
+
+void globalThis.mongo.close();
