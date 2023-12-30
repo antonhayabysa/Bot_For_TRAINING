@@ -20,6 +20,11 @@ const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
 const db = await connectToMongoDB();
 const collection = db.collection("Sessions");
+const admin = 305515622;
+
+bot.command("test", async (ctx) => {
+  ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`);
+});
 
 bot.use(
   session({
