@@ -7,7 +7,7 @@ import {
     PASSWORD,
 } from "../utils.mjs";
 import {connectToMongoDB, registerNewUser} from "../db.mjs";
-import {MongoDBAdapter, ISession} from "@grammyjs/storage-mongodb";
+import {MongoDBAdapter} from "@grammyjs/storage-mongodb";
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
 
