@@ -4,11 +4,14 @@ let userLastQuestionIndex = {};
 export const PASSWORD = "123";
 let authorizedUsers = {};
 
-function isAuthorized(userId) {
-  return authorizedUsers[userId] === PASSWORD;
+function isAuthorized(ctx) {
+  if (!ctx.session.paidUntil) {
+    return false;
+  }
+  return ctx.session.paidUntil.getTime() > new Date().getTime();
 }
 
-export const getRandomQuestion = (topic, userId) => {
+export const getRandomQuestion = (topic, userId, ctx) => {
   if (!userLastQuestionIndex[userId]) {
     userLastQuestionIndex[userId] = {};
   }
@@ -16,7 +19,7 @@ export const getRandomQuestion = (topic, userId) => {
   if (userLastQuestionIndex[userId][topic] === undefined) {
     userLastQuestionIndex[userId][topic] = 0;
   } else {
-    if (userLastQuestionIndex[userId][topic] >= 4 && !isAuthorized(userId)) {
+    if (userLastQuestionIndex[userId][topic] >= 4 && !isAuthorized(ctx)) {
       throw new Error(
         "Требуется ввод пароля для доступа к следующим вопросам."
       );

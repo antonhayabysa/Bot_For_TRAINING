@@ -99,7 +99,7 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
   const userId = ctx.from.id.toString();
 
   try {
-    const { question, questionTopic } = getRandomQuestion(topic, userId);
+    const { question, questionTopic } = getRandomQuestion(topic, userId, ctx);
 
     let inlineKeyboard = new InlineKeyboard();
 
@@ -182,7 +182,7 @@ bot.on("callback_query:data", async (ctx) => {
       },
       {
         $set: {
-          "value.paidAntil": dateIn30Days,
+          "value.paidUntil": dateIn30Days,
         },
       }
     );
