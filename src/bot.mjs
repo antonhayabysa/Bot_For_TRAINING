@@ -6,13 +6,7 @@ import {
   HttpError,
   session,
 } from "grammy";
-import {
-  getRandomQuestion,
-  getCorrectAnswer,
-  questions,
-  authorizedUsers,
-  PASSWORD,
-} from "../utils.mjs";
+import { getRandomQuestion, getCorrectAnswer, questions } from "../utils.mjs";
 import { connectToMongoDB, registerNewUser } from "../db.mjs";
 import { MongoDBAdapter } from "@grammyjs/storage-mongodb";
 
@@ -32,18 +26,6 @@ bot.use(
     storage: new MongoDBAdapter({ collection }),
   })
 );
-
-bot.command("password", async (ctx) => {
-  const userId = ctx.from.id.toString();
-  const enteredPassword = ctx.message.text.split(" ")[1];
-
-  if (enteredPassword === PASSWORD) {
-    authorizedUsers[userId] = PASSWORD;
-    await ctx.reply("Пароль принят. Теперь вы можете продолжить.");
-  } else {
-    await ctx.reply("Неверный пароль. Попробуйте снова.");
-  }
-});
 
 const getTotalQuestionsByTopic = () => {
   const totalQuestions = {};
@@ -76,6 +58,8 @@ bot.command("start", async (ctx) => {
     .text("React")
     .row()
     .text("📈 Ваша статистика")
+    .text("🆘 Помощь")
+    .row()
     .resized();
 
   // URL изображения для ответа
@@ -85,13 +69,29 @@ bot.command("start", async (ctx) => {
   // Отправляем приветственное сообщение с фото
   await ctx.replyWithPhoto(imageUrl);
   await ctx.reply(
-    `Привет, ${userName}! Я - Frontend Interview Prep Bot 🤖 \nЯ помогу тебе подготовиться к интервью по фронтенду.`
+    `👋 Привет, ${userName}! Добро пожаловать в Frontend Interview Prep Bot 🤖\n\n` +
+      `Я здесь, чтобы помочь тебе максимально эффективно подготовиться к интервью по фронтенду. Впереди тебя ждут интересные задачи и полезные материалы! 🚀\n\n` +
+      `Давай выберем, с чего начнем? Ты можешь выбрать одну из тем ниже или посмотреть свою статистику. Приступим? 👇`,
+    {
+      reply_markup: startKeyboard,
+    }
+  );
+});
+
+bot.hears("🆘 Помощь", async (ctx) => {
+  const helpKeyboard = new InlineKeyboard().url(
+    "🗨️ Написать Антону",
+    "https://t.me/AntonSnizhko"
   );
 
-  // Отправляем сообщение с выбором темы
-  await ctx.reply("С чего начнем? Выбери тему вопроса в меню 👇", {
-    reply_markup: startKeyboard,
-  });
+  await ctx.reply(
+    "🤖 Привет! Если у тебя возникли вопросы или есть что сказать, я здесь, чтобы помочь!\n\n" +
+      "💡 Нужна помощь или хотите поделиться идеями? Просто нажми на кнопку ниже, чтобы написать мне. Твой фидбек помогает нам стать лучше!\n\n" +
+      "🚀 И если у тебя есть предложения по улучшению курса, мы будем рады их услышать. Давайте вместе сделаем обучение ещё лучше!",
+    {
+      reply_markup: helpKeyboard,
+    }
+  );
 });
 
 bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
@@ -136,39 +136,50 @@ bot.hears("📈 Ваша статистика", async (ctx) => {
   const userName = ctx.from.first_name || "Пользователь";
 
   if (!ctx.session.stats || Object.keys(ctx.session.stats).length === 0) {
-    await ctx.reply(`📊 ${userName}, вы еще не прошли ни одного теста.`);
+    await ctx.reply(`📊 ${userName}, ты еще не прошёл ни одного теста.`);
     return;
   }
 
   const totalQuestions = getTotalQuestionsByTopic();
-  let message = `<b>📈 Ваша статистика, ${userName}:</b>\n\n`;
+  let message = `<b>📈 Твоя статистика ${userName}:</b>\n\n`;
   message += "<pre>";
-  message += "Тема         | Всего вопросов | Пройдено | Верно\n";
-  message += "-------------|----------------|----------|------\n";
+  message += "Тема   | Всего | Пройд. | Верно\n";
+  message += "-------|-------|--------|------\n";
 
   for (const topic of Object.keys(totalQuestions)) {
+    const shortTopic = topic === "javascript" ? "js" : topic;
     const stats = ctx.session.stats[topic] || { total: 0, completed: 0 };
     const totalInTopic = totalQuestions[topic];
-    message += `${topic.toUpperCase().padEnd(13)}| ${String(
+    message += `${shortTopic.substr(0, 5).padEnd(7)}| ${String(
       totalInTopic
-    ).padEnd(15)}| ${String(stats.total).padEnd(8)}| ${stats.completed}\n`;
+    ).padEnd(7)}| ${String(stats.total).padEnd(8)}| ${stats.completed}\n`;
   }
   message += "</pre>";
 
   await ctx.reply(message, { parse_mode: "HTML" });
 });
+
 bot.on("message:photo", async (ctx) => {
-  await ctx.reply("все ок фото есть");
+  // Отправка уведомления пользователю
+  await ctx.reply("📸 Скриншот получен! Ожидайте подтверждения оплаты...");
+
+  // Пересылка фото администратору
   await ctx.forwardMessage(admin);
-  await ctx.api.sendMessage(admin, `hi + ${ctx.chat.first_name}`, {
-    reply_markup: new InlineKeyboard().text(
-      " купить подписку ",
-      JSON.stringify({
-        userID: ctx.chat.id,
-        command: "purchaseSubscription",
-      })
-    ),
-  });
+
+  // Отправка уведомления администратору с возможностью подтверждения покупки
+  await ctx.api.sendMessage(
+    admin,
+    `🔔 Пользователь ${ctx.chat.first_name} отправил скриншот оплаты. Пожалуйста, проверьте и подтвердите покупку подписки.`,
+    {
+      reply_markup: new InlineKeyboard().text(
+        "Подтвердить продажу подписки",
+        JSON.stringify({
+          userID: ctx.chat.id,
+          command: "purchaseSubscription",
+        })
+      ),
+    }
+  );
 });
 
 bot.on("callback_query:data", async (ctx) => {
@@ -190,9 +201,24 @@ bot.on("callback_query:data", async (ctx) => {
         },
       }
     );
-    await ctx.api.sendMessage(callbackData.userID, `ура ты купил курс`);
+    // Форматирование даты на русском языке в европейском стиле (день, месяц, год)
+    const formattedDate = dateIn30Days.toLocaleDateString("ru-RU", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+
+    await ctx.api.sendMessage(
+      callbackData.userID,
+      `🌟 Поздравляем с приобретением курса! Теперь у тебя есть полный доступ к всем материалам для подготовки к собеседованию.\n\n` +
+        `Твоя подписка активна до: ${formattedDate}.\n\n` +
+        `Мы регулярно обновляем и улучшаем материалы курса, чтобы оставаться актуальными по последним трендам и информации.\n\n` +
+        `Если у тебя возникнут вопросы или нужна дополнительная помощь, не стесняйтесь обращаться к нам. Удачи в обучении и подготовке к собеседованиям! 🚀`
+    );
+
+    // Ответ на callback-запрос
     await ctx.answerCallbackQuery({
-      text: "У тебя купили курс ! Ура ! ",
+      text: "Пользователь успешно оформил подписку!",
       show_alert: true,
     });
     return;
