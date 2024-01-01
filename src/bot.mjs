@@ -95,15 +95,18 @@ bot.hears("🆘 Помощь", async (ctx) => {
 });
 
 bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
-  const topic = ctx.message.text.toLowerCase();
-  const userId = ctx.from.id.toString();
+  const topic = ctx.message.text.toLowerCase(); // Преобразуем название темы в нижний регистр
+  const userId = ctx.from.id.toString(); // Получаем ID пользователя
 
   try {
+    // Получаем случайный вопрос по теме
     const { question, questionTopic } = getRandomQuestion(topic, userId, ctx);
 
+    // Создаем клавиатуру с вариантами ответов или кнопкой для показа ответа
     let inlineKeyboard = new InlineKeyboard();
 
     if (question.hasOptions) {
+      // Если у вопроса есть варианты ответов
       question.options.forEach((option) => {
         inlineKeyboard = inlineKeyboard
           .text(
@@ -117,6 +120,7 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
           .row();
       });
     } else {
+      // Если вариантов ответа нет, создаем кнопку для показа правильного ответа
       inlineKeyboard = inlineKeyboard.text(
         "Узнать ответ",
         JSON.stringify({
@@ -126,8 +130,10 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
       );
     }
 
+    // Отправляем вопрос пользователю
     await ctx.reply(question.text, { reply_markup: inlineKeyboard });
   } catch (error) {
+    // Обработка ошибок
     await ctx.reply(error.message);
   }
 });
