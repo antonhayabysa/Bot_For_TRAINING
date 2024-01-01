@@ -151,16 +151,19 @@ bot.hears("📈 Ваша статистика", async (ctx) => {
   const totalQuestions = getTotalQuestionsByTopic();
   let message = `<b>📈 Ваша статистика ${userName}:</b>\n\n`;
   message += "<pre>";
-  message += "Тема   | Всего | Пройд. | Верно\n";
-  message += "-------|-------|--------|------\n";
+  message += "Тема    | Всего | Пройд. | Верно \n";
+  message += "--------|-------|--------|-------\n";
 
   for (const topic of Object.keys(totalQuestions)) {
     const shortTopic = topic === "javascript" ? "js" : topic;
     const stats = ctx.session.stats[topic] || { total: 0, completed: 0 };
     const totalInTopic = totalQuestions[topic];
-    message += `${shortTopic.substr(0, 5).padEnd(7)}| ${String(
-      totalInTopic
-    ).padEnd(7)}| ${String(stats.total).padEnd(8)}| ${stats.completed}\n`;
+    message += `${shortTopic.padEnd(8, " ")}| ${String(totalInTopic).padStart(
+      6,
+      " "
+    )}| ${String(stats.total).padStart(7, " ")}| ${String(
+      stats.completed
+    ).padStart(6, " ")}\n`;
   }
   message += "</pre>";
 
