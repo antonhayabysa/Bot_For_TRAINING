@@ -94,8 +94,10 @@ bot.hears("🆘 Помощь", async (ctx) => {
   );
 });
 
-bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
-  const topic = ctx.message.text.toLowerCase(); // Преобразуем название темы в нижний регистр
+bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (ctx) => {
+  // Удаляем эмодзи и лишние пробелы, приводим к нижнему регистру
+  const topic = ctx.message.text.replace(/[^a-zA-Z]+/g, "").toLowerCase();
+
   const userId = ctx.from.id.toString(); // Получаем ID пользователя
 
   try {
