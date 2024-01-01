@@ -1,7 +1,6 @@
 import questions from "./questions.mjs";
 
 let userLastQuestionIndex = {};
-export const PASSWORD = "123";
 let authorizedUsers = {};
 
 function isAuthorized(ctx) {
