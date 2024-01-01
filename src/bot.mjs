@@ -51,14 +51,14 @@ bot.command("start", async (ctx) => {
 
   // Инициализация клавиатуры для ответа пользователю
   const startKeyboard = new Keyboard()
-    .text("HTML")
-    .text("CSS")
+    .text("🌐 HTML")
+    .text("🎨 CSS")
     .row()
-    .text("JavaScript")
-    .text("React")
+    .text("💻 JavaScript")
+    .text("⚛️ React")
     .row()
-    .text("📈 Ваша статистика")
     .text("🆘 Помощь")
+    .text("📈 Ваша статистика")
     .row()
     .resized();
 
