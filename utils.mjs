@@ -2,8 +2,15 @@ import questions from "./questions.mjs";
 
 let userLastQuestionIndex = {};
 let authorizedUsers = {};
+const admin = 305515622;
 
 function isAuthorized(ctx) {
+  // Проверяем, является ли пользователь администратором
+  if (ctx.from.id === admin) {
+    return true; // Администратор всегда авторизован
+  }
+
+  // Проверяем наличие и действительность подписки для обычных пользователей
   if (!ctx.session.paidUntil) {
     return false;
   }
