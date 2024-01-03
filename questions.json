@@ -1429,6 +1429,13 @@
         {"id": 3, "text": "Date.now()", "isCorrect": false},
         {"id": 4, "text": "createDate()", "isCorrect": false}
       ]
+    },   
+    {
+      "id": 41,
+      "text": "🔍 Вопрос: Что такое 'поднятие' (hoisting) в JavaScript? Объясните на примере.\n",
+      "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV86ORbfRlk4YjglxL7idogNkPobqV98SCR5PA3uRmI6AUNp8C5QicfM6b7sZVGiccIphaf7BKJpwx6pqnnXPgiy4iQadJ974tMnPYurmGd-pPD09XjAAk60Ie2-2en0SikuT_uJiXHAxLM4qnE2RLMEg9VmboluT0bCI9awtwDFFZjX6Wp2B3dolKzaHJyuNqk0ww8WOHGkaY5d5y5bZ0UcZnhuBYpT7CFRthUJ44Gydm-KhSnSqY6BjxyyQ2aeRX3Crd0OHSP2Ll1KjXGxqdekdIEnAVGanQ_JR17PZRfOnH0I50L-8oz4anPsVrR9YWfFCi7g3w0HRu4CttbCffYr2oog2pyhoShkRT17nOcxMaOdTdIYU58OGvOQJYlGuEyvKw5_un2PTZvFJlielv1yIqwmaSUvnhy3XAvslzzX0nnE2klHNbDKU-FmMhwkYAT-u6x4Au1tuonr0jcDnYes4rYjxKT6MEaY28GgG-S1uQ_m6PA8Gp3A97wAx3AQ2AUxv8ac8ba3YOHgbaBaG2oYHint767DGESBnxG6dqBT4WkfTyOY5HCAFM5k4pgy81juArEjCexSGgUeY5DLxe56f4Rhrm6Pos_3rVRbDGvpB2Tl1h5g088TElxMQ_CC43OaXb7nxLi5z7cJ0EnU_lYgvDJCH2axTxLP1tQ1qEgZ12RYng-LIUTj-npcxu02kiPWVw7aFV2IoJPlautetnqwgmRhazeyKa6cgsrGPFacpqbLV6pELNjzdHtP4gYXDfec7vHF3DYBJId21jHEMg7q2wjZ8zNY62xkMldF_JKMTSP-RbhRYAAwjXJ4xjEoA3myn_L36eKbP8AxEP9_LiUyYiP5MoN39_WzIV3cOL6wQ8CCSyy80zNOAxlV1BHzCujmkSg=w1654-h638-s-no?authuser=0",
+      "hasOptions": false,
+      "answer": "📖 'Поднятие' или hoisting — это механизм в JavaScript, при котором переменные и объявления функций перемещаются в верхнюю часть своей области видимости перед тем, как код будет выполнен. Это означает, что переменные и функции можно использовать до их объявления в коде.\n\n 🖼️ Пример кода: В данном случае, когда функция demoHoisting() вызвана, первый вызов console.log(myVar) выводит undefined. Это происходит из-за того, что объявление переменной var myVar было 'поднято' в начало функции. Однако, так как присваивание значения myVar = 10 происходит после этого лога, в момент вызова console.log(myVar) значение переменной еще не определено. После инициализации переменной myVar второй вызов console.log(myVar) выводит 10."
     }
   ],
   "react": [

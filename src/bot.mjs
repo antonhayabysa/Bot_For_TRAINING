@@ -95,9 +95,7 @@ bot.hears("🆘 Помощь", async (ctx) => {
 });
 
 bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (ctx) => {
-  // Удаляем эмодзи и лишние пробелы, приводим к нижнему регистру
   const topic = ctx.message.text.replace(/[^a-zA-Z]+/g, "").toLowerCase();
-
   const userId = ctx.from.id.toString(); // Получаем ID пользователя
 
   try {
@@ -128,6 +126,7 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
         JSON.stringify({
           type: questionTopic,
           questionId: question.id,
+          showImage: question.codeImage ? true : false,
         })
       );
     }
@@ -136,7 +135,7 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
     await ctx.reply(question.text, { reply_markup: inlineKeyboard });
   } catch (error) {
     // Обработка ошибок
-    await ctx.reply(error.message);
+    await ctx.reply(`Произошла ошибка: ${error.message}`);
   }
 });
 
@@ -195,6 +194,25 @@ bot.on("message:photo", async (ctx) => {
 
 bot.on("callback_query:data", async (ctx) => {
   const callbackData = JSON.parse(ctx.callbackQuery.data);
+
+  if (callbackData.showImage) {
+    const answer = getCorrectAnswer(callbackData.type, callbackData.questionId);
+    await ctx.reply(answer, {
+      parse_mode: "HTML",
+      disable_web_page_preview: true,
+    });
+
+    // Отправляем изображение после нажатия на кнопку "Узнать ответ"
+    const categoryQuestions = questions[callbackData.type];
+    const question = categoryQuestions.find(
+      (q) => q.id === callbackData.questionId
+    );
+    if (question && question.codeImage) {
+      await ctx.replyWithPhoto(question.codeImage);
+    }
+    await ctx.answerCallbackQuery();
+    return;
+  }
 
   if (callbackData.command === "purchaseSubscription") {
     const currentDate = new Date();
