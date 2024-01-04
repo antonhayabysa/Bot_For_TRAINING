@@ -541,7 +541,7 @@
       "id": 31,
       "text": "В чем разница между блочными и строчными элементами в HTML?",
       "hasOptions": false,
-      "answer": "Блочные элементы занимают всю доступную ширину и начинаются с новой строки, в то время как строчные элементы занимают только необходимую ширину и не начинают новую строку."
+      "answer": "📖 Ответ: Блочные и строчные элементы в HTML отличаются по своему поведению и влиянию на макет страницы.\n\nБлочные элементы:\n1. Занимают всю доступную ширину контейнера.\n2. Начинаются с новой строки.\n3. Примеры: div, p, заголовки (h1 - h6), списки (ul, ol).\n\nСтрочные элементы:\n1. Занимают только необходимую ширину.\n2. Не начинают новую строку.\n3. Примеры: span, a, strong, em, img.\n\nБлочные элементы идеально подходят для структурирования основных частей страницы, в то время как строчные элементы используются для форматирования содержимого внутри блочных элементов."
     },
     {
       "id": 32,
@@ -565,7 +565,7 @@
       "id": 35,
       "text": "Какие новые формы ввода были введены в HTML5?",
       "hasOptions": false,
-      "answer": "HTML5 ввел новые типы ввода, включая 'email', 'url', 'number', 'range', 'date', 'search', 'color' и другие, чтобы упростить сбор и валидацию различных видов данных."
+      "answer": "📖 Ответ: HTML5 значительно расширил возможности форм с помощью новых типов ввода, упрощая сбор и валидацию данных. Ключевые нововведения включают:\n\n1. 'email' - для ввода электронных адресов.\n2. 'url' - для ввода URL-адресов.\n3. 'number' - для числовых данных.\n4. 'range' - ползунок для выбора числа в заданном диапазоне.\n5. 'date' - для выбора даты.\n6. 'search' - для поисковых запросов.\n7. 'color' - для выбора цвета.\n\nЭти новые типы упрощают разработку форм, обеспечивая лучшую поддержку для различных типов данных и их валидации."
     },
     {
       "id": 36,
@@ -618,6 +618,168 @@
           "id": 4,
           "text": "formvalidate",
           "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "text": "Какие механизмы HTML5 используются для хранения данных на стороне клиента?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: В HTML5 для хранения данных на стороне клиента используются Local Storage и Session Storage. Эти механизмы позволяют сохранять данные между сессиями браузера (Local Storage) или только в течение текущей сессии (Session Storage)."
+    },
+    {
+      "id": 39,
+      "text": "Какие новые API были представлены в HTML5?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: HTML5 представил ряд новых API, включая Drag and Drop, Local Storage, Session Storage, Canvas, WebSocket, Geolocation. Эти API расширяют возможности веб-разработчиков, позволяя создавать более сложные и интерактивные веб-приложения."
+    },
+    {
+      "id": 40,
+      "text": "Что такое Data Attributes в HTML и как их использовать?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: Data Attributes (data-*) в HTML позволяют хранить дополнительную информацию в стандартных HTML элементах, что удобно для передачи данных в JavaScript. Это облегчает манипуляции с данными в DOM без использования скрытых полей формы или дополнительных механизмов для сохранения состояния."
+    },
+    {
+      "id": 41,
+      "text": "Как в HTML обеспечивается доступность веб-контента для пользователей с ограниченными возможностями?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: Доступность в HTML обеспечивается с помощью семантических тегов, атрибутов ARIA, предоставления альтернативных текстов для мультимедиа, обеспечения клавиатурной навигации и использования доступных форм. Это помогает сделать контент доступным для пользователей с разными ограничениями, включая слепоту, низкое зрение, слуховые и двигательные нарушения."
+    },
+    {
+      "id": 42,
+      "text": "Чем отличаются новые элементы форм в HTML5 от предыдущих версий HTML?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: В HTML5 представлены новые элементы форм, такие как 'email', 'url', 'number', 'range', 'date', 'search', 'color', которые обеспечивают более удобный ввод данных и встроенную валидацию. Эти элементы позволяют браузеру предоставить пользователям подходящие виджеты для ввода данных, повышая удобство и эффективность обработки форм."
+    },
+    {
+      "id": 43,
+      "text": "Какие преимущества дают семантические элементы HTML5, такие как 'article', 'section', 'nav', 'header', 'footer'?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: Семантические элементы HTML5, такие как 'article', 'section', 'nav', 'header', 'footer', улучшают читаемость кода, облегчают SEO-оптимизацию, способствуют лучшей доступности и помогают создать более структурированный и организованный документ. Эти элементы ясно определяют различные части веб-страницы, что облегчает их понимание как пользователями, так и поисковыми системами."
+    },
+    {
+      "id": 44,
+      "text": "Какой элемент HTML используется для определения независимого раздела или раздела, который не имеет связи с основным содержанием?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "<article>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<section>",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "<div>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<aside>",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "text": "Что означает атрибут 'lang' в HTML и где он обычно используется?",
+      "hasOptions": false,
+      "answer": "Атрибут 'lang' используется для указания языка содержимого в HTML-документе, обычно применяется в теге <html> для определения основного языка документа."
+    },
+    {
+      "id": 46,
+      "text": "Как в HTML можно вставить символ копирайта?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "&copy;",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "&copyright;",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "&cp;",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "&rights;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "text": "Чем отличается элемент <strong> от <b> в HTML?",
+      "hasOptions": false,
+      "answer": "Элемент <strong> указывает на важность содержимого, в то время как <b> просто жирно выделяет текст без дополнительного семантического значения."
+    },
+    {
+      "id": 48,
+      "text": "Какой элемент HTML используется для группировки вместе связанных элементов формы?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "<group>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<fieldset>",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "<set>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<formgroup>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "text": "Что такое iframe в HTML и для чего он используется?",
+      "hasOptions": false,
+      "answer": "Элемент <iframe> используется для встраивания другой HTML-страницы в текущий HTML-документ, обеспечивая возможность отображения внешнего контента внутри определенной области страницы."
+    },
+    {
+      "id": 50,
+      "text": "Какой элемент HTML используется для группировки блоков контента, обычно с заголовками?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "<article>",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "<section>",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "<group>",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<div>",
+          "isCorrect": false
         }
       ]
     }
@@ -940,6 +1102,657 @@
       "text": "Как работает наследование стилей в CSS?",
       "hasOptions": false,
       "answer": "Некоторые CSS-свойства наследуются от родительских элементов, в то время как другие свойства не наследуются по умолчанию."
+    },
+    {
+      "id": 26,
+      "text": "Что такое Flexbox в CSS?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: Flexbox, официально известный как Flexible Box Layout Module, - это способ укладки элементов в контейнере, который позволяет им масштабироваться и располагаться динамически, обеспечивая более эффективное использование пространства и управление распределением."
+    },
+    {
+      "id": 27,
+      "text": "Какое свойство используется для определения основной оси контейнера Flexbox?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "flex-direction",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "align-items",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "justify-content",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "flex-wrap",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "Какое свойство Flexbox выравнивает элементы по перекрестной оси?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "justify-content",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "align-items",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "flex-grow",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "flex-shrink",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Какое значение свойства 'flex-wrap' позволяет элементам обтекать в несколько строк?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "nowrap",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "wrap",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "reverse",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "wrap-reverse",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Какое свойство Flexbox определяет порядок следования элементов в контейнере?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "flex-flow",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "order",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "align-self",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "flex-basis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "text": "Как свойство 'flex-grow' влияет на элементы в контейнере Flexbox?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: Свойство 'flex-grow' определяет способность элемента расти и занимать доступное пространство в контейнере Flexbox. Значение, большее нуля, позволяет элементу расширяться и занимать больше места по сравнению с другими элементами."
+    },
+    {
+      "id": 32,
+      "text": "Какое значение у 'flex-shrink' по умолчанию и что оно означает?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "0, элементы не сжимаются",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "1, элементы сжимаются пропорционально",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "2, элементы сжимаются вдвое быстрее",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "auto, автоматическое сжатие",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "text": "Как свойство 'align-content' влияет на многострочные контейнеры Flexbox?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: Свойство 'align-content' управляет распределением пространства между строками в многострочном контейнере Flexbox. Это свойство применяется только в том случае, если есть свободное пространство в контейнере и если используется 'flex-wrap: wrap'."
+    },
+    {
+      "id": 34,
+      "text": "Как использовать Flexbox для центрирования элемента как по горизонтали, так и по вертикали?",
+      "hasOptions": false,
+      "answer": "📖 Ответ: Для центрирования элемента по обеим осям в Flexbox, установите для родительского контейнера свойства 'display: flex', 'justify-content: center' (для горизонтального выравнивания) и 'align-items: center' (для вертикального выравнивания)."
+    },
+    {
+      "id": 35,
+      "text": "Какое свойство CSS используется для создания градиентного фона?",
+      "hasOptions": false,
+      "answer": "Для создания градиентного фона используется свойство 'background-image' с функцией 'linear-gradient' или 'radial-gradient'."
+    },
+    {
+      "id": 36,
+      "text": "Что такое CSS препроцессоры и какие из них вы знаете?",
+      "hasOptions": false,
+      "answer": "CSS препроцессоры — это инструменты, которые позволяют использовать переменные, функции, миксины и другие удобные функции для создания CSS. Примеры препроцессоров включают Sass, LESS и Stylus."
+    },
+    {
+      "id": 37,
+      "text": "Как работает свойство 'transition' в CSS?",
+      "hasOptions": false,
+      "answer": "Свойство 'transition' в CSS позволяет контролировать скорость изменения свойств элемента при их изменении, создавая плавный переход от одного состояния к другому."
+    },
+    {
+      "id": 38,
+      "text": "Как можно использовать CSS переменные в стилях?",
+      "hasOptions": false,
+      "answer": "CSS переменные объявляются как кастомные свойства (например, --main-color: black;) и могут быть использованы в других CSS свойствах с помощью функции var(--main-color)."
+    },
+    {
+      "id": 39,
+      "text": "Что такое BEM в контексте CSS и для чего он используется?",
+      "hasOptions": false,
+      "answer": "BEM (Block, Element, Modifier) — это методология именования классов в CSS, направленная на упрощение разработки и поддержки стилей, особенно в больших проектах."
+    },
+    {
+      "id": 40,
+      "text": "Какое свойство CSS используется для отображения контента в несколько колонок?",
+      "hasOptions": false,
+      "answer": "Свойства 'column-count' и 'column-width' используются для создания макета с множественными колонками в CSS."
+    },
+    {
+      "id": 41,
+      "text": "Какое значение свойства 'display' используется для создания гибкого контейнера в CSS?",
+      "hasOptions": false,
+      "answer": "Значение 'flex' свойства 'display' используется для создания гибкого контейнера в CSS, применяя Flexbox макет."
+    },
+    {
+      "id": 42,
+      "text": "Как можно стилизовать элемент только при наведении курсора?",
+      "hasOptions": false,
+      "answer": "Для стилизации элемента при наведении курсора используется псевдокласс ':hover' в CSS."
+    },
+    {
+      "id": 43,
+      "text": "Какое свойство CSS используется для добавления тени к тексту?",
+      "hasOptions": false,
+      "answer": "Свойство 'text-shadow' используется для добавления тени к тексту в CSS."
+    },
+    {
+      "id": 44,
+      "text": "Как с помощью CSS можно сделать элемент полностью невидимым, но оставить его в DOM?",
+      "hasOptions": false,
+      "answer": "Для этого можно использовать свойство 'visibility' со значением 'hidden', которое сделает элемент невидимым, но не удаляет его из DOM."
+    },
+    {
+      "id": 45,
+      "text": "Какое значение свойства 'display' создает гибкий контейнер?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "block",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "inline",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "flex",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "grid",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "text": "Какой селектор CSS выбирает элементы, которые непосредственно следуют за определенным элементом?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "+",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "~",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": ">",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "<",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "text": "Какое значение свойства 'position' позволяет элементу оставаться в области видимости при прокрутке страницы?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "absolute",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "fixed",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "relative",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "static",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "text": "Какое свойство CSS используется для изменения порядка элементов во Flexbox?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "align-self",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "flex-grow",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "order",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "flex-wrap",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "text": "Какое свойство CSS используется для создания круглого элемента?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "border-radius",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "border-circle",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "shape-round",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "circle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "text": "Какое свойство CSS позволяет элементу захватывать остаточное пространство в контейнере Flexbox?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "flex-basis",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "flex-grow",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "flex-shrink",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "flex-space",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "text": "Что делает свойство 'overflow' в CSS?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Изменяет размер элемента",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Управляет отображением содержимого, выходящего за границы элемента",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Добавляет прокрутку к элементу",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Скрывает элемент",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "text": "Какое значение свойства 'display' создает двумерную сетку?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "flex",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "block",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "grid",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "inline-grid",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "text": "Какое свойство CSS позволяет элементам 'плавать' вокруг друг друга?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "display",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "position",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "float",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "clear",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "text": "Какое свойство CSS используется для создания градиентов?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "color-gradient",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "background-gradient",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "background-image",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "linear-gradient",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "text": "Какое свойство CSS используется для включения пользовательского шрифта на веб-странице?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "@font-face",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "font-import",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "font-link",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "embed-font",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "text": "Какое свойство CSS используется для создания пошаговых анимаций?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "animation",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "keyframes",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "transition",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "transform",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "text": "Какое свойство CSS позволяет контролировать поведение переполнения содержимого контейнера?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "overflow",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "display",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "visibility",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "clip",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "text": "Какое значение свойства 'font-weight' соответствует жирности 'Bold'?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "500",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "600",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "700",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "800",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "text": "Если у элемента <div> определен внешний отступ (margin) 20px, а у его дочернего элемента <p> определен внешний отступ 30px, какой будет итоговый внешний отступ (margin) у элемента <p>?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "20px, поскольку он наследует значение от родителя",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "30px, поскольку дочерний элемент переопределяет стиль родителя",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "50px, так как отступы суммируются",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "0px, поскольку внутренний элемент отменяет внешний отступ родителя",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "text": "Если элемент A с z-index: 3 находится внутри элемента B с z-index: 1, и он перекрывает элемент C с z-index: 2, который не является потомком элемента B, какой элемент будет отображаться выше на странице?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Элемент A, так как он имеет наибольший z-index",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Элемент B, так как он является родительским элементом для A",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Элемент C, так как z-index родителя ограничивает z-index дочерних элементов",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "Ответ зависит от порядка размещения элементов в HTML",
+          "isCorrect": false
+        }
+      ]
     }
   ],
   "javascript": [
