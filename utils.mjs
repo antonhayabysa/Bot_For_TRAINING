@@ -17,7 +17,7 @@ function isAuthorized(ctx) {
   return ctx.session.paidUntil.getTime() > new Date().getTime();
 }
 
-export const getRandomQuestion = (topic, userId, ctx) => {
+export const getRandomQuestion = async (topic, userId, ctx) => {
   if (!userLastQuestionIndex[userId]) {
     userLastQuestionIndex[userId] = {};
   }
@@ -26,7 +26,7 @@ export const getRandomQuestion = (topic, userId, ctx) => {
     userLastQuestionIndex[userId][topic] = 0;
   } else {
     if (userLastQuestionIndex[userId][topic] >= 4 && !isAuthorized(ctx)) {
-      throw new Error(
+      await ctx.reply(
         "🌟🎉 Поздравляем с успешным завершением вступительной части тестов! 🎉🌟\n\n" +
           "🔑 Хотите разблокировать полный доступ ко всем тестам и материалам? Оформите подписку! Это ваш ключ к глубокой подготовке к собеседованию, а также доступу к постоянно обновляемым ресурсам.\n\n" +
           "💳 Стоимость подписки на 30 дней — всего 50 гривен. Выберите удобный способ оплаты:\n" +
@@ -35,6 +35,7 @@ export const getRandomQuestion = (topic, userId, ctx) => {
           "📸 После оплаты, пожалуйста, отправьте скриншот подтверждения для активации подписки.\n\n" +
           "🙏 Спасибо за доверие к нашему сервису! Мы уверены, что наши тесты станут важным инструментом в вашей подготовке к собеседованию. Вперёд к новым знаниям и успехам! 🚀"
       );
+      return {}; // Возвращаем пустой объект
     }
     userLastQuestionIndex[userId][topic] =
       (userLastQuestionIndex[userId][topic] + 1) % questions[topic].length;
@@ -43,7 +44,7 @@ export const getRandomQuestion = (topic, userId, ctx) => {
   const questionIndex = userLastQuestionIndex[userId][topic];
   const question = questions[topic][questionIndex];
 
-  return { question: question, questionTopic: topic };
+  return question ? { question: question, questionTopic: topic } : {};
 };
 
 export const getCorrectAnswer = (topic, id) => {

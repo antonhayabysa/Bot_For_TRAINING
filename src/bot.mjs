@@ -100,7 +100,16 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
 
   try {
     // Получаем случайный вопрос по теме
-    const { question, questionTopic } = getRandomQuestion(topic, userId, ctx);
+    const { question, questionTopic } = await getRandomQuestion(
+      topic,
+      userId,
+      ctx
+    );
+
+    if (!question || Object.keys(question).length === 0) {
+      // Если вопроса нет, прекращаем выполнение функции
+      return;
+    }
 
     // Создаем клавиатуру с вариантами ответов или кнопкой для показа ответа
     let inlineKeyboard = new InlineKeyboard();
