@@ -92,12 +92,12 @@ bot.callbackQuery(["ru", "en", "uk"], async (ctx) => {
   const selectedLanguage = ctx.callbackQuery.data;
   ctx.session.language = selectedLanguage;
   await ctx.answerCallbackQuery(
-    `Язык изменен на ${
+    `Language changed to ${
       selectedLanguage === "ru"
-        ? "🇷🇺 русский"
+        ? "🇷🇺 Russian"
         : selectedLanguage === "en"
-        ? "🇬🇧 английский"
-        : "🇺🇦 украинский"
+        ? "🇬🇧 English"
+        : "🇺🇦 Ukrainian"
     }.`
   );
 });
