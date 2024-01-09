@@ -32,14 +32,6 @@ bot.use(
   })
 );
 
-const getTotalQuestionsByTopic = () => {
-  const totalQuestions = {};
-  for (const topic in questions) {
-    totalQuestions[topic] = questions[topic].length;
-  }
-  return totalQuestions;
-};
-
 bot.command("start", async (ctx) => {
   ctx.session.chat = ctx.chat;
 
@@ -56,8 +48,6 @@ bot.command("start", async (ctx) => {
 
   // Инициализация клавиатуры для ответа пользователю
   const startKeyboard = new Keyboard()
-    .text("🌍 Выбрать язык")
-    .row()
     .text("🌐 HTML")
     .text("🎨 CSS")
     .row()
@@ -65,7 +55,7 @@ bot.command("start", async (ctx) => {
     .text("⚛️ React")
     .row()
     .text("🆘 Помощь")
-    .text("📈 Ваша статистика")
+    .text("🌍 Выбрать язык")
     .resized();
 
   // URL изображения для ответа
@@ -187,41 +177,6 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
   }
 });
 
-bot.hears("📈 Ваша статистика", async (ctx) => {
-  const userName = ctx.from.first_name || "Пользователь";
-
-  if (!ctx.session.stats || Object.keys(ctx.session.stats).length === 0) {
-    await ctx.reply(`📊 ${userName}, Вы еще не прошли ни одного теста.`);
-    return;
-  }
-
-  const totalQuestions = getTotalQuestionsByTopic();
-  let message = `<b>📈 Ваша статистика ${userName}:</b>\n\n`;
-  message += "<pre>";
-  message += "Тема    | Всего | Пройд. | Верно \n";
-  message += "--------|-------|--------|-------\n";
-
-  for (const topic of Object.keys(totalQuestions)) {
-    const shortTopic = topic === "javascript" ? "js" : topic;
-    const stats = ctx.session.stats[topic] || { total: 0, completed: 0 };
-
-    message += `${shortTopic.padEnd(8, " ")}| ${String(
-      totalQuestions[topic]
-    ).padStart(6, " ")}| ${String(stats.total).padStart(7, " ")}| ${String(
-      stats.completed
-    ).padStart(6, " ")}\n`;
-
-    // Проверяем, прошел ли пользователь все вопросы по теме
-    if (stats.total >= totalQuestions[topic]) {
-      // Обнуляем статистику по этой теме
-      ctx.session.stats[topic] = { total: 0, completed: 0 };
-    }
-  }
-  message += "</pre>";
-
-  await ctx.reply(message, { parse_mode: "HTML" });
-});
-
 bot.on("message:photo", async (ctx) => {
   // Отправка уведомления пользователю
   await ctx.reply("📸 Скриншот получен! Ожидайте подтверждения оплаты...");
@@ -318,7 +273,7 @@ bot.on("callback_query:data", async (ctx) => {
       callbackData.questionId,
       ctx.session.language
     );
-    await ctx.reply(`Правильный ответ: ${answer}`, {
+    await ctx.reply(`${answer}`, {
       parse_mode: "HTML",
       disable_web_page_preview: true,
     });

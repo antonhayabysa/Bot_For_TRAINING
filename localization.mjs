@@ -34,7 +34,6 @@ export const translations = {
       javascript: "💻 JavaScript",
       react: "⚛️ React",
       help: "🆘 Help",
-      statistics: "📈 Your Statistics",
       changeLanguage: "🌍 Change Language",
     },
     ru: {
@@ -43,7 +42,6 @@ export const translations = {
       javascript: "💻 JavaScript",
       react: "⚛️ React",
       help: "🆘 Помощь",
-      statistics: "📈 Ваша статистика",
       changeLanguage: "🌍 Сменить язык",
     },
     uk: {
@@ -52,7 +50,6 @@ export const translations = {
       javascript: "💻 JavaScript",
       react: "⚛️ React",
       help: "🆘 Допомога",
-      statistics: "📈 Ваша статистика",
       changeLanguage: "🌍 Змінити мову",
     },
   },
@@ -83,35 +80,10 @@ export const translations = {
       "Ми регулярно оновлюємо та вдосконалюємо матеріали курсу, щоб залишатися актуальними з останніми трендами та інформацією.\n\n" +
       "Якщо у вас виникнуть запитання або потрібна додаткова допомога, будь ласка, не соромтеся звертатися до нас. Успіхів у навчанні та підготовці до співбесіди! 🚀",
   },
-  questionReceived: {
-    en: "Question: {question}",
-    ru: "Вопрос: {question}",
-    uk: "Питання: {question}",
-  },
-  chooseOption: {
-    en: "Please choose an option:",
-    ru: "Пожалуйста, выберите вариант:",
-    uk: "Будь ласка, виберіть варіант:",
-  },
   paymentScreenshotReceived: {
     en: "📸 Screenshot of the payment received! We are processing your subscription...",
     ru: "📸 Скриншот оплаты получен! Мы обрабатываем вашу подписку...",
     uk: "📸 Скріншот оплати отримано! Ми обробляємо вашу підписку...",
-  },
-  noTestsCompleted: {
-    en: "{userName}, you have not completed any tests yet.",
-    ru: "{userName}, вы еще не прошли ни одного теста.",
-    uk: "{userName}, ви ще не пройшли жодного тесту.",
-  },
-  yourStatistics: {
-    en: "<b>📈 Your Statistics {userName}:</b>\n\n",
-    ru: "<b>📈 Ваша статистика {userName}:</b>\n\n",
-    uk: "<b>📈 Ваша статистика {userName}:</b>\n\n",
-  },
-  statisticsTableHeader: {
-    en: "Topic    | Total | Completed | Correct \n",
-    ru: "Тема    | Всего | Пройд. | Верно \n",
-    uk: "Тема    | Всього | Пройд. | Вірно \n",
   },
   subscriptionExceeded: {
     en:
@@ -143,26 +115,6 @@ export const translations = {
     en: "Learn the answer",
     ru: "Узнать ответ",
     uk: "Дізнатися відповідь",
-  },
-  noTestsCompleted: {
-    en: "{userName}, you have not completed any tests yet.",
-    ru: "{userName}, вы еще не прошли ни одного теста.",
-    uk: "{userName}, ви ще не пройшли жодного тесту.",
-  },
-  yourStatistics: {
-    en: "<b>📈 Your Statistics {userName}:</b>\n\n",
-    ru: "<b>📈 Ваша статистика {userName}:</b>\n\n",
-    uk: "<b>📈 Ваша статистика {userName}:</b>\n\n",
-  },
-  statisticsTableHeader: {
-    en: "Topic    | Total | Completed | Correct \n",
-    ru: "Тема    | Всего | Пройд. | Верно \n",
-    uk: "Тема    | Всього | Пройд. | Вірно \n",
-  },
-  screenshotReceived: {
-    en: "📸 Screenshot received! Awaiting payment confirmation...",
-    ru: "📸 Скриншот получен! Ожидается подтверждение оплаты...",
-    uk: "📸 Скріншот отримано! Чекаємо на підтвердження платежу...",
   },
   correctAnswer: {
     en: "Correct ✅",
