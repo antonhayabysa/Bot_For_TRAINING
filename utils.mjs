@@ -25,8 +25,11 @@ export const getRandomQuestion = async (topic, userId, ctx) => {
   if (userLastQuestionIndex[userId][topic] === undefined) {
     userLastQuestionIndex[userId][topic] = 0;
   } else {
-    // Проверяем, если индекс вопроса достиг последнего в списке
-    if (userLastQuestionIndex[userId][topic] >= questions[topic].length - 1) {
+    // Проверяем, если индекс вопроса достиг последнего в списке или пользователь прошел 5 вопросов
+    if (
+      userLastQuestionIndex[userId][topic] >= questions[topic].length - 1 ||
+      (!isAuthorized(ctx) && userLastQuestionIndex[userId][topic] >= 4)
+    ) {
       // Если пользователь авторизован, начинаем вопросы сначала и выводим сообщение
       if (isAuthorized(ctx)) {
         await ctx.reply(
