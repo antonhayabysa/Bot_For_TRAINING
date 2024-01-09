@@ -54,8 +54,8 @@ bot.command("start", async (ctx) => {
     .text("💻 JavaScript")
     .text("⚛️ React")
     .row()
-    .text("🆘 Помощь")
-    .text("🌍 Выбрать язык")
+    .text("🆘 FAQ")
+    .text("🌍 Language")
     .resized();
 
   // URL изображения для ответа
@@ -65,9 +65,9 @@ bot.command("start", async (ctx) => {
   // Отправляем приветственное сообщение с фото
   await ctx.replyWithPhoto(imageUrl);
   await ctx.reply(
-    `👋 Здравствуйте, ${userName}! Добро пожаловать в Frontend Interview Prep Bot 🤖\n\n` +
-      `Я здесь, чтобы помочь Вам максимально эффективно подготовиться к интервью по фронтенду. Впереди Вас ждут интересные задачи и полезные материалы! 🚀\n\n` +
-      `Давайте выберем, с чего начнем? Вы можете выбрать одну из тем ниже или посмотреть свою статистику. Приступим? 👇`,
+    `👋 Вітаю,  ${userName}! Ласкаво просимо до Frontend Interview Prep Bot 🤖\n\n` +
+      `Я тут, щоб допомогти вам якнайефективніше підготуватися до співбесіди з фронтенду. Попереду вас чекають цікаві завдання та корисні матеріали! 🚀\n\n` +
+      `Давайте виберемо, з чого почнемо? Ви можете вибрати одну з тем нижче або переглянути вашу статистику. Розпочнемо? 👇`,
     {
       reply_markup: startKeyboard,
     }
@@ -75,14 +75,14 @@ bot.command("start", async (ctx) => {
 });
 
 // Обработчик для кнопки выбора языка
-bot.hears("🌍 Выбрать язык", async (ctx) => {
+bot.hears("🌍 Language", async (ctx) => {
   const languageKeyboard = new InlineKeyboard()
-    .text("🇷🇺 Русский", "ru")
+    .text("🇷🇺 Russian", "ru")
     .text("🇬🇧 English", "en")
-    .text("🇺🇦 Українська", "uk")
+    .text("🇺🇦 Ukrainian", "uk")
     .row();
 
-  await ctx.reply("Выберите язык:", {
+  await ctx.reply("Choose language:", {
     reply_markup: languageKeyboard,
   });
 });
@@ -102,16 +102,16 @@ bot.callbackQuery(["ru", "en", "uk"], async (ctx) => {
   );
 });
 
-bot.hears("🆘 Помощь", async (ctx) => {
+bot.hears("🆘 FAQ", async (ctx) => {
   const helpKeyboard = new InlineKeyboard().url(
-    "🗨️ Написать Антону",
+    "🗨️ Написати Антону",
     "https://t.me/AntonSnizhko"
   );
 
   await ctx.reply(
-    "🤖 Здравствуйте! Если у Вас возникли вопросы или есть предложения, я здесь, чтобы помочь!\n\n" +
-      "💡 Нужна помощь или хотите поделиться идеями? Просто нажмите на кнопку ниже, чтобы написать мне. Ваш фидбек помогает нам стать лучше!\n\n" +
-      "🚀 И если у Вас есть предложения по улучшению курса, мы будем рады их услышать. Давайте вместе сделаем обучение ещё лучше!",
+    "🤖 Вітаю! Якщо у вас є запитання або пропозиції, я тут, щоб допомогти!\n\n" +
+      "💡 Потрібна допомога або хочете поділитися ідеями? Просто натисніть на кнопку нижче, щоб написати мені. Ваш відгук допомагає нам ставати кращими!\n\n" +
+      "🚀 І якщо у вас є пропозиції щодо покращення курсу, ми будемо раді їх почути. Давайте разом зробимо навчання ще кращим!",
     {
       reply_markup: helpKeyboard,
     }
@@ -160,7 +160,7 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
     } else {
       // Если вариантов ответа нет, создаем кнопку для показа правильного ответа
       inlineKeyboard = inlineKeyboard.text(
-        "Узнать ответ",
+        "🙊 🙉 🙈",
         JSON.stringify({
           type: questionTopic,
           questionId: question.id,
@@ -179,7 +179,7 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
 
 bot.on("message:photo", async (ctx) => {
   // Отправка уведомления пользователю
-  await ctx.reply("📸 Скриншот получен! Ожидайте подтверждения оплаты...");
+  await ctx.reply("📸 Screenshot received! Wait for payment confirmation...");
 
   // Пересылка фото администратору
   await ctx.forwardMessage(admin);
@@ -251,10 +251,10 @@ bot.on("callback_query:data", async (ctx) => {
 
     await ctx.api.sendMessage(
       callbackData.userID,
-      `🌟 Поздравляем с приобретением курса! Теперь у Вас есть полный доступ к всем материалам для подготовки к собеседованию.\n\n` +
-        `Ваша подписка активна до: ${formattedDate}.\n\n` +
-        `Мы регулярно обновляем и улучшаем материалы курса, чтобы оставаться актуальными по последним трендам и информации.\n\n` +
-        `Если у Вас возникнут вопросы или нужна дополнительная помощь, не стесняйтесь обращаться к нам. Удачи в обучении и подготовке к собеседованиям! 🚀`
+      `🌟 Вітаємо з придбанням курсу! Тепер у Вас є повний доступ до всіх матеріалів для підготовки до співбесіди.\n\n` +
+        `Ваша підписка активна до: ${formattedDate}.\n\n` +
+        `Ми регулярно оновлюємо та вдосконалюємо матеріали курсу, щоб залишатися актуальними з останніми трендами та інформацією.\n\n` +
+        `Якщо у Вас виникнуть запитання або потрібна додаткова допомога, будь ласка, не соромтеся звертатися до нас. Успіхів у навчанні та підготовці до співбесіди! 🚀`
     );
     await ctx.answerCallbackQuery({
       text: "Пользователь успешно оформил подписку!",
@@ -293,14 +293,14 @@ bot.on("callback_query:data", async (ctx) => {
   ctx.session.stats[topic].total += 1;
   if (callbackData.isCorrect) {
     ctx.session.stats[topic].completed += 1;
-    await ctx.reply("Верно ✅");
+    await ctx.reply("👍 ✅");
   } else {
     const answer = getCorrectAnswer(
       callbackData.type.split("-")[0],
       callbackData.questionId,
       ctx.session.language
     );
-    await ctx.reply(`Неверно ❌ Правильный ответ: ${answer}`);
+    await ctx.reply(`👎 ❌ 🤦‍♂  Correct : ${answer}`);
   }
 
   await ctx.answerCallbackQuery();
