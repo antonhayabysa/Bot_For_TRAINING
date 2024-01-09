@@ -18,10 +18,15 @@ const admin = 305515622;
 
 bot.command("test", async (ctx) => {});
 
+function getLocalizedText(question, language) {
+  return question.text[language] || question.text["en"]; // Возвращает текст на выбранном языке или на английском по умолчанию
+}
+
 bot.use(
   session({
     initial: () => ({
       startedUsingBot: new Date(),
+      language: "en", // Установка английского языка по умолчанию
     }),
     storage: new MongoDBAdapter({ collection }),
   })
@@ -41,16 +46,18 @@ bot.command("start", async (ctx) => {
   const userId = ctx.from.id.toString();
   const userName = ctx.from.first_name || "Пользователь";
   const userUsername = ctx.from.username || "";
+  ctx.session.language = "uk";
 
   console.log(
     `Пользователь: ${userId}, Имя: ${userName}, Username: ${userUsername}`
   );
 
-  // Регистрируем нового пользователя в MongoDB
   await registerNewUser(userId, userName, userUsername);
 
   // Инициализация клавиатуры для ответа пользователю
   const startKeyboard = new Keyboard()
+    .text("🌍 Выбрать язык")
+    .row()
     .text("🌐 HTML")
     .text("🎨 CSS")
     .row()
@@ -59,7 +66,6 @@ bot.command("start", async (ctx) => {
     .row()
     .text("🆘 Помощь")
     .text("📈 Ваша статистика")
-    .row()
     .resized();
 
   // URL изображения для ответа
@@ -75,6 +81,34 @@ bot.command("start", async (ctx) => {
     {
       reply_markup: startKeyboard,
     }
+  );
+});
+
+// Обработчик для кнопки выбора языка
+bot.hears("🌍 Выбрать язык", async (ctx) => {
+  const languageKeyboard = new InlineKeyboard()
+    .text("🇷🇺 Русский", "ru")
+    .text("🇬🇧 English", "en")
+    .text("🇺🇦 Українська", "uk")
+    .row();
+
+  await ctx.reply("Выберите язык:", {
+    reply_markup: languageKeyboard,
+  });
+});
+
+// Обработчик для Inline кнопок выбора языка
+bot.callbackQuery(["ru", "en", "uk"], async (ctx) => {
+  const selectedLanguage = ctx.callbackQuery.data;
+  ctx.session.language = selectedLanguage;
+  await ctx.answerCallbackQuery(
+    `Язык изменен на ${
+      selectedLanguage === "ru"
+        ? "🇷🇺 русский"
+        : selectedLanguage === "en"
+        ? "🇬🇧 английский"
+        : "🇺🇦 украинский"
+    }.`
   );
 });
 
@@ -111,6 +145,11 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
       return;
     }
 
+    const localizedQuestionText = getLocalizedText(
+      question,
+      ctx.session.language
+    ); // Локализуем текст вопроса
+
     // Создаем клавиатуру с вариантами ответов или кнопкой для показа ответа
     let inlineKeyboard = new InlineKeyboard();
 
@@ -119,7 +158,7 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
       question.options.forEach((option) => {
         inlineKeyboard = inlineKeyboard
           .text(
-            option.text,
+            option.text[ctx.session.language] || option.text["uk"], // Локализуем текст вариантов ответов
             JSON.stringify({
               type: `${questionTopic}-option`,
               isCorrect: option.isCorrect,
@@ -140,8 +179,8 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
       );
     }
 
-    // Отправляем вопрос пользователю
-    await ctx.reply(question.text, { reply_markup: inlineKeyboard });
+    // Отправляем локализованный вопрос пользователю
+    await ctx.reply(localizedQuestionText, { reply_markup: inlineKeyboard });
   } catch (error) {
     // Обработка ошибок
     await ctx.reply(`Произошла ошибка: ${error.message}`);
@@ -204,14 +243,18 @@ bot.on("message:photo", async (ctx) => {
 bot.on("callback_query:data", async (ctx) => {
   const callbackData = JSON.parse(ctx.callbackQuery.data);
 
+  // Обработка показа ответа с изображением
   if (callbackData.showImage) {
-    const answer = getCorrectAnswer(callbackData.type, callbackData.questionId);
+    const answer = getCorrectAnswer(
+      callbackData.type,
+      callbackData.questionId,
+      ctx.session.language // Добавление языка сессии
+    );
     await ctx.reply(answer, {
       parse_mode: "HTML",
       disable_web_page_preview: true,
     });
 
-    // Отправляем изображение после нажатия на кнопку "Узнать ответ"
     const categoryQuestions = questions[callbackData.type];
     const question = categoryQuestions.find(
       (q) => q.id === callbackData.questionId
@@ -223,6 +266,7 @@ bot.on("callback_query:data", async (ctx) => {
     return;
   }
 
+  // Обработка подтверждения покупки подписки
   if (callbackData.command === "purchaseSubscription") {
     const currentDate = new Date();
     const dateIn30Days = new Date(
@@ -239,7 +283,6 @@ bot.on("callback_query:data", async (ctx) => {
         },
       }
     );
-    // Форматирование даты на русском языке в европейском стиле (день, месяц, год)
     const formattedDate = dateIn30Days.toLocaleDateString("ru-RU", {
       day: "numeric",
       month: "long",
@@ -253,8 +296,6 @@ bot.on("callback_query:data", async (ctx) => {
         `Мы регулярно обновляем и улучшаем материалы курса, чтобы оставаться актуальными по последним трендам и информации.\n\n` +
         `Если у Вас возникнут вопросы или нужна дополнительная помощь, не стесняйтесь обращаться к нам. Удачи в обучении и подготовке к собеседованиям! 🚀`
     );
-
-    // Ответ на callback-запрос
     await ctx.answerCallbackQuery({
       text: "Пользователь успешно оформил подписку!",
       show_alert: true,
@@ -262,7 +303,23 @@ bot.on("callback_query:data", async (ctx) => {
     return;
   }
 
+  // Обработка ответов на вопросы
+
   const topic = callbackData.type.split("-")[0];
+
+  if (!callbackData.type.includes("option")) {
+    const answer = getCorrectAnswer(
+      callbackData.type,
+      callbackData.questionId,
+      ctx.session.language
+    );
+    await ctx.reply(`Правильный ответ: ${answer}`, {
+      parse_mode: "HTML",
+      disable_web_page_preview: true,
+    });
+    await ctx.answerCallbackQuery();
+    return;
+  }
 
   if (!ctx.session.stats) {
     ctx.session.stats = {
@@ -276,29 +333,12 @@ bot.on("callback_query:data", async (ctx) => {
   ctx.session.stats[topic].total += 1;
   if (callbackData.isCorrect) {
     ctx.session.stats[topic].completed += 1;
-  }
-
-  if (ctx.session.stats[topic].total >= questions[topic].length) {
-    ctx.session.stats[topic].total = 0;
-    ctx.session.stats[topic].completed = 0;
-  }
-
-  if (!callbackData.type.includes("option")) {
-    const answer = getCorrectAnswer(callbackData.type, callbackData.questionId);
-    await ctx.reply(answer, {
-      parse_mode: "HTML",
-      disable_web_page_preview: true,
-    });
-    await ctx.answerCallbackQuery();
-    return;
-  }
-
-  if (callbackData.isCorrect) {
     await ctx.reply("Верно ✅");
   } else {
     const answer = getCorrectAnswer(
       callbackData.type.split("-")[0],
-      callbackData.questionId
+      callbackData.questionId,
+      ctx.session.language
     );
     await ctx.reply(`Неверно ❌ Правильный ответ: ${answer}`);
   }

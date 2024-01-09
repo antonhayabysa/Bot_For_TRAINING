@@ -47,12 +47,13 @@ export const getRandomQuestion = async (topic, userId, ctx) => {
   return question ? { question: question, questionTopic: topic } : {};
 };
 
-export const getCorrectAnswer = (topic, id) => {
+export const getCorrectAnswer = (topic, id, language = "en") => {
   const question = questions[topic].find((q) => q.id === id);
   if (!question.hasOptions) {
-    return question.answer;
+    return question.answer[language] || question.answer["en"]; // Возврат ответа на выбранном языке
   }
-  return question.options.find((option) => option.isCorrect).text;
+  const correctOption = question.options.find((option) => option.isCorrect);
+  return correctOption.text[language] || correctOption.text["en"]; // Возврат текста правильного варианта ответа
 };
 
 export { questions, authorizedUsers };
