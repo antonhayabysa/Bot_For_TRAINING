@@ -258,9 +258,9 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Для создания такого списка в HTML используется тег <ul>, а для определения каждого пункта списка - тег <li>.",
-        "en": "To create such a list in HTML, the <ul> tag is used, and the <li> tag is used to define each item in the list.",
-        "uk": "Для створення такого списку у HTML використовується тег <ul>, а для визначення кожного пункту списку - тег <li>."
+        "ru": "Для создания непронумерованного списка в HTML используется тег &lt;ul&gt;, а для определения каждого пункта списка - тег &lt;li&gt;.",
+        "en": "To create an unordered list in HTML, the &lt;ul&gt; tag is used, and the &lt;li&gt; tag is used to define each item in the list.",
+        "uk": "Для створення ненумерованого списку в HTML використовується тег &lt;ul&gt;, а для визначення кожного пункту списку - тег &lt;li&gt;."        
       }
     },    
     {
@@ -286,9 +286,9 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Тег <!DOCTYPE> — это обязательная декларация в начале HTML-документа, сообщающая браузеру о версии HTML или XHTML для правильного отображения страницы. Он влияет на режим отображения в браузере (стандартный или совместимости) и обеспечивает кросс-браузерную совместимость, соответствуя стандартам веб-разработки.",
-        "en": "The <!DOCTYPE> tag is a mandatory declaration at the beginning of an HTML document, informing the browser of the HTML or XHTML version for correct page rendering. It affects the browser's rendering mode (standard or compatibility) and ensures cross-browser compatibility, conforming to web development standards.",
-        "uk": "Тег <!DOCTYPE> - це обов'язкова декларація на початку HTML-документа, яка повідомляє браузер про версію HTML або XHTML для правильного відображення сторінки. Він впливає на режим відображення у браузері (стандартний або сумісності) та забезпечує крос-браузерну сумісність, відповідаючи стандартам веб-розробки."
+        "ru": "Тег &lt;!DOCTYPE&gt; — это обязательная декларация в начале HTML-документа, сообщающая браузеру о версии HTML или XHTML для правильного отображения страницы. Он влияет на режим отображения в браузере (стандартный или совместимости) и обеспечивает кросс-браузерную совместимость, соответствуя стандартам веб-разработки.",
+        "en": "The &lt;!DOCTYPE&gt; tag is a mandatory declaration at the beginning of an HTML document, informing the browser of the HTML or XHTML version for correct page rendering. It affects the browser's rendering mode (standard or compatibility) and ensures cross-browser compatibility, conforming to web development standards.",
+        "uk": "Тег &lt;!DOCTYPE&gt; - це обов'язкова декларація на початку HTML-документа, яка повідомляє браузер про версію HTML або XHTML для правильного відображення сторінки. Він впливає на режим відображення у браузері (стандартний або сумісності) та забезпечує крос-браузерну сумісність, відповідаючи стандартам веб-розробки."
       }
     },    
     {
@@ -1058,7 +1058,7 @@
     {
       "id": 33,
       "text": {
-        "ru": "Что делает элемент &lt;canvas&gt; в HTML5?",
+        "ru": "Что делает элемент canvas в HTML5?",
         "en": "What does the &lt;canvas&gt; element do in HTML5?",
         "uk": "Що робить елемент &lt;canvas&gt; в HTML5?"
       },
@@ -1558,9 +1558,9 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Стили рекомендуется подключать в head для того, чтобы страница как можно быстрее приняла свой внешний вид. Скрипты подключенные в head могут затормозить этот процесс, в связи с этим их рекомендуется подключать перед закрывающим тегом body. Исключением являются скрипты аналитики, для определения количества посетителей, которые не дождались загрузки страницы. В этом случае скрипт должен быть подключен в head.",
-        "en": "It is recommended to include styles in the head so that the page takes on its appearance as quickly as possible. Scripts included in the head can slow down this process, so it is advisable to include them before the closing </body> tag. An exception is analytics scripts, which are used to track the number of visitors who did not wait for the page to load. In this case, the script should be included in the head.",
-        "uk": "Стилі рекомендується підключати в head, щоб сторінка якомога швидше набрала свій зовнішній вигляд. Скрипти, підключені в head, можуть сповільнити цей процес, тому їх рекомендується включати перед закриваючим тегом </body>. Винятком є скрипти аналітики, які використовуються для відстеження кількості відвідувачів, які не дочекалися завантаження сторінки. У цьому випадку скрипт слід підключити в head."
+        "ru": "Стили рекомендуется подключать в &lt;head&gt; для того, чтобы страница как можно быстрее приняла свой внешний вид. Скрипты подключенные в &lt;head&gt; могут затормозить этот процесс, в связи с этим их рекомендуется подключать перед закрывающим тегом &lt;/body&gt;. Исключением являются скрипты аналитики, для определения количества посетителей, которые не дождались загрузки страницы. В этом случае скрипт должен быть подключен в &lt;head&gt;.",
+        "en": "It is recommended to include styles in the &lt;head&gt; so that the page takes on its appearance as quickly as possible. Scripts included in the &lt;head&gt; can slow down this process, so it is advisable to include them before the closing &lt;/body&gt; tag. An exception is analytics scripts, which are used to track the number of visitors who did not wait for the page to load. In this case, the script should be included in the &lt;head&gt;.",
+        "uk": "Стилі рекомендується підключати в &lt;head&gt;, щоб сторінка якомога швидше набрала свій зовнішній вигляд. Скрипти, підключені в &lt;head&gt;, можуть сповільнити цей процес, тому їх рекомендується включати перед закриваючим тегом &lt;/body&gt;. Винятком є скрипти аналітики, які використовуються для відстеження кількості відвідувачів, які не дочекалися завантаження сторінки. У цьому випадку скрипт слід підключити в &lt;head&gt;."        
       }
     },
     {
@@ -2391,9 +2391,9 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "📖 Ответ: Свойство 'align-content' управляет распределением пространства между строками в многострочном контейнере Flexbox. Это свойство применяется только в том случае, если есть свободное пространство в контейнере и если используется 'flex-wrap: wrap'.",
-        "en": "📖 Answer: The 'align-content' property controls the distribution of space between lines in a multi-line Flexbox container. This property is applied only when there is available space in the container and 'flex-wrap: wrap' is used.",
-        "uk": "📖 Відповідь: Властивість 'align-content' визначає розподіл простору між рядками у багаторядковому контейнері Flexbox. Ця властивість застосовується тільки тоді, коли в контейнері є вільний простір і використовується 'flex-wrap: wrap'."
+        "ru": "📖 Свойство 'align-content' управляет распределением пространства между строками в многострочном контейнере Flexbox. Это свойство применяется только в том случае, если есть свободное пространство в контейнере и если используется 'flex-wrap: wrap'.",
+        "en": "📖 The 'align-content' property controls the distribution of space between lines in a multi-line Flexbox container. This property is applied only when there is available space in the container and 'flex-wrap: wrap' is used.",
+        "uk": "📖 Властивість 'align-content' визначає розподіл простору між рядками у багаторядковому контейнері Flexbox. Ця властивість застосовується тільки тоді, коли в контейнері є вільний простір і використовується 'flex-wrap: wrap'."
       }
     },
     {

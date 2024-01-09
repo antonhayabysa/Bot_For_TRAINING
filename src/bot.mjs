@@ -204,13 +204,18 @@ bot.hears("📈 Ваша статистика", async (ctx) => {
   for (const topic of Object.keys(totalQuestions)) {
     const shortTopic = topic === "javascript" ? "js" : topic;
     const stats = ctx.session.stats[topic] || { total: 0, completed: 0 };
-    const totalInTopic = totalQuestions[topic];
-    message += `${shortTopic.padEnd(8, " ")}| ${String(totalInTopic).padStart(
-      6,
-      " "
-    )}| ${String(stats.total).padStart(7, " ")}| ${String(
+
+    message += `${shortTopic.padEnd(8, " ")}| ${String(
+      totalQuestions[topic]
+    ).padStart(6, " ")}| ${String(stats.total).padStart(7, " ")}| ${String(
       stats.completed
     ).padStart(6, " ")}\n`;
+
+    // Проверяем, прошел ли пользователь все вопросы по теме
+    if (stats.total >= totalQuestions[topic]) {
+      // Обнуляем статистику по этой теме
+      ctx.session.stats[topic] = { total: 0, completed: 0 };
+    }
   }
   message += "</pre>";
 
