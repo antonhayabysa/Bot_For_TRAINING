@@ -1013,8 +1013,8 @@
       "id": 33,
       "text": {
         "ru": "Что делает элемент canvas в HTML5?",
-        "en": "What does the &lt;canvas&gt; element do in HTML5?",
-        "uk": "Що робить елемент &lt;canvas&gt; в HTML5?"
+        "en": "What does the canvas element do in HTML5?",
+        "uk": "Що робить елемент canvas в HTML5?"
       },
       "hasOptions": false,
       "answer": {
@@ -1168,11 +1168,11 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "HTML5 представил новые API, включая:\n- Drag and Drop: Перетаскивание элементов в веб-интерфейсе.\n- Local Storage: Длительное хранение данных на стороне клиента.\n- Session Storage: Хранение данных на время сессии браузера.\n- Canvas: Создание графики с помощью JavaScript.\n- WebSocket: Двустороннее взаимодействие между клиентом и сервером в реальном времени.\n- Geolocation: Определение географического положения пользователя, расширяя возможности разработчиков.",
-        "en": "HTML5 introduced new APIs such as Drag and Drop, Local Storage, Session Storage, Canvas, WebSocket, Geolocation, expanding developers' capabilities.",
-        "uk": "HTML5 представив нові API, такі як Drag and Drop, Local Storage, Session Storage, Canvas, WebSocket, Geolocation, розширюючи можливості розробників."
+        "ru": "HTML5 представил новые API, включая:\n- Drag and Drop: Перетаскивание элементов в веб-интерфейсе.\n- Local Storage: Длительное хранение данных на стороне клиента.\n- Session Storage: Хранение данных на время сессии браузера.\n- Canvas: Создание графики с помощью JavaScript.\n- WebSocket: Двустороннее взаимодействие между клиентом и сервером в реальном времени.\n- Geolocation: Определение географического положения пользователя.",
+        "en": "HTML5 introduced new APIs, including:\n- Drag and Drop: Dragging and dropping elements within the web interface.\n- Local Storage: Long-term storage of data on the client side.\n- Session Storage: Storing data for the duration of a browser session.\n- Canvas: Creating graphics using JavaScript.\n- WebSocket: Real-time two-way communication between client and server.\n- Geolocation: Determining the user's geographical location.",
+        "uk": "HTML5 представив нові API, включаючи:\n- Drag and Drop: Перетягування елементів у веб-інтерфейсі.\n- Local Storage: Довготривале зберігання даних на стороні клієнта.\n- Session Storage: Зберігання даних на час сесії браузера.\n- Canvas: Створення графіки за допомогою JavaScript.\n- WebSocket: Двостороннє спілкування між клієнтом та сервером у реальному часі.\n- Geolocation: Визначення географічного положення користувача. "
       }
-    },    
+    },      
     {
       "id": 40,
       "text": {
