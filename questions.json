@@ -337,53 +337,7 @@
           "isCorrect": false
         }
       ]
-    },{
-      "id": 10,
-      "text": {
-        "ru": "Какой тег используется для создания таблицы?",
-        "en": "Which tag is used to create a table?",
-        "uk": "Який тег використовується для створення таблиці?"
-      },
-      "hasOptions": true,
-      "options": [
-        {
-          "id": 1,
-          "text": {
-            "ru": "<table>",
-            "en": "<table>",
-            "uk": "<table>"
-          },
-          "isCorrect": true
-        },
-        {
-          "id": 2,
-          "text": {
-            "ru": "<grid>",
-            "en": "<grid>",
-            "uk": "<grid>"
-          },
-          "isCorrect": false
-        },
-        {
-          "id": 3,
-          "text": {
-            "ru": "<row>",
-            "en": "<row>",
-            "uk": "<row>"
-          },
-          "isCorrect": false
-        },
-        {
-          "id": 4,
-          "text": {
-            "ru": "<column>",
-            "en": "<column>",
-            "uk": "<column>"
-          },
-          "isCorrect": false
-        }
-      ]
-    },        
+    },
     {
       "id": 11,
       "text": {
@@ -1147,9 +1101,9 @@
     {
       "id": 37,
       "text": {
-        "ru": "Какой атрибут используется для указания, что форма должна быть проверена перед отправкой?",
-        "en": "Which attribute is used to indicate that a form should be validated before submission?",
-        "uk": "Який атрибут використовується для вказівки, що форма повинна бути перевірена перед відправкою?"
+        "ru": "Какой атрибут используется для отмены стандартной проверки формы перед отправкой в HTML?",
+        "en": "Which attribute is used to disable the standard form validation before submission in HTML?",
+        "uk": "Який атрибут використовується для відключення стандартної перевірки форми перед відправкою у HTML?"
       },
       "hasOptions": true,
       "options": [
@@ -1178,7 +1132,7 @@
             "en": "novalidate",
             "uk": "novalidate"
           },
-          "isCorrect": false
+          "isCorrect": true
         },
         {
           "id": 4,
@@ -1187,7 +1141,7 @@
             "en": "formvalidate",
             "uk": "formvalidate"
           },
-          "isCorrect": true
+          "isCorrect": false
         }
       ]
     },
@@ -1200,9 +1154,9 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "В HTML5 для хранения данных на стороне клиента используются Local Storage и Session Storage, позволяющие сохранять данные между сессиями или только в течение текущей сессии.",
-        "en": "HTML5 uses Local Storage and Session Storage for storing data on the client side, allowing data to be saved between browser sessions or just during the current session.",
-        "uk": "У HTML5 для зберігання даних на стороні клієнта використовуються Local Storage та Session Storage, що дозволяють зберігати дані між сесіями або лише протягом поточної сесії."
+        "ru": "В HTML5 для хранения данных на стороне клиента используются Local Storage и Session Storage. Local Storage сохраняет данные без срока истечения, идеально для долгосрочного хранения. Session Storage сохраняет данные только во время сессии браузера.",
+        "en": "HTML5 uses Local Storage and Session Storage for client-side data storage. Local Storage saves data indefinitely, ideal for long-term storage. Session Storage saves data only during the browser session.",
+        "uk": "У HTML5 для зберігання даних на стороні клієнта використовуються Local Storage та Session Storage. Local Storage зберігає дані без терміну дії, ідеально для довгострокового зберігання. Session Storage зберігає дані лише під час сесії браузера."
       }
     },
     {
@@ -1214,7 +1168,7 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "HTML5 представил новые API, включая Drag and Drop, Local Storage, Session Storage, Canvas, WebSocket, Geolocation, расширяя возможности разработчиков.",
+        "ru": "HTML5 представил новые API, включая:\n- Drag and Drop: Перетаскивание элементов в веб-интерфейсе.\n- Local Storage: Длительное хранение данных на стороне клиента.\n- Session Storage: Хранение данных на время сессии браузера.\n- Canvas: Создание графики с помощью JavaScript.\n- WebSocket: Двустороннее взаимодействие между клиентом и сервером в реальном времени.\n- Geolocation: Определение географического положения пользователя, расширяя возможности разработчиков.",
         "en": "HTML5 introduced new APIs such as Drag and Drop, Local Storage, Session Storage, Canvas, WebSocket, Geolocation, expanding developers' capabilities.",
         "uk": "HTML5 представив нові API, такі як Drag and Drop, Local Storage, Session Storage, Canvas, WebSocket, Geolocation, розширюючи можливості розробників."
       }
