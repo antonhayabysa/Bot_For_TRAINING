@@ -4754,7 +4754,440 @@
         "en": "📖 Answer: Scalar data types, also known as primitive types, include undefined, null, boolean, number, string, bigint, and symbol. They represent simple values that are stored directly in variables. When scalar types are passed to functions, they are copied, and their original values remain unchanged.\n\n 🖼️ Code example: In this example, a is a scalar variable that holds the value 5. When we pass a to the function inc, its value is copied into parameter n. The function increases n by 1 and returns the new value, which is assigned to variable b. The original value of a remains unchanged.",
         "uk": "📖 Відповідь: Скалярні типи даних, також відомі як примітивні типи, включають undefined, null, boolean, number, string, bigint, і symbol. Вони представляють прості значення, які зберігаються безпосередньо у змінних. При передачі скалярних типів у функції вони копіюються, а їх оригінальні значення залишаються незмінними.\n\n 🖼️ Приклад коду: У цьому прикладі, a - це скалярна змінна, яка містить значення 5. Коли ми передаємо a у функцію inc, її значення копіюється у параметр n. Функція збільшує n на 1 і повертає нове значення, яке присвоюється змінній b. Початкове значення a залишається незмінним."
       }
-    }    
+    },
+    {
+      "id": 44,
+      "text": {
+        "ru": "Что выведет alert в следующем коде: \nlet str = \"Hello\";\nstr.something = 5;\nalert(str.something);",
+        "en": "What will the alert display in the following code: \nlet str = \"Hello\";\nstr.something = 5;\nalert(str.something);",
+        "uk": "Що виведе alert у наступному коді: \nlet str = \"Hello\";\nstr.something = 5;\nalert(str.something);"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Без использования 'strict mode', alert выведет 'undefined', потому что свойство 'something' не будет сохранено у строкового примитива 'str'. В 'strict mode' такой код вызовет ошибку TypeError, так как свойство не может быть добавлено к строке.",
+        "en": "Without using 'strict mode', the alert will display 'undefined' because the property 'something' will not be stored on the string primitive 'str'. In 'strict mode', such code will cause a TypeError because a property cannot be added to a string.",
+        "uk": "Без використання 'strict mode', alert виведе 'undefined', оскільки властивість 'something' не буде збережена у строковому примітиві 'str'. У 'strict mode' такий код спричинить помилку TypeError, адже властивість не може бути додана до рядка."
+      }
+    },
+    {
+      "id": 45,
+      "text": {
+        "ru": "Каких операторов из этого списка нет в JavaScript?",
+        "en": "Which operators from this list are not in JavaScript?",
+        "uk": "Яких операторів з цього списку немає в JavaScript?"
+      },
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": {
+            "ru": "*",
+            "en": "*",
+            "uk": "*"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": {
+            "ru": "^",
+            "en": "^",
+            "uk": "^"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": {
+            "ru": "%",
+            "en": "%",
+            "uk": "%"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": {
+            "ru": "#",
+            "en": "#",
+            "uk": "#"
+          },
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": {
+            "ru": "&",
+            "en": "&",
+            "uk": "&"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": {
+            "ru": ">>",
+            "en": ">>",
+            "uk": ">>"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 7,
+          "text": {
+            "ru": ">>>",
+            "en": ">>>",
+            "uk": ">>>"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": {
+            "ru": "!",
+            "en": "!",
+            "uk": "!"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "text": {
+        "ru": "Верно ли сравнение: \"ёжик\" > \"яблоко\"?",
+        "en": "Is the comparison \"ёжик\" > \"яблоко\" correct?",
+        "uk": "Чи правильне порівняння: \"їжачок\" > \"яблоко\"?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Да, это сравнение верно. В JavaScript сравнение строк происходит посимвольно, основываясь на стандартной нумерации Юникода. Поскольку Юникод символа 'ё' имеет более высокое значение, чем у 'я', сравнение \"ёжик\" > \"яблоко\" возвращает 'true'. Это сравнение не зависит от локальных настроек и будет одинаковым в любом окружении.",
+        "en": "Yes, this comparison is correct. In JavaScript, string comparison is done character-by-character based on standard Unicode numbering. Since the Unicode value of 'ё' is higher than that of 'я', the comparison \"ёжик\" > \"яблоко\" returns 'true'. This comparison does not depend on locale settings and will be the same in any environment.",
+        "uk": "Так, це порівняння правильне. У JavaScript порівняння рядків відбувається посимвольно на основі стандартної нумерації Юнікоду. Оскільки Юнікод символа 'ё' має більше значення, ніж у 'я', порівняння \"їжачок\" > \"яблоко\" повертає 'true'. Це порівняння не залежить від локальних налаштувань і буде однаковим у будь-якому середовищі."
+      }
+    },
+    {
+      "id": 47,
+      "text": {
+        "ru": "Какое из этих слов не имеет специального использования в JavaScript, никак не упомянуто в стандарте?",
+        "en": "Which of these words does not have a special usage in JavaScript, not mentioned in the standard?",
+        "uk": "Яке з цих слів не має спеціального використання в JavaScript, не згадується в стандарті?"
+      },
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": {
+            "ru": "this",
+            "en": "this",
+            "uk": "this"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": {
+            "ru": "instanceof",
+            "en": "instanceof",
+            "uk": "instanceof"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": {
+            "ru": "constructor",
+            "en": "constructor",
+            "uk": "constructor"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": {
+            "ru": "parent",
+            "en": "parent",
+            "uk": "parent"
+          },
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": {
+            "ru": "new",
+            "en": "new",
+            "uk": "new"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": {
+            "ru": "Все имеют специальное использование",
+            "en": "All have special usage",
+            "uk": "Всі мають спеціальне використання"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "text": {
+        "ru": "Верно ли, что null == undefined?",
+        "en": "Is it true that null == undefined?",
+        "uk": "Чи правда, що null == undefined?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Да, это верно. В JavaScript, оператор '==' сравнивает значения с приведением типов, и в результате сравнения 'null == undefined' возвращается 'true'. Это особенность языка, где 'null' и 'undefined', хотя и являются разными типами данных, считаются равными при нестрогом сравнении.",
+        "en": "Yes, it is true. In JavaScript, the '==' operator compares values with type coercion, and as a result, 'null == undefined' returns 'true'. This is a language feature where 'null' and 'undefined', although different data types, are considered equal in a non-strict comparison.",
+        "uk": "Так, це правда. У JavaScript, оператор '==' порівнює значення з приведенням типів, і в результаті порівняння 'null == undefined' повертається 'true'. Це особливість мови, де 'null' і 'undefined', хоча і є різними типами даних, вважаються рівними при нестрогому порівнянні."
+      }
+    },
+    {
+      "id": 49,
+      "text": {
+        "ru": "Что выведет код ниже?\n\nlet obj = {'1': 0, 1: 1, 0: 2};\nalert(obj['1']);",
+        "en": "What does the following code output?\n\nlet obj = {'1': 0, 1: 1, 0: 2};\nalert(obj['1']);",
+        "uk": "Що виведе наступний код?\n\nlet obj = {'1': 0, 1: 1, 0: 2};\nalert(obj['1']);"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Код выведет '1'. В JavaScript, ключи объекта преобразуются в строки. Поэтому, когда создается объект obj, ключ '1' и числовой ключ 1 считаются одним и тем же ключом. В результате, значение ключа '1' перезаписывается с 0 на 1. Поэтому, при обращении к obj['1'] возвращается значение 1.",
+        "en": "The code outputs '1'. In JavaScript, object keys are converted to strings. Therefore, when the obj object is created, the key '1' and the numeric key 1 are considered the same key. As a result, the value of key '1' is overwritten from 0 to 1. Hence, accessing obj['1'] returns the value 1.",
+        "uk": "Код виведе '1'. У JavaScript, ключі об'єкта перетворюються на рядки. Тому, коли створюється об'єкт obj, ключ '1' та числовий ключ 1 вважаються одним і тим же ключем. В результаті, значення ключа '1' перезаписується з 0 на 1. Таким чином, при зверненні до obj['1'] повертається значення 1."
+      }
+    },
+    {
+      "id": 50,
+      "text": {
+        "ru": "Какие вызовы parseInt возвратят число?",
+        "en": "Which calls to parseInt return a number?",
+        "uk": "Які виклики parseInt повертають число?"
+      },
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": {
+            "ru": "parseInt(\"1px\")",
+            "en": "parseInt(\"1px\")",
+            "uk": "parseInt(\"1px\")"
+          },
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": {
+            "ru": "parseInt(\"-1.2\")",
+            "en": "parseInt(\"-1.2\")",
+            "uk": "parseInt(\"-1.2\")"
+          },
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": {
+            "ru": "parseInt(\"0 минут\")",
+            "en": "parseInt(\"0 минут\")",
+            "uk": "parseInt(\"0 минут\")"
+          },
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": {
+            "ru": "parseInt(\"$1.2\")",
+            "en": "parseInt(\"$1.2\")",
+            "uk": "parseInt(\"$1.2\")"
+          },
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "text": {
+        "ru": "Что выведет этот код?\n\nf.call(f);\n\nfunction f() {\n  alert( this );\n}",
+        "en": "What does this code output?\n\nf.call(f);\n\nfunction f() {\n  alert( this );\n}",
+        "uk": "Що виведе цей код?\n\nf.call(f);\n\nfunction f() {\n  alert( this );\n}"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет [object Object]. Метод call() вызывает функцию f с контекстом, указанным первым аргументом, который в данном случае является сама функция f. В JavaScript функции являются объектами, поэтому this внутри функции f будет ссылаться на саму функцию f. При преобразовании объекта функции в строку для alert, он будет представлен как [object Object].",
+        "en": "This code outputs [object Object]. The call() method calls the function f with the context specified by the first argument, which in this case is the function f itself. In JavaScript, functions are objects, so this inside the function f will refer to the function f itself. When converting the function object to a string for the alert, it is represented as [object Object].",
+        "uk": "Цей код виведе [object Object]. Метод call() викликає функцію f з контекстом, зазначеним першим аргументом, який у даному випадку є сама функція f. У JavaScript функції є об'єктами, тому this усередині функції f буде посилатися на саму функцію f. При перетворенні об'єкта функції в рядок для alert, він буде представлений як [object Object]."
+      }
+    },
+    {
+      "id": 52,
+      "text": {
+        "ru": "Что выведет этот код?\n\nfunction User() { }\nUser.prototype = { admin: false };\n\nlet user = new User();\n\nUser.prototype = { admin: true };\n\nalert(user.admin);",
+        "en": "What does this code output?\n\nfunction User() { }\nUser.prototype = { admin: false };\n\nlet user = new User();\n\nUser.prototype = { admin: true };\n\nalert(user.admin);",
+        "uk": "Що виведе цей код?\n\nfunction User() { }\nUser.prototype = { admin: false };\n\nlet user = new User();\n\nUser.prototype = { admin: true };\n\nalert(user.admin);"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет 'false'. Когда объект 'user' создается с использованием 'new User()', он наследует свойства из 'User.prototype' на тот момент. В момент создания объекта 'user' прототип 'User.prototype' содержит { admin: false }. После изменения 'User.prototype' на { admin: true }, это не влияет на уже созданные объекты, такие как 'user'. Следовательно, 'user.admin' будет 'false'.",
+        "en": "This code outputs 'false'. When the 'user' object is created using 'new User()', it inherits properties from 'User.prototype' at that time. At the moment of creating the 'user' object, 'User.prototype' contains { admin: false }. Changing 'User.prototype' to { admin: true } afterwards does not affect already created objects such as 'user'. Therefore, 'user.admin' will be 'false'.",
+        "uk": "Цей код виведе 'false'. Коли об'єкт 'user' створюється за допомогою 'new User()', він успадковує властивості з 'User.prototype' на той момент. У момент створення об'єкта 'user', 'User.prototype' містить { admin: false }. Зміна 'User.prototype' на { admin: true } після цього не впливає на вже створені об'єкти, такі як 'user'. Таким чином, 'user.admin' буде 'false'."
+      }
+    },
+    {
+      "id": 53,
+      "text": {
+        "ru": "Что получится, если сложить true + false?",
+        "en": "What is the result of adding true + false?",
+        "uk": "Що буде, якщо додати true + false?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Результатом сложения true + false будет число 1. В JavaScript, при выполнении арифметических операций, булевы значения преобразуются в числа: true становится 1, а false - 0. Следовательно, сложение true (1) и false (0) дает 1.",
+        "en": "The result of adding true + false is 1. In JavaScript, when performing arithmetic operations, boolean values are converted to numbers: true becomes 1, and false becomes 0. Therefore, adding true (1) and false (0) results in 1.",
+        "uk": "Результатом додавання true + false буде число 1. У JavaScript, при виконанні арифметичних операцій, булеві значення перетворюються на числа: true стає 1, а false - 0. Отже, додавання true (1) і false (0) дає 1."
+      }
+    },
+    {
+      "id": 54,
+      "text": {
+        "ru": "Что выведет sayHi при вызове через setTimeout?\n\nlet name = \"Вася\";\nfunction sayHi() {\n  alert(name);\n}\n\nsetTimeout(function() {\n  let name = \"Петя\";\n  sayHi();\n}, 1000);",
+        "en": "What will sayHi output when called via setTimeout?\n\nlet name = \"Vasya\";\nfunction sayHi() {\n  alert(name);\n}\n\nsetTimeout(function() {\n  let name = \"Petya\";\n  sayHi();\n}, 1000);",
+        "uk": "Що виведе sayHi при виклику через setTimeout?\n\nlet name = \"Вася\";\nfunction sayHi() {\n  alert(name);\n}\n\nsetTimeout(function() {\n  let name = \"Петя\";\n  sayHi();\n}, 1000);"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Функция sayHi выведет 'Вася'. В JavaScript функции имеют доступ к переменным в своем лексическом окружении в момент их создания. Функция sayHi была создана в глобальной области видимости, где переменная name имеет значение 'Вася'. Переменная name, объявленная внутри setTimeout, является локальной для этой функции и не влияет на переменную name в sayHi.",
+        "en": "The function sayHi will output 'Vasya'. In JavaScript, functions have access to variables in their lexical environment at the time of their creation. The sayHi function was created in the global scope, where the variable name has the value 'Vasya'. The variable name declared inside setTimeout is local to that function and does not affect the name variable in sayHi.",
+        "uk": "Функція sayHi виведе 'Вася'. У JavaScript функції мають доступ до змінних у своєму лексичному оточенні на момент їх створення. Функція sayHi була створена в глобальній області видимості, де змінна name має значення 'Вася'. Змінна name, оголошена всередині setTimeout, є локальною для цієї функції і не впливає на змінну name у sayHi."
+      }
+    },
+    {
+      "id": 55,
+      "text": {
+        "ru": "Что выведет этот скрипт?\n\n\"use strict\";\n\na = null + undefined;\nalert(a);",
+        "en": "What does this script output?\n\n\"use strict\";\n\na = null + undefined;\nalert(a);",
+        "uk": "Що виведе цей скрипт?\n\n\"use strict\";\n\na = null + undefined;\nalert(a);"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот скрипт выведет 'NaN'. В JavaScript, операция сложения с операндами null и undefined возвращает 'NaN' (Not-a-Number). В строгом режиме ('use strict'), попытка присвоения значения необъявленной переменной 'a' не приведет к ошибке, так как операция является допустимой, но результатом выражения null + undefined будет 'NaN'.",
+        "en": "This script outputs 'NaN'. In JavaScript, the addition operation with operands null and undefined returns 'NaN' (Not-a-Number). In strict mode ('use strict'), attempting to assign a value to an undeclared variable 'a' does not result in an error, as the operation is permissible, but the result of the expression null + undefined is 'NaN'.",
+        "uk": "Цей скрипт виведе 'NaN'. У JavaScript, операція додавання з операндами null і undefined повертає 'NaN' (Not-a-Number). У строгому режимі ('use strict'), спроба присвоєння значення неоголошеній змінній 'a' не призводить до помилки, оскільки операція є допустимою, але результатом виразу null + undefined буде 'NaN'."
+      }
+    },
+    {
+      "id": 56,
+      "text": {
+        "ru": "Что выведет этот код?\n\nfor(let i=0; i<10; i++) {\n  setTimeout(function() {\n    alert(i);\n  }, 100);\n}",
+        "en": "What does this code output?\n\nfor(let i=0; i<10; i++) {\n  setTimeout(function() {\n    alert(i);\n  }, 100);\n}",
+        "uk": "Що виведе цей код?\n\nfor(let i=0; i<10; i++) {\n  setTimeout(function() {\n    alert(i);\n  }, 100);\n}"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет числа от 0 до 9. В цикле for используется ключевое слово let для объявления переменной i, что создает для каждой итерации цикла отдельную область видимости. Следовательно, каждый вызов функции в setTimeout будет ссылаться на свою версию переменной i. Таким образом, выводятся числа от 0 до 9.",
+        "en": "This code outputs numbers from 0 to 9. The for loop uses the keyword let to declare the variable i, which creates a separate scope for each iteration of the loop. As a result, each call of the function in setTimeout will refer to its version of the variable i. Thus, numbers from 0 to 9 are outputted.",
+        "uk": "Цей код виведе числа від 0 до 9. У циклі for використовується ключове слово let для оголошення змінної i, що створює окрему область видимості для кожної ітерації циклу. Відповідно, кожен виклик функції в setTimeout буде посилатися на свою версію змінної i. Таким чином, виводяться числа від 0 до 9."
+      }
+    },
+    {
+      "id": 57,
+      "text": {
+        "ru": "Что делает оператор **?",
+        "en": "What does the operator ** do?",
+        "uk": "Що робить оператор **?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Оператор '**' в JavaScript используется для возведения числа в степень. Например, выражение 'x ** y' возводит число 'x' в степень 'y'. Это альтернатива использованию функции Math.pow(x, y), но более современная и компактная.",
+        "en": "The '**' operator in JavaScript is used for exponentiation, that is, raising a number to a power. For example, the expression 'x ** y' raises the number 'x' to the power of 'y'. It is an alternative to using Math.pow(x, y) but is more modern and concise.",
+        "uk": "Оператор '**' у JavaScript використовується для піднесення числа до ступеня. Наприклад, вираз 'x ** y' підносить число 'x' до ступеня 'y'. Це альтернатива використанню функції Math.pow(x, y), але більш сучасна і компактна."
+      }
+    },
+    {
+      "id": 58,
+      "text": {
+        "ru": "Какой оператор из этих выполняет не только математические операции: '*', '/', '+', '-', '>>>'?",
+        "en": "Which of these operators performs not only mathematical operations: '*', '/', '+', '-', '>>>'?",
+        "uk": "Який з цих операторів виконує не тільки математичні операції: '*', '/', '+', '-', '>>>'?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Оператор '>>>' выполняет не только математические операции. Это оператор беззнакового сдвига вправо, который используется в битовых операциях. В отличие от '*', '/', '+', '-', которые являются чисто математическими операторами, '>>>' перемещает биты числа вправо, что делает его уникальным среди представленных операторов.",
+        "en": "The '>>>' operator performs not only mathematical operations. It is an unsigned right shift operator used in bitwise operations. Unlike '*', '/', '+', '-', which are purely mathematical operators, '>>>' shifts the bits of a number to the right, making it unique among the operators listed.",
+        "uk": "Оператор '>>>' виконує не тільки математичні операції. Це оператор беззнакового зсуву вправо, який використовується в бітових операціях. На відміну від '*', '/', '+', '-', які є чисто математичними операторами, '>>>' зміщує біти числа вправо, що робить його унікальним серед перерахованих операторів."
+      }
+    },
+    {
+      "id": 59,
+      "text": {
+        "ru": "Существует ли такое значение X, что после присваивания a = X вызов alert(a == X) выдаст false?\n\nlet a = X;\nalert( a == X ); // false",
+        "en": "Is there a value X such that after assigning a = X, the call alert(a == X) would return false?\n\nlet a = X;\nalert( a == X ); // false",
+        "uk": "Чи існує таке значення X, що після присвоєння a = X виклик alert(a == X) виведе false?\n\nlet a = X;\nalert( a == X ); // false"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Да, такое значение X существует, и это значение NaN (Not a Number). В JavaScript, NaN уникален тем, что не равен ничему, включая самого себя. Таким образом, сравнение a == X после присваивания a = NaN действительно вернет false.",
+        "en": "Yes, such a value X exists, and it is the value NaN (Not a Number). In JavaScript, NaN is unique in that it is not equal to anything, including itself. Therefore, the comparison a == X after assigning a = NaN will indeed return false.",
+        "uk": "Так, таке значення X існує, і це значення NaN (Not a Number). У JavaScript, NaN унікальний тим, що не рівний нічому, включаючи самого себе. Таким чином, порівняння a == X після присвоєння a = NaN дійсно поверне false."
+      }
+    },
+    {
+      "id": 60,
+      "text": {
+        "ru": "Какие из перечисленных вариантов создают массив с элементами 'a' и 'b'?",
+        "en": "Which of the following options create an array with elements 'a' and 'b'?",
+        "uk": "Які з наведених варіантів створюють масив з елементами 'a' і 'b'?"
+      },
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": {
+            "ru": "let a = new Array('a', 'b')",
+            "en": "let a = new Array('a', 'b')",
+            "uk": "let a = new Array('a', 'b')"
+          },
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": {
+            "ru": "let a = { 'a', 'b' }",
+            "en": "let a = { 'a', 'b' }",
+            "uk": "let a = { 'a', 'b' }"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": {
+            "ru": "let a = ( 'a', 'b' )",
+            "en": "let a = ( 'a', 'b' )",
+            "uk": "let a = ( 'a', 'b' )"
+          },
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": {
+            "ru": "let a = [ 'a', 'b' ]",
+            "en": "let a = [ 'a', 'b' ]",
+            "uk": "let a = [ 'a', 'b' ]"
+          },
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": {
+            "ru": "let a = 'a,b'.split(',')" ,
+            "en": "let a = 'a,b'.split(',')" ,
+            "uk": "let a = 'a,b'.split(',')" 
+          },
+          "isCorrect": true
+        }
+      ]
+    }
   ],
   "react": [
     {
