@@ -1825,7 +1825,8 @@
           "isCorrect": false
         }
       ]
-    },{
+    },
+    {
       "id": 13,
       "text": {
         "ru": "Какой селектор CSS выбирает все элементы, которые имеют указанный атрибут, начинающийся с определенной строки?",
@@ -2012,11 +2013,11 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Свойство 'position' определяет, как элемент располагается в документе, с основными значениями: 'static', 'relative', 'absolute', 'fixed', 'sticky'.",
-        "en": "The 'position' property determines how an element is positioned in the document, with main values being: 'static', 'relative', 'absolute', 'fixed', 'sticky'.",
-        "uk": "Властивість 'position' визначає, як елемент розташовується в документі, з основними значеннями: 'static', 'relative', 'absolute', 'fixed', 'sticky'."
+        "ru": "Свойство 'position' в CSS определяет способ позиционирования элемента в документе. Основные значения свойства: 'static' — стандартное позиционирование, 'relative' — позиционируется относительно своего обычного положения, 'absolute' — позиционируется абсолютно относительно ближайшего позиционированного предка, 'fixed' — фиксированное позиционирование относительно окна браузера, 'sticky' — 'липкое' позиционирование, комбинация относительного и фиксированного.",
+        "en": "The 'position' property in CSS determines how an element is positioned in the document. The main values of the property are: 'static' — default positioning, 'relative' — positioned relative to its normal position, 'absolute' — absolutely positioned relative to the nearest positioned ancestor, 'fixed' — fixed positioning relative to the browser window, 'sticky' — a 'sticky' positioning, a combination of relative and fixed.",
+        "uk": "Властивість 'position' у CSS визначає спосіб позиціонування елемента в документі. Основні значення властивості: 'static' — стандартне позиціонування, 'relative' — позиціонується відносно свого звичайного положення, 'absolute' — абсолютно позиціонується відносно найближчого позиціонованого предка, 'fixed' — фіксоване позиціонування відносно вікна браузера, 'sticky' — 'липке' позиціонування, комбінація відносного і фіксованого."
       }
-    },
+    },    
     {
       "id": 22,
       "text": {
@@ -3281,11 +3282,11 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Замыкания – это способность функции запоминать лексическое окружение, в котором она была создана, то есть хранить в себе ссылку на это окружение и обращаться к нему.",
-        "en": "Closures are the ability of a function to remember the lexical environment in which it was created, meaning it retains a reference to that environment and can access it.",
-        "uk": "Замикання – це здатність функції запам'ятовувати лексичне оточення, в якому вона була створена, тобто зберігати посилання на це оточення і отримувати до нього доступ."
+        "ru": "Замыкание в программировании — это функция, которая запоминает своё лексическое окружение (внешние переменные) на момент создания, даже если она выполняется вне своего лексического контекста. Это позволяет функции получать доступ к этим переменным вне зависимости от места её вызова.",
+        "en": "A closure in programming is a function that remembers its lexical environment (external variables) at the time of creation, even if it is executed outside its lexical context. This allows the function to access these variables regardless of where it is called.",
+        "uk": "Замикання в програмуванні — це функція, яка запам'ятовує своє лексичне оточення (зовнішні змінні) на момент створення, навіть якщо вона виконується поза своїм лексичним контекстом. Це дозволяє функції отримувати доступ до цих змінних незалежно від місця її виклику."
       }
-    },
+    },    
     {
       "id": 3,
       "text": {
@@ -3295,9 +3296,9 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Использование const дает два преимущества:\n1) Безопасность: объявление переменных через const защищает от неожиданного изменения значения переменной в коде, что может часто приводит к ошибкам и неожиданному поведению программы.\n2) Читаемость: использование const позволяет читателю кода понимать, что значение переменной не будет изменяться в течение выполнения программы. Это делает код более понятным и уменьшает возможность ошибок.",
-        "en": "Using const provides two advantages:\n1) Safety: declaring variables with const protects against unexpected changes to variable values in the code, which can often lead to errors and unexpected program behavior.\n2) Readability: using const allows code readers to understand that the variable's value will not change during program execution. This makes the code more understandable and reduces the likelihood of errors.",
-        "uk": "Використання const надає два переваги:\n1) Безпека: оголошення змінних через const захищає від неочікуваних змін значень змінних в коді, що часто призводить до помилок і неочікуваної поведінки програми.\n2) Читабельність: використання const дозволяє читачу коду розуміти, що значення змінної не буде змінюватися протягом виконання програми. Це робить код більш зрозумілим і зменшує ймовірність помилок."
+        "ru": "Использование const предпочтительно по двум основным причинам:\n1) Неизменность: const предотвращает повторное присвоение значения переменной, что уменьшает вероятность ошибок и повышает надежность кода.\n2) Ясность кода: const ясно указывает, что значение переменной не должно меняться, что упрощает понимание логики программы и улучшает читаемость кода.\nВ отличие от const, переменные, объявленные с помощью let, могут быть переназначены. Это делает let более гибким для переменных, значения которых могут изменяться (например, счетчики, значения цикла и т.д.).",
+        "en": "Using const is preferable for two main reasons:\n1) Immutability: const prevents reassignment of a variable, reducing the likelihood of errors and increasing code reliability.\n2) Code clarity: const clearly indicates that the value of a variable should not change, simplifying understanding of the program's logic and improving code readability.\nUnlike const, variables declared with let can be reassigned. This makes let more flexible for variables whose values might change (like counters, loop values, etc.).",
+        "uk": "Використання const є бажанішим з двох основних причин:\n1) Незмінність: const запобігає повторному присвоєнню значення змінної, що зменшує ймовірність помилок і підвищує надійність коду.\n2) Ясність коду: const чітко вказує, що значення змінної не повинно змінюватися, спрощуючи розуміння логіки програми і покращуючи читабельність коду.\nНа відміну від const, змінні, оголошені з допомогою let, можуть бути перепризначені. Це робить let більш гнучким для змінних, значення яких можуть змінюватися (наприклад, лічильники, значення циклу тощо)."
       }
     },
     {
@@ -3694,11 +3695,11 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Область видимости – это контекст в JavaScript, который определяет доступность переменных. Существуют локальная и глобальная области видимости.",
-        "en": "Scope is the context in JavaScript that determines variable accessibility. There are local and global scopes.",
-        "uk": "Область видимості - це контекст в JavaScript, який визначає доступність змінних. Існують локальна та глобальна області видимості."
+        "ru": "Область видимости в JavaScript – это контекст, который определяет доступность переменных. Существуют два типа области видимости: глобальная и локальная. Глобальная область видимости означает, что переменная доступна из любой части кода. Локальная область видимости, в свою очередь, ограничивает доступность переменной рамками функции или блока кода, в котором она была объявлена. JavaScript также поддерживает замыкания, что позволяет функциям запоминать и доступать к переменным, которые были доступны в момент их создания.",
+        "en": "Scope in JavaScript is the context that determines the accessibility of variables. There are two types of scopes: global and local. Global scope means a variable is accessible from any part of the code. Local scope, on the other hand, limits the accessibility of a variable to the function or block of code in which it is declared. JavaScript also supports closures, which allow functions to remember and access variables that were available at the time of their creation.",
+        "uk": "Область видимості в JavaScript - це контекст, який визначає доступність змінних. Існує два типи областей видимості: глобальна та локальна. Глобальна область видимості означає, що змінна доступна з будь-якої частини коду. Локальна область видимості, у свою чергу, обмежує доступність змінної межами функції або блоку коду, в якому вона була оголошена. JavaScript також підтримує замикання, які дозволяють функціям запам'ятовувати та доступатися до змінних, які були доступні на момент їх створення."
       }
-    },
+    },    
     {
       "id": 16,
       "text": {
@@ -3736,9 +3737,9 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "'this' – это ссылка на контекст объекта, в рамках которого выполняется текущий код.",
-        "en": "'this' is a reference to the context of the object in which the current code is executed.",
-        "uk": "'this' - це посилання на контекст об'єкта, в рамках якого виконується поточний код."
+        "ru": "'this' в JavaScript – это ключевое слово, которое используется для ссылки на объект, в контексте которого выполняется текущий код. Значение 'this' зависит от того, как вызывается функция: в глобальном контексте 'this' указывает на глобальный объект, в методе объекта - на сам объект, в функции-конструкторе - на создаваемый объект, а в строгом режиме без явного контекста 'this' будет 'undefined'.",
+        "en": "'this' in JavaScript is a keyword used to refer to the object within whose context the current code is executed. The value of 'this' depends on how the function is called: in the global context, 'this' refers to the global object, in an object's method - to the object itself, in a constructor function - to the object being created, and in strict mode without explicit context, 'this' will be 'undefined'.",
+        "uk": "'this' у JavaScript - це ключове слово, яке використовується для посилання на об'єкт, в контексті якого виконується поточний код. Значення 'this' залежить від того, як викликається функція: у глобальному контексті 'this' вказує на глобальний об'єкт, у методі об'єкта - на сам об'єкт, у функції-конструкторі - на створюваний об'єкт, а в строгому режимі без явного контексту 'this' буде 'undefined'."
       }
     },
     {
@@ -3764,11 +3765,11 @@
       },
       "hasOptions": false,
       "answer": {
-        "ru": "Всплытие событий – это процесс, при котором событие передается от наиболее вложенного элемента к его родителям.",
-        "en": "Event bubbling is the process where an event is passed from the most nested element to its ancestors.",
-        "uk": "Всплеск подій - це процес, коли подія передається від найбільш вкладеного елемента до його предків."
+        "ru": "Всплытие событий в JavaScript – это механизм, при котором событие, инициированное на одном из дочерних элементов, автоматически передается вверх по дереву DOM, достигая последовательно всех родительских элементов. Это означает, что обработчик события, установленный на родительский элемент, может перехватывать события, запущенные на дочерних элементах, даже если они не имеют своего обработчика.",
+        "en": "Event bubbling in JavaScript is a mechanism where an event initiated on one of the child elements automatically propagates up the DOM tree, reaching all the parent elements in sequence. This means a handler set on a parent element can intercept events fired on child elements, even if they don’t have their own handler.",
+        "uk": "Всплеск подій у JavaScript - це механізм, при якому подія, ініційована на одному з дочірніх елементів, автоматично передається вгору по дереву DOM, досягаючи послідовно всіх батьківських елементів. Це означає, що обробник подій, встановлений на батьківський елемент, може перехоплювати події, запущені на дочірніх елементах, навіть якщо вони не мають свого обробника."
       }
-    },
+    },    
     {
       "id": 21,
       "text": {
@@ -4759,59 +4760,59 @@
     {
       "id": 1,
       "text": {
-          "ru": "Что такое React JS?",
-          "en": "What is React JS?",
-          "uk": "Що таке React JS?"
+        "ru": "Что такое React JS?",
+        "en": "What is React JS?",
+        "uk": "Що таке React JS?"
       },
       "hasOptions": false,
       "answer": {
-          "ru": "React JS, или просто React, это открытая библиотека JavaScript для создания пользовательских интерфейсов, особенно для одностраничных приложений (SPA). Ключевые особенности React: ...",
-          "en": "React JS, or simply React, is an open-source JavaScript library for building user interfaces, especially for single-page applications (SPA). Key features of React: ...",
-          "uk": "React JS, або просто React, це відкрита бібліотека JavaScript для створення користувацьких інтерфейсів, зокрема для односторінкових програм (SPA). Ключові особливості React: ..."
+        "ru": "React JS, или просто React, - это открытая библиотека JavaScript для создания пользовательских интерфейсов, особенно для одностраничных приложений (SPA). Она позволяет разрабатывать интерфейсы с использованием компонентного подхода, где каждый компонент представляет собой часть UI. React использует JSX для описания структуры UI с помощью синтаксиса, похожего на HTML. Состояние компонентов управляется через 'state', а взаимодействие между компонентами - через 'props'. React оптимизирует рендеринг, используя виртуальный DOM для минимизации манипуляций с реальным DOM, что значительно повышает производительность приложений.",
+        "en": "React JS, or simply React, is an open-source JavaScript library for building user interfaces, particularly for single-page applications (SPA). It allows developers to build interfaces using a component-based approach, where each component represents a part of the UI. React uses JSX to describe UI structure with a syntax similar to HTML. Component states are managed through 'state', and interactions between components through 'props'. React optimizes rendering by using a virtual DOM to minimize manipulations with the real DOM, significantly enhancing application performance.",
+        "uk": "React JS, або просто React, - це відкрита бібліотека JavaScript для створення користувацьких інтерфейсів, зокрема для односторінкових програм (SPA). Вона дозволяє розробникам створювати інтерфейси, використовуючи компонентний підхід, де кожен компонент представляє частину UI. React використовує JSX для опису структури UI за допомогою синтаксису, схожого на HTML. Стани компонентів керуються через 'state', а взаємодія між компонентами через 'props'. React оптимізує рендеринг, використовуючи віртуальний DOM для мінімізації маніпуляцій з реальним DOM, що значно підвищує продуктивність програм."
       }
-  },
-  {
+    },
+    {
       "id": 2,
       "text": {
-          "ru": "Для чего нужен атрибут key при рендере списков?",
-          "en": "Why is the 'key' attribute needed when rendering lists?",
-          "uk": "Для чого потрібен атрибут key при рендері списків?"
+        "ru": "Для чего нужен атрибут key при рендере списков?",
+        "en": "Why is the 'key' attribute needed when rendering lists?",
+        "uk": "Для чого потрібен атрибут key при рендері списків?"
       },
       "hasOptions": false,
       "answer": {
-          "ru": "Ключи (keys) помогают React определять, какие элементы были изменены, добавлены или удалены. Их необходимо указывать, чтобы React мог сопоставлять элементы массива с течением времени. Лучший способ выбрать ключ — это использовать строку, которая будет явно отличать элемент списка от его соседей. Лучше всего вы будете использовать ID из ваших данных как ключи. ...",
-          "en": "Keys help React identify which items have been changed, added, or removed. They need to be specified to enable React to match elements in an array over time. The best way to pick a key is to use a string that distinctly identifies a list item among its siblings. Ideally, you should use IDs from your data as keys. ...",
-          "uk": "Ключі (keys) допомагають React визначати, які елементи були змінені, додані або видалені. Їх необхідно вказувати, щоб React міг порівнювати елементи масиву з часом. Найкращий спосіб вибрати ключ — це використовувати рядок, який чітко відрізняє елемент списку серед його сусідів. Найкраще використовувати ID з ваших даних як ключі. ..."
+        "ru": "Атрибут 'key' в React необходим при рендере списков для повышения производительности и предотвращения потенциальных ошибок в приложении. Во время рендеринга списков React использует ключи для эффективного обновления и повторного использования существующих элементов вместо их пересоздания. Ключи должны быть уникальными и стабильными, обычно используются уникальные идентификаторы из данных. Когда элементы списка меняются (например, добавляются, удаляются или сортируются), React использует ключи для правильного определения элементов, которые нужно обновить, что уменьшает ненужные манипуляции с DOM и улучшает производительность приложения.",
+        "en": "The 'key' attribute in React is essential when rendering lists for enhancing performance and preventing potential errors in the application. During list rendering, React uses keys for efficiently updating and reusing existing elements rather than recreating them. Keys should be unique and stable, typically utilizing unique identifiers from the data. When list items change (for example, being added, removed, or reordered), React uses keys to correctly identify which elements need updating, reducing unnecessary DOM manipulations and improving application performance.",
+        "uk": "Атрибут 'key' у React необхідний при рендерінгу списків для підвищення продуктивності та запобігання потенційним помилкам у додатку. Під час рендерінгу списків React використовує ключі для ефективного оновлення та повторного використання існуючих елементів замість їх повторного створення. Ключі повинні бути унікальними та стабільними, зазвичай використовуються унікальні ідентифікатори з даних. Коли елементи списку змінюються (наприклад, додаються, видаляються або пересортовуються), React використовує ключі для правильного визначення елементів, які потрібно оновити, що зменшує непотрібні маніпуляції з DOM і покращує продуктивність додатку."
       }
-  },
-  {
+    },
+    {
       "id": 3,
       "text": {
-          "ru": "Как работает проп children?",
-          "en": "How does the 'children' prop work?",
-          "uk": "Як працює проп children?"
+        "ru": "Как работает проп children?",
+        "en": "How does the 'children' prop work?",
+        "uk": "Як працює проп children?"
       },
       "hasOptions": false,
       "answer": {
-          "ru": "Некоторые компоненты не знают своих потомков заранее. Это особенно характерно для таких компонентов, как Sidebar или Dialog, которые представляют из себя как бы «коробку», в которую можно что-то положить. Для таких компонентов можно использовать специальный проп children, который передаст дочерние элементы сразу на вывод. ...",
-          "en": "Some components do not know their children in advance. This is especially common for components like Sidebar or Dialog, which act as a sort of 'box' into which you can put something. For these components, you can use the special prop children, which passes the child elements directly to the output. ...",
-          "uk": "Деякі компоненти не знають своїх нащадків заздалегідь. Це особливо характерно для таких компонентів, як Sidebar або Dialog, які представляють собою своєрідну «коробку», в яку можна щось покласти. Для таких компонентів можна використовувати спеціальний проп children, який передасть дочірні елементи відразу на вивід. ..."
+        "ru": "Проп 'children' в React позволяет компонентам автоматически принимать любые дочерние элементы, переданные в их JSX. Это делает компоненты более гибкими, позволяя пользователям определять содержимое, которое должно быть отображено внутри компонента. Например, в компоненте &lt;MyComponent&gt;&lt;Child /&gt;&lt;/MyComponent&gt;, 'Child' будет доступен в 'MyComponent' как 'props.children'. Это особенно полезно в шаблонных компонентах, таких как модальные окна, вкладки и списки, где содержимое определяется пользователем.",
+        "en": "The 'children' prop in React allows components to automatically receive any child elements passed into their JSX. This makes the components more flexible, allowing users to define the content that should be rendered inside the component. For instance, in &lt;MyComponent&gt;&lt;Child /&gt;&lt;/MyComponent&gt;, 'Child' is accessible in 'MyComponent' as 'props.children'. This is particularly useful in template components, such as modals, tabs, and lists, where the content is user-defined.",
+        "uk": "Проп 'children' у React дозволяє компонентам автоматично приймати будь-які дочірні елементи, передані у їх JSX. Це робить компоненти більш гнучкими, дозволяючи користувачам визначати вміст, який повинен відображатися всередині компонента. Наприклад, у компоненті &lt;MyComponent&gt;&lt;Child /&gt;&lt;/MyComponent&gt;, 'Child' буде доступний у 'MyComponent' як 'props.children'. Це особливо корисно в шаблонних компонентах, таких як модальні вікна, вкладки та списки, де вміст визначається користувачем."
       }
-  },
-  {
-    "id": 4,
-    "text": {
+    },       
+    {
+      "id": 4,
+      "text": {
         "ru": "Что такое порталы в React?",
         "en": "What are portals in React?",
         "uk": "Що таке портали в React?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Порталы в React - это механизм для рендеринга компонентов в DOM-узле, который находится вне иерархии родительского компонента. Это полезно для создания модальных окон, всплывающих сообщений и других элементов, которые должны 'вырваться' из родительского контейнера, например, для обхода CSS-ограничений, таких как overflow и z-index. Создание портала происходит с помощью функции ReactDOM.createPortal(), где первый аргумент - рендеримый React-элемент, а второй - DOM-элемент, в который этот React-элемент будет помещен.",
+        "en": "Portals in React are a mechanism for rendering components in a DOM node that is outside the parent component's hierarchy. This is useful for creating modal dialogs, pop-up messages, and other elements that need to 'break out' of the parent container, for example, to bypass CSS constraints such as overflow and z-index. A portal is created using the ReactDOM.createPortal() function, where the first argument is the React element to be rendered, and the second is the DOM element in which this React element will be placed.",
+        "uk": "Портали у React - це механізм для рендерінгу компонентів у DOM-вузлі, який знаходиться за межами ієрархії батьківського компонента. Це корисно для створення модальних вікон, спливаючих повідомлень та інших елементів, які потрібно 'вирвати' з батьківського контейнера, наприклад, для обходу CSS-обмежень, таких як overflow та z-index. Створення порталу відбувається за допомогою функції ReactDOM.createPortal(), де перший аргумент - рендеримий React-елемент, а другий - DOM-елемент, у який цей React-елемент буде поміщений."
+      }
     },
-    "hasOptions": false,
-    "answer": {
-        "ru": "Порталы позволяют рендерить дочерние элементы в DOM-узел, который находится вне DOM-иерархии родительского компонента. Типовой случай применения порталов — когда в родительском компоненте заданы стили overflow: hidden или z-index, но вам нужно, чтобы дочерний элемент визуально выходил за рамки своего контейнера. Чаще всего, это диалоговые окна, всплывающие карточки и всплывающие подсказки. ...",
-        "en": "Portals allow you to render child elements in a DOM node that exists outside of the DOM hierarchy of the parent component. A typical use case for portals is when the parent component has styles like overflow: hidden or z-index, but you need the child element to visually break out of its container. Most commonly, this applies to dialog boxes, pop-up cards, and tooltips. ...",
-        "uk": "Портали дозволяють рендерити дочірні елементи в DOM-вузлі, який знаходиться поза DOM-ієрархією батьківського компонента. Типовий випадок застосування порталів — коли в батьківському компоненті встановлені стилі overflow: hidden або z-index, але вам потрібно, щоб дочірній елемент візуально виходив за межі свого контейнера. Найчастіше це стосується діалогових вікон, спливаючих карток та підказок. ..."
-    }
-  },
   {
     "id": 5,
     "text": {

@@ -33,7 +33,7 @@ export const getRandomQuestion = async (topic, userId, ctx) => {
       // Если пользователь авторизован, начинаем вопросы сначала и выводим сообщение
       if (isAuthorized(ctx)) {
         await ctx.reply(
-          "🎉 Ви відповіли на всі питання у цьому розділі! 🧠 Тепер ми почнемо спочатку для повторення та закріплення знань! 🔄"
+          "🎉 Ви відповіли на всі питання у цьому розділі! 🧠 Тепер ми почнемо спочатку для повторення та закріплення знань! 🔄\n\n🎉 The tests are completed! Let's start over for a revision. 🔄"
         );
         userLastQuestionIndex[userId][topic] = 0;
       } else {
