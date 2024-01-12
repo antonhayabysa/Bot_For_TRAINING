@@ -5266,7 +5266,217 @@
         "en": "Yes, there is a difference between these expressions. The expression !!(a && b) converts the result of the logical operation a && b into a boolean value. If both a and b are truthy, the result will be true, otherwise false. The expression (a && b) returns the value of a if it is falsy, or the value of b if a is truthy.",
         "uk": "Так, між цими виразами є різниця. Вираз !!(a && b) перетворює результат логічної операції a && b у булеве значення. Якщо обидва a та b є істинними (truthy), результат буде true, в іншому випадку — false. Вираз (a && b) повертає значення a, якщо воно хибне (falsy), або значення b, якщо a є істинним (truthy)."
       }
-    }
+    },
+    {
+      "id": 69,
+      "text": {
+        "ru": "Какие из перечисленных вариантов подключения скрипта являются корректными с точки зрения современного стандарта HTML?\n\n1. <script type=\"text/javascript\" src=\"my.js\"></script>\n2. <script src=\"my.js\"></script>\n3. <script src=\"my.js\"/>\n4. <хачу-javascript отсюда=\"my.js\">",
+        "en": "Which of the following script embedding options are correct according to modern HTML standards?\n\n1. <script type=\"text/javascript\" src=\"my.js\"></script>\n2. <script src=\"my.js\"></script>\n3. <script src=\"my.js\"/>\n4. <хачу-javascript from=\"my.js\">",
+        "uk": "Які з наведених варіантів підключення скрипта є коректними з точки зору сучасних стандартів HTML?\n\n1. <script type=\"text/javascript\" src=\"my.js\"></script>\n2. <script src=\"my.js\"></script>\n3. <script src=\"my.js\"/>\n4. <хачу-javascript звідси=\"my.js\">"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Корректными вариантами подключения скрипта являются:\n1. &lt;script type=\"text/javascript\" src=\"my.js\"&gt;&lt;/script&gt;\n2. &lt;script src=\"my.js\"&gt;&lt;/script&gt;\nТип 'text/javascript' в первом варианте является устаревшим и необязательным в HTML5, но его использование всё ещё корректно. Второй вариант является стандартным способом подключения скриптов. Третий вариант (&lt;script src=\"my.js\"/&gt;) не является валидным в HTML, так как тег &lt;script&gt; должен быть закрыт. Четвёртый вариант не соответствует стандартам HTML.",
+        "en": "The correct options for embedding a script are:\n1. &lt;script type=\"text/javascript\" src=\"my.js\"&gt;&lt;/script&gt;\n2. &lt;script src=\"my.js\"&gt;&lt;/script&gt;\nThe 'text/javascript' type in the first option is deprecated and optional in HTML5, but its use is still valid. The second option is the standard way of embedding scripts. The third option (&lt;script src=\"my.js\"/&gt;) is not valid in HTML, as the &lt;script&gt; tag needs to be closed. The fourth option does not conform to HTML standards.",
+        "uk": "Коректними варіантами підключення скрипта є:\n1. &lt;script type=\"text/javascript\" src=\"my.js\"&gt;&lt;/script&gt;\n2. &lt;script src=\"my.js\"&gt;&lt;/script&gt;\nТип 'text/javascript' у першому варіанті є застарілим та необов'язковим в HTML5, але його використання все ще коректно. Другий варіант є стандартним способом підключення скриптів. Третій варіант (&lt;script src=\"my.js\"/&gt;) не є валідним в HTML, оскільки тег &lt;script&gt; має бути закритим. Четвертий варіант не відповідає стандартам HTML."
+      }
+    },       
+    {
+      "id": 70,
+      "text": {
+        "ru": "Что выведет этот код?\n\nlet obj = {\n \"0\": 1,\n 0: 2\n};\n\nalert( obj[\"0\"] + obj[0] );",
+        "en": "What will this code output?\n\nlet obj = {\n \"0\": 1,\n 0: 2\n};\n\nalert( obj[\"0\"] + obj[0] );",
+        "uk": "Що виведе цей код?\n\nlet obj = {\n \"0\": 1,\n 0: 2\n};\n\nalert( obj[\"0\"] + obj[0] );"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет '4'. В JavaScript, когда ключи объекта представлены как строка и число, но фактически имеют одно и то же строковое значение (в данном случае '0' и 0), то последнее присвоенное значение перезаписывает предыдущее. Таким образом, obj['0'] и obj[0] оба ссылаются на второе свойство со значением 2, и сумма будет 2 + 2, что равно 4.",
+        "en": "This code will output '4'. In JavaScript, when object keys are represented as a string and a number but essentially have the same string value (in this case '0' and 0), the last assigned value overwrites the previous one. Thus, obj['0'] and obj[0] both refer to the second property with the value 2, and the sum will be 2 + 2, which equals 4.",
+        "uk": "Цей код виведе '4'. У JavaScript, коли ключі об'єкта представлені як рядок та число, але насправді мають одне і те ж значення рядка (у даному випадку '0' та 0), останнє присвоєне значення перезаписує попереднє. Таким чином, obj['0'] та obj[0] обидва посилаються на другу властивість із значенням 2, і сума буде 2 + 2, що дорівнює 4."
+      }
+    },
+    {
+      "id": 71,
+      "text": {
+        "ru": "Чему равна переменная name?\n\nlet name = \"пупкин\".replace(\"п\", \"д\")",
+        "en": "What is the value of the variable name?\n\nlet name = \"пупкин\".replace(\"п\", \"д\")",
+        "uk": "Якому значенню дорівнює змінна name?\n\nlet name = \"пупкин\".replace(\"п\", \"д\")"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Переменная name равна 'дупкин'. Метод .replace(\"п\", \"д\") заменяет первое вхождение символа 'п' на 'д' в строке \"пупкин\", результатом чего является строка 'дупкин'.",
+        "en": "The variable name is equal to 'дупкин'. The method .replace(\"п\", \"д\") replaces the first occurrence of 'п' with 'д' in the string \"пупкин\", resulting in the string 'дупкин'.",
+        "uk": "Змінна name дорівнює 'дупкин'. Метод .replace(\"п\", \"д\") замінює перше входження символу 'п' на 'д' у рядку \"пупкин\", в результаті чого отримуємо рядок 'дупкин'."
+      }
+    },
+    {
+      "id": 72,
+      "text": {
+        "ru": "Какие варианты правильно объявляют функцию f, возвращающую сумму двух аргументов?\n\n1. let f = function(a,b) { return a+b }\n2. let f = new Function(\"a,b\", \"return a+b\")\n3. let f = new Function(\"a\", \"b\", \"return a+b\")\n4. let f = (a, b) => a + b\n5. let f = (a, b) => { a + b }\n6. Никакие.",
+        "en": "Which of the following correctly declare a function f that returns the sum of two arguments?\n\n1. let f = function(a,b) { return a+b }\n2. let f = new Function(\"a,b\", \"return a+b\")\n3. let f = new Function(\"a\", \"b\", \"return a+b\")\n4. let f = (a, b) => a + b\n5. let f = (a, b) => { a + b }\n6. None.",
+        "uk": "Які з варіантів правильно оголошують функцію f, яка повертає суму двох аргументів?\n\n1. let f = function(a,b) { return a+b }\n2. let f = new Function(\"a,b\", \"return a+b\")\n3. let f = new Function(\"a\", \"b\", \"return a+b\")\n4. let f = (a, b) => a + b\n5. let f = (a, b) => { a + b }\n6. Жодні."
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Правильно объявляют функцию f следующие варианты:\n1. let f = function(a,b) { return a+b }\n2. let f = new Function(\"a,b\", \"return a+b\")\n3. let f = new Function(\"a\", \"b\", \"return a+b\")\n4. let f = (a, b) => a + b\nПятый вариант некорректен, так как стрелочная функция без фигурных скобок возвращает результат выражения, а с фигурными скобками требует явного return.",
+        "en": "The following options correctly declare the function f:\n1. let f = function(a,b) { return a+b }\n2. let f = new Function(\"a,b\", \"return a+b\")\n3. let f = new Function(\"a\", \"b\", \"return a+b\")\n4. let f = (a, b) => a + b\nThe fifth option is incorrect, as an arrow function without curly braces returns the result of the expression, while with curly braces, it requires an explicit return.",
+        "uk": "Правильно оголошують функцію f наступні варіанти:\n1. let f = function(a,b) { return a+b }\n2. let f = new Function(\"a,b\", \"return a+b\")\n3. let f = new Function(\"a\", \"b\", \"return a+b\")\n4. let f = (a, b) => a + b\nП'ятий варіант некоректний, оскільки стрілочна функція без фігурних дужок повертає результат виразу, а з фігурними дужками вимагає явного return."
+      }
+    },
+    {
+      "id": 73,
+      "text": {
+        "ru": "Чему равно выражение 2 && 1 && null && 0 && undefined?\n\n1. 2\n2. 1\n3. null\n4. 0\n5. undefined\n6. false",
+        "en": "What is the value of the expression 2 && 1 && null && 0 && undefined?\n\n1. 2\n2. 1\n3. null\n4. 0\n5. undefined\n6. false",
+        "uk": "Якому значенню дорівнює вираз 2 && 1 && null && 0 && undefined?\n\n1. 2\n2. 1\n3. null\n4. 0\n5. undefined\n6. false"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Выражение 2 && 1 && null && 0 && undefined равно 'null'. Оператор '&&' возвращает первое ложное значение, которое встречается в его операндах, или последнее значение, если все истинны. Так как 'null' является первым ложным значением в данной последовательности, выражение возвращает 'null'.",
+        "en": "The expression 2 && 1 && null && 0 && undefined is equal to 'null'. The '&&' operator returns the first falsy value encountered among its operands, or the last value if all are truthy. Since 'null' is the first falsy value in this sequence, the expression returns 'null'.",
+        "uk": "Вираз 2 && 1 && null && 0 && undefined дорівнює 'null'. Оператор '&&' повертає перше хибне значення, яке зустрічається серед його операндів, або останнє значення, якщо всі істинні. Оскільки 'null' є першим хибним значенням у цій послідовності, вираз повертає 'null'."
+      }
+    },
+    {
+      "id": 74,
+      "text": {
+        "ru": "Какие из этих вызовов синтаксически верно сгенерируют исключение?\n\n1. throw \"Ошибка\"\n2. throw new Error(\"Ошибка\")\n3. throw { message: \"Ошибка\" }\n4. throw Error(\"Ошибка\")\n5. Ни один.",
+        "en": "Which of these calls correctly syntactically generate an exception?\n\n1. throw \"Ошибка\"\n2. throw new Error(\"Ошибка\")\n3. throw { message: \"Ошибка\" }\n4. throw Error(\"Ошибка\")\n5. None.",
+        "uk": "Які з цих викликів синтаксично правильно генерують виняток?\n\n1. throw \"Помилка\"\n2. throw new Error(\"Помилка\")\n3. throw { message: \"Помилка\" }\n4. throw Error(\"Помилка\")\n5. Жоден."
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Все четыре вызова синтаксически верно сгенерируют исключение. В JavaScript можно генерировать исключения различных типов, включая строки, объекты, экземпляры Error или любые другие типы. Поэтому все представленные варианты являются синтаксически корректными для генерации исключения.",
+        "en": "All four calls correctly syntactically generate an exception. In JavaScript, you can throw exceptions of various types, including strings, objects, instances of Error, or any other types. Therefore, all the presented options are syntactically correct for generating an exception.",
+        "uk": "Всі чотири виклики синтаксично правильно генерують виняток. У JavaScript можна генерувати винятки різних типів, включаючи рядки, об'єкти, екземпляри Error або будь-які інші типи. Тому всі представлені варіанти є синтаксично коректними для генерації винятку."
+      }
+    },
+    {
+      "id": 75,
+      "text": {
+        "ru": "Как получить размер отступа margin-top у <div>?\n\n<style>\n  div { margin: 10px; }\n</style>\n\n<div id='div'></div>\n\n1. div.style.marginTop\n2. div.style['margin-top']\n3. getComputedStyle(div, 'margin').top\n4. getComputedStyle(div).marginTop\n5. getComputedStyle(div).margin.top",
+        "en": "How to get the margin-top size of a <div>?\n\n<style>\n  div { margin: 10px; }\n</style>\n\n<div id='div'></div>\n\n1. div.style.marginTop\n2. div.style['margin-top']\n3. getComputedStyle(div, 'margin').top\n4. getComputedStyle(div).marginTop\n5. getComputedStyle(div).margin.top",
+        "uk": "Як отримати розмір відступу margin-top у <div>?\n\n<style>\n  div { margin: 10px; }\n</style>\n\n<div id='div'></div>\n\n1. div.style.marginTop\n2. div.style['margin-top']\n3. getComputedStyle(div, 'margin').top\n4. getComputedStyle(div).marginTop\n5. getComputedStyle(div).margin.top"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Чтобы получить размер отступа margin-top у &lt;div&gt;, следует использовать метод getComputedStyle. Правильным вызовом является getComputedStyle(div).marginTop. Этот метод возвращает вычисленные стили элемента, включая стили, заданные через CSS. Свойства объекта style доступны только для инлайновых стилей и не будут работать в данном случае, так как стиль задан через CSS.",
+        "en": "To get the margin-top size of a &lt;div&gt;, you should use the getComputedStyle method. The correct call is getComputedStyle(div).marginTop. This method returns the computed styles of the element, including styles set through CSS. The properties of the style object are only available for inline styles and will not work in this case, as the style is set via CSS.",
+        "uk": "Щоб отримати розмір відступу margin-top у &lt;div&gt;, слід використовувати метод getComputedStyle. Правильним викликом є getComputedStyle(div).marginTop. Цей метод повертає вирахувані стилі елемента, включаючи стилі, задані через CSS. Властивості об'єкта style доступні лише для інлайнових стилів і не працюватимуть у цьому випадку, оскільки стиль заданий через CSS."
+      }
+    },    
+    {
+      "id": 76,
+      "text": {
+        "ru": "Сколько потомков будет у <div> после кода ниже?\n\n<div id='div'></div>\n<p id='p'>Привет</p>\n<script>\n  div.appendChild(p);\n  p.appendChild(div);\n</script>\n\n1. 0\n2. 1\n3. 2\n4. В коде ошибка.",
+        "en": "How many children will <div> have after the following code?\n\n<div id='div'></div>\n<p id='p'>Hello</p>\n<script>\n  div.appendChild(p);\n  p.appendChild(div);\n</script>\n\n1. 0\n2. 1\n3. 2\n4. There is an error in the code.",
+        "uk": "Скільки дітей буде у <div> після наступного коду?\n\n<div id='div'></div>\n<p id='p'>Привіт</p>\n<script>\n  div.appendChild(p);\n  p.appendChild(div);\n</script>\n\n1. 0\n2. 1\n3. 2\n4. У коді помилка."
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "В коде ошибка. Второй вызов p.appendChild(div) приведет к ошибке, так как элемент не может быть одновременно потомком и родителем относительно другого элемента. В момент выполнения этой строки кода, &lt;p&gt; уже является потомком &lt;div&gt;, поэтому попытка добавить &lt;div&gt; как потомка &lt;p&gt; приведет к логическому конфликту в DOM.",
+        "en": "There is an error in the code. The second call p.appendChild(div) will result in an error, as an element cannot be both a child and a parent relative to another element. At the time of executing this line of code, &lt;p&gt; is already a child of &lt;div&gt;, so attempting to add &lt;div&gt; as a child of &lt;p&gt; will lead to a logical conflict in the DOM.",
+        "uk": "У коді помилка. Другий виклик p.appendChild(div) призведе до помилки, оскільки елемент не може бути одночасно дитиною та батьком відносно іншого елемента. На момент виконання цього рядка коду, &lt;p&gt; вже є дитиною &lt;div&gt;, тому спроба додати &lt;div&gt; як дитину &lt;p&gt; призведе до логічного конфлікту в DOM."
+      }
+    },    
+    {
+      "id": 77,
+      "text": {
+        "ru": "Какое событие из этого списка не существует?\n\n1. onmousescroll\n2. onclick\n3. onmouseover\n4. onmousemove\n5. onwheel\n6. все существуют.",
+        "en": "Which event from this list does not exist?\n\n1. onmousescroll\n2. onclick\n3. onmouseover\n4. onmousemove\n5. onwheel\n6. all exist.",
+        "uk": "Яка подія з цього списку не існує?\n\n1. onmousescroll\n2. onclick\n3. onmouseover\n4. onmousemove\n5. onwheel\n6. всі існують."
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Событие 'onmousescroll' из предложенного списка не существует. Остальные события, включая onclick, onmouseover, onmousemove и onwheel, являются действительными событиями в JavaScript.",
+        "en": "The 'onmousescroll' event from the given list does not exist. The other events, including onclick, onmouseover, onmousemove, and onwheel, are valid events in JavaScript.",
+        "uk": "Подія 'onmousescroll' з наданого списку не існує. Інші події, включаючи onclick, onmouseover, onmousemove та onwheel, є дійсними подіями в JavaScript."
+      }
+    },
+    {
+      "id": 78,
+      "text": {
+        "ru": "Что выведет этот код?\n\n<p id=\"elem\">Привет, мир!</p>\n\n<script>\n  elem.outerHTML = \"Прощай, жестокий мир!\"\n  alert(elem.outerHTML);\n</script>\n\n1. Выведет undefined, теперь elem – текстовый узел.\n2. Прощай, жестокий мир!\n3. <p id=\"elem\">Привет, мир!</p>\n4. <p id=\"elem\">Прощай, жестокий мир!</p>\n5. Будет ошибка.",
+        "en": "What will this code output?\n\n<p id=\"elem\">Hello, world!</p>\n\n<script>\n  elem.outerHTML = \"Goodbye, cruel world!\"\n  alert(elem.outerHTML);\n</script>\n\n1. Outputs undefined, now elem is a text node.\n2. Goodbye, cruel world!\n3. <p id=\"elem\">Hello, world!</p>\n4. <p id=\"elem\">Goodbye, cruel world!</p>\n5. There will be an error.",
+        "uk": "Що виведе цей код?\n\n<p id=\"elem\">Привіт, світ!</p>\n\n<script>\n  elem.outerHTML = \"Прощавай, жорстокий світе!\"\n  alert(elem.outerHTML);\n</script>\n\n1. Виведе undefined, тепер elem – текстовий вузол.\n2. Прощавай, жорстокий світе!\n3. <p id=\"elem\">Привіт, світ!</p>\n4. <p id=\"elem\">Прощавай, жорстокий світе!</p>\n5. Буде помилка."
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет 'undefined'. После замены outerHTML элемента elem на 'Прощай, жестокий мир!', ссылка elem уже не указывает на элемент DOM. Вместо этого, elem теперь ссылается на устаревший элемент DOM, который был заменен, и не имеет доступа к новому HTML. Поэтому при попытке доступа к elem.outerHTML возвращается undefined.",
+        "en": "This code will output 'undefined'. After the outerHTML of the elem element is replaced with 'Goodbye, cruel world!', the reference elem no longer points to a DOM element. Instead, elem now refers to the obsolete DOM element that was replaced and has no access to the new HTML. Therefore, trying to access elem.outerHTML returns undefined.",
+        "uk": "Цей код виведе 'undefined'. Після заміни outerHTML елемента elem на 'Прощавай, жорстокий світе!', посилання elem вже не вказує на елемент DOM. Замість цього, elem тепер посилається на застарілий елемент DOM, який був замінений, і не має доступу до нового HTML. Тому при спробі доступу до elem.outerHTML повертається undefined."
+      }
+    },
+    {
+      "id": 79,
+      "text": {
+        "ru": "Есть кнопка <button id='elem'></button>, как показать в ней строку \"<hello>\"?\n\nРезультат должен быть таким:\n\n<button id='elem'><hello></button>\n\n1. elem.innerHTML = \"<hello>\"\n2. elem.innerText = \"<hello>\"\n3. elem.textContent = \"<hello>\"\n4. elem.setText(\"<hello>\")",
+        "en": "There is a button <button id='elem'></button>, how to display the string \"<hello>\" in it?\n\nThe result should be as follows:\n\n<button id='elem'><hello></button>\n\n1. elem.innerHTML = \"<hello>\"\n2. elem.innerText = \"<hello>\"\n3. elem.textContent = \"<hello>\"\n4. elem.setText(\"<hello>\")",
+        "uk": "Є кнопка <button id='elem'></button>, як показати в ній рядок \"<hello>\"?\n\nРезультат повинен бути таким:\n\n<button id='elem'><hello></button>\n\n1. elem.innerHTML = \"<hello>\"\n2. elem.innerText = \"<hello>\"\n3. elem.textContent = \"<hello>\"\n4. elem.setText(\"<hello>\")"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Чтобы отобразить строку '&lt;hello&gt;' в элементе button, правильными способами будут:\n1. elem.innerHTML = \"&lt;hello&gt;\" - это приведет к интерпретации строки как HTML, и '&lt;hello&gt;' отобразится как '&lt;hello&gt;'.\n2. elem.textContent = \"&lt;hello&gt;\" - это безопасно вставит текст '&lt;hello&gt;' без интерпретации его как HTML.\nМетоды elem.innerText и elem.setText не подходят в данном случае, так как elem.innerText не интерпретирует HTML, а elem.setText не существует в стандартном API.",
+        "en": "To display the string '&lt;hello&gt;' in a button element, the correct ways are:\n1. elem.innerHTML = \"&lt;hello&gt;\" - this will interpret the string as HTML, and '&lt;hello&gt;' will be displayed as '&lt;hello&gt;'.\n2. elem.textContent = \"&lt;hello&gt;\" - this will safely insert the text '&lt;hello&gt;' without interpreting it as HTML.\nThe methods elem.innerText and elem.setText are not suitable in this case, as elem.innerText does not interpret HTML, and elem.setText does not exist in the standard API.",
+        "uk": "Щоб показати рядок '&lt;hello&gt;' в елементі кнопки, правильними способами будуть:\n1. elem.innerHTML = \"&lt;hello&gt;\" - це призведе до інтерпретації рядка як HTML, і '&lt;hello&gt;' відобразиться як '&lt;hello&gt;'.\n2. elem.textContent = \"&lt;hello&gt;\" - це безпечно вставить текст '&lt;hello&gt;' без інтерпретації його як HTML.\nМетоди elem.innerText та elem.setText не підходять у даному випадку, оскільки elem.innerText не інтерпретує HTML, а elem.setText не існує в стандартному API."
+      }
+    },
+    {
+      "id": 80,
+      "text": {
+        "ru": "Как получить полную ширину блочного DOM-элемента, если у него есть border и padding?\n\n1. parseInt(elem.style.width)\n2. parseInt(getComputedStyle(elem).width)\n3. elem.offsetWidth\n4. elem.clientWidth",
+        "en": "How to get the full width of a block DOM element if it has a border and padding?\n\n1. parseInt(elem.style.width)\n2. parseInt(getComputedStyle(elem).width)\n3. elem.offsetWidth\n4. elem.clientWidth",
+        "uk": "Як отримати повну ширину блочного DOM-елемента, якщо у нього є border і padding?\n\n1. parseInt(elem.style.width)\n2. parseInt(getComputedStyle(elem).width)\n3. elem.offsetWidth\n4. elem.clientWidth"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Чтобы получить полную ширину блочного элемента, включая border и padding, следует использовать elem.offsetWidth. Это свойство возвращает ширину элемента, включая внутренние отступы (padding), границы (border), но исключая внешние отступы (margin). Остальные варианты не учитывают все эти факторы одновременно.",
+        "en": "To get the full width of a block element, including border and padding, you should use elem.offsetWidth. This property returns the width of the element, including internal padding, borders, but excluding external margins. The other options do not take all these factors into account simultaneously.",
+        "uk": "Щоб отримати повну ширину блочного елемента, включаючи border і padding, слід використовувати elem.offsetWidth. Ця властивість повертає ширину елемента, включаючи внутрішні відступи (padding), межі (border), але виключаючи зовнішні відступи (margin). Інші варіанти не враховують всі ці фактори одночасно."
+      }
+    },
+    {
+      "id": 81,
+      "text": {
+        "ru": "Вызов setTimeout(func, 0) вызовет func…\n\n1. Сразу после setTimeout, до следующей строки кода.\n2. Сразу после текущего скрипта, когда браузер сможет выполнить JavaScript.\n3. Ровно через 4 миллисекунды.\n4. Через 4 миллисекунды или больше, в зависимости от пожеланий браузера.",
+        "en": "The call setTimeout(func, 0) will call func…\n\n1. Immediately after setTimeout, before the next line of code.\n2. Immediately after the current script, when the browser can execute JavaScript.\n3. Exactly after 4 milliseconds.\n4. After 4 milliseconds or more, depending on the browser's wishes.",
+        "uk": "Виклик setTimeout(func, 0) викличе func…\n\n1. Відразу після setTimeout, до наступного рядка коду.\n2. Відразу після поточного скрипту, коли браузер зможе виконати JavaScript.\n3. Рівно через 4 мілісекунди.\n4. Через 4 мілісекунди або більше, залежно від бажань браузера."
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Вызов setTimeout(func, 0) вызовет функцию func сразу после текущего скрипта, когда браузер сможет выполнить JavaScript. Даже с задержкой в 0 миллисекунд, выполнение func не начнется сразу после setTimeout из-за особенностей цикла событий в JavaScript. Функция func будет помещена в очередь задач и выполнена, как только текущий скрипт завершится и браузер будет готов обработать следующую задачу.",
+        "en": "The call setTimeout(func, 0) will call the function func immediately after the current script, when the browser can execute JavaScript. Even with a delay of 0 milliseconds, the execution of func will not start immediately after setTimeout due to the event loop characteristics in JavaScript. The function func will be placed in the task queue and executed as soon as the current script is finished and the browser is ready to handle the next task.",
+        "uk": "Виклик setTimeout(func, 0) викличе функцію func відразу після поточного скрипту, коли браузер зможе виконати JavaScript. Навіть з затримкою в 0 мілісекунд, виконання func не почнеться відразу після setTimeout через особливості циклу подій у JavaScript. Функція func буде поміщена в чергу завдань і виконана, як тільки поточний скрипт завершиться і браузер буде готовий обробити наступне завдання."
+      }
+    },
+    {
+      "id": 82,
+      "text": {
+        "ru": "Чему равно значение свойства checked в коде ниже?\n\nvar input = document.createElement('input');\ninput.setAttribute('checked', 'checked');\n// input.checked = ?\n\n1. \"checked\"\n2. \"true\"\n3. true",
+        "en": "What is the value of the checked property in the following code?\n\nvar input = document.createElement('input');\ninput.setAttribute('checked', 'checked');\n// input.checked = ?\n\n1. \"checked\"\n2. \"true\"\n3. true",
+        "uk": "Якому значенню дорівнює властивість checked у наступному коді?\n\nvar input = document.createElement('input');\ninput.setAttribute('checked', 'checked');\n// input.checked = ?\n\n1. \"checked\"\n2. \"true\"\n3. true"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "В этом коде значение свойства input.checked будет true. Свойство checked в DOM является булевым. Несмотря на то, что атрибут 'checked' установлен как строка 'checked', когда оно обращается к свойству JavaScript объекта, оно возвращает true или false. В данном случае, поскольку атрибут 'checked' присутствует, свойство checked возвращает true.",
+        "en": "In this code, the value of input.checked will be true. The checked property in the DOM is a boolean property. Despite the 'checked' attribute being set as the string 'checked', when it is accessed as a property of the JavaScript object, it returns true or false. In this case, since the 'checked' attribute is present, the checked property returns true.",
+        "uk": "У цьому коді значення властивості input.checked буде true. Властивість checked у DOM є булевою властивістю. Незважаючи на те, що атрибут 'checked' встановлений як рядок 'checked', коли він звертається до властивості об'єкта JavaScript, він повертає true або false. У даному випадку, оскільки атрибут 'checked' присутній, властивість checked повертає true."
+      }
+    },
+    {
+      "id": 83,
+      "text": {
+        "ru": "Есть такой элемент:\n\n<input id=\"input\" value=\"Привет\">\nКакие вызовы поменяют значение в нём?\n\n1. input.value = \"Пока\"\n2. input.setValue(\"Пока\")\n3. input.setAttribute(\"value\", \"Пока\");\n4. input.dataset.value = \"Пока\";\n5. input[\"Пока\"] = true;\n6. Все вышеперечисленные.",
+        "en": "There is such an element:\n\n<input id=\"input\" value=\"Hello\">\nWhich calls will change its value?\n\n1. input.value = \"Goodbye\"\n2. input.setValue(\"Goodbye\")\n3. input.setAttribute(\"value\", \"Goodbye\");\n4. input.dataset.value = \"Goodbye\";\n5. input[\"Goodbye\"] = true;\n6. All of the above.",
+        "uk": "Є такий елемент:\n\n<input id=\"input\" value=\"Привіт\">\nЯкі виклики змінять його значення?\n\n1. input.value = \"Бувай\"\n2. input.setValue(\"Бувай\")\n3. input.setAttribute(\"value\", \"Бувай\");\n4. input.dataset.value = \"Бувай\";\n5. input[\"Бувай\"] = true;\n6. Всі вищеперелічені."
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Значение в элементе input можно изменить следующими способами:\n1. input.value = \"Пока\" - это обновит текущее значение input.\n3. input.setAttribute(\"value\", \"Пока\") - это изменит начальное значение (атрибут value) элемента input, но не обязательно текущее отображаемое значение.\nОстальные варианты не изменят отображаемое значение input. Метод input.setValue не существует в стандартном API, input.dataset.value изменяет пользовательские данные, а input[\"Пока\"] = true не соответствует способам установки значений для input элементов.",
+        "en": "The value in the input element can be changed in the following ways:\n1. input.value = \"Goodbye\" - this will update the current value of the input.\n3. input.setAttribute(\"value\", \"Goodbye\") - this will change the initial value (value attribute) of the input element, but not necessarily the current displayed value.\nThe other options will not change the displayed value of the input. The method input.setValue does not exist in the standard API, input.dataset.value changes custom data, and input[\"Goodbye\"] = true does not correspond to the ways of setting values for input elements.",
+        "uk": "Значення в елементі input можна змінити такими способами:\n1. input.value = \"Бувай\" - це оновить поточне значення input.\n3. input.setAttribute(\"value\", \"Бувай\") - це змінить початкове значення (атрибут value) елемента input, але не обов'язково поточне відображуване значення.\nІнші варіанти не змінять відображуване значення input. Метод input.setValue не існує у стандартному API, input.dataset.value змінює користувацькі дані, а input[\"Бувай\"] = true не відповідає способам встановлення значень для елементів input."
+      }
+    }         
   ],
   "react": [
     {
