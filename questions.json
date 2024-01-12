@@ -4962,49 +4962,16 @@
     {
       "id": 50,
       "text": {
-        "ru": "Какие вызовы parseInt возвратят число?",
-        "en": "Which calls to parseInt return a number?",
-        "uk": "Які виклики parseInt повертають число?"
+        "ru": "Какие из следующих вызовов функции parseInt в JavaScript возвратят число?\n\nparseInt(\"1px\")\nparseInt(\"-1.2\")\nparseInt(\"0 минут\")\nparseInt(\"$1.2\")",
+        "en": "Which of the following calls to the parseInt function in JavaScript return a number?\n\nparseInt(\"1px\")\nparseInt(\"-1.2\")\nparseInt(\"0 минут\")\nparseInt(\"$1.2\")",
+        "uk": "Які з наступних викликів функції parseInt у JavaScript повертають число?\n\nparseInt(\"1px\")\nparseInt(\"-1.2\")\nparseInt(\"0 минут\")\nparseInt(\"$1.2\")"
       },
-      "hasOptions": true,
-      "options": [
-        {
-          "id": 1,
-          "text": {
-            "ru": "parseInt(\"1px\")",
-            "en": "parseInt(\"1px\")",
-            "uk": "parseInt(\"1px\")"
-          },
-          "isCorrect": true
-        },
-        {
-          "id": 2,
-          "text": {
-            "ru": "parseInt(\"-1.2\")",
-            "en": "parseInt(\"-1.2\")",
-            "uk": "parseInt(\"-1.2\")"
-          },
-          "isCorrect": true
-        },
-        {
-          "id": 3,
-          "text": {
-            "ru": "parseInt(\"0 минут\")",
-            "en": "parseInt(\"0 минут\")",
-            "uk": "parseInt(\"0 минут\")"
-          },
-          "isCorrect": true
-        },
-        {
-          "id": 4,
-          "text": {
-            "ru": "parseInt(\"$1.2\")",
-            "en": "parseInt(\"$1.2\")",
-            "uk": "parseInt(\"$1.2\")"
-          },
-          "isCorrect": false
-        }
-      ]
+      "hasOptions": false,
+      "answer": {
+        "ru": "Вызовы parseInt(\"1px\"), parseInt(\"-1.2\") и parseInt(\"0 минут\") возвращают числа 1, -1 и 0 соответственно. Функция parseInt в JavaScript анализирует строку слева направо и возвращает целое число, начиная с первого символа, до тех пор, пока не встретит символ, не являющийся частью числа. В случае с parseInt(\"$1.2\"), поскольку строка начинается с символа '$', который не является числовым, функция возвращает NaN.",
+        "en": "The calls parseInt(\"1px\"), parseInt(\"-1.2\"), and parseInt(\"0 минут\") return the numbers 1, -1, and 0, respectively. The parseInt function in JavaScript parses a string from left to right and returns an integer starting from the first character until it encounters a non-numeric character. In the case of parseInt(\"$1.2\"), as the string starts with the '$' character, which is not numeric, the function returns NaN.",
+        "uk": "Виклики parseInt(\"1px\"), parseInt(\"-1.2\") та parseInt(\"0 минут\") повертають числа 1, -1 та 0 відповідно. Функція parseInt у JavaScript аналізує рядок зліва направо та повертає ціле число, починаючи з першого символу, доки не зустріне символ, який не є частиною числа. У випадку з parseInt(\"$1.2\"), оскільки рядок починається з символу '$', який не є числовим, функція повертає NaN."
+      }
     },
     {
       "id": 51,
@@ -5187,6 +5154,118 @@
           "isCorrect": true
         }
       ]
+    },
+    {
+      "id": 61,
+      "text": {
+        "ru": "Что выведет следующий код JavaScript?\n\nlet a = (1,5 - 1) * 2;\n\nalert(a);",
+        "en": "What will the following JavaScript code output?\n\nlet a = (1,5 - 1) * 2;\n\nalert(a);",
+        "uk": "Що виведе наступний код JavaScript?\n\nlet a = (1,5 - 1) * 2;\n\nalert(a);"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет '8'. В JavaScript, выражение в скобках (1,5 - 1) использует оператор запятой, который оценивает оба своих операнда (1 и 5 - 1) и возвращает последний (4). Поэтому выражение (1,5 - 1) эквивалентно 4. После этого происходит умножение: 4 * 2, что и дает в результате 8.",
+        "en": "This code will output '8'. In JavaScript, the expression (1,5 - 1) uses the comma operator, which evaluates both of its operands (1 and 5 - 1) and returns the last one (4). Therefore, the expression (1,5 - 1) is equivalent to 4. Then, the multiplication takes place: 4 * 2, resulting in 8.",
+        "uk": "Цей код виведе '8'. У JavaScript, вираз (1,5 - 1) використовує оператор коми, який оцінює обидва свої операнди (1 і 5 - 1) та повертає останній (4). Таким чином, вираз (1,5 - 1) еквівалентний 4. Після цього відбувається множення: 4 * 2, що і дає в результаті 8."
+      }
+    },
+    {
+      "id": 62,
+      "text": {
+        "ru": "Чему равно выражение 0 || 1 && 2 || 3 в JavaScript?",
+        "en": "What is the value of the expression 0 || 1 && 2 || 3 in JavaScript?",
+        "uk": "Чому дорівнює вираз 0 || 1 && 2 || 3 в JavaScript?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Выражение 0 || 1 && 2 || 3 возвращает 2. В JavaScript оператор && имеет более высокий приоритет, чем ||. Сначала выполняется операция 1 && 2, что возвращает 2, так как оба значения истинные. Затем выражение упрощается до 0 || 2 || 3. Первый операнд 0 является ложным, поэтому выражение возвращает первое истинное значение, которое следует за ним, то есть 2.",
+        "en": "The expression 0 || 1 && 2 || 3 evaluates to 2. In JavaScript, the && operator has a higher precedence than ||. First, the 1 && 2 operation is executed, which returns 2, as both values are truthy. Then, the expression simplifies to 0 || 2 || 3. The first operand 0 is falsy, so the expression returns the first truthy value that follows, which is 2.",
+        "uk": "Вираз 0 || 1 && 2 || 3 повертає 2. У JavaScript оператор && має більш високий пріоритет, ніж ||. Спочатку виконується операція 1 && 2, що повертає 2, оскільки обидва значення є істинними. Потім вираз спрощується до 0 || 2 || 3. Перший операнд 0 є хибним, тому вираз повертає перше істинне значення, яке слідує за ним, а це 2."
+      }
+    },
+    {
+      "id": 63,
+      "text": {
+        "ru": "Чему равно выражение 0 || 1 && 2 || 3 в JavaScript?",
+        "en": "What is the value of the expression 0 || 1 && 2 || 3 in JavaScript?",
+        "uk": "Чому дорівнює вираз 0 || 1 && 2 || 3 в JavaScript?"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Выражение 0 || 1 && 2 || 3 возвращает 2. В JavaScript оператор && имеет более высокий приоритет, чем ||. Сначала выполняется операция 1 && 2, что возвращает 2, так как оба значения истинные. Затем выражение упрощается до 0 || 2 || 3. Первый операнд 0 является ложным, поэтому выражение возвращает первое истинное значение, которое следует за ним, то есть 2.",
+        "en": "The expression 0 || 1 && 2 || 3 evaluates to 2. In JavaScript, the && operator has a higher precedence than ||. First, the 1 && 2 operation is executed, which returns 2, as both values are truthy. Then, the expression simplifies to 0 || 2 || 3. The first operand 0 is falsy, so the expression returns the first truthy value that follows, which is 2.",
+        "uk": "Вираз 0 || 1 && 2 || 3 повертає 2. У JavaScript оператор && має більш високий пріоритет, ніж ||. Спочатку виконується операція 1 && 2, що повертає 2, оскільки обидва значення є істинними. Потім вираз спрощується до 0 || 2 || 3. Перший операнд 0 є хибним, тому вираз повертає перше істинне значення, яке слідує за ним, а це 2."
+      }
+    },
+    {
+      "id": 64,
+      "text": {
+        "ru": "Чему равно такое выражение в JavaScript?\n\n[] + false - null + true",
+        "en": "What is the value of the following expression in JavaScript?\n\n[] + false - null + true",
+        "uk": "Чому дорівнює такий вираз у JavaScript?\n\n[] + false - null + true"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Это выражение возвращает 'NaN'. В JavaScript, при выполнении операций с различными типами, происходит неявное преобразование типов. Сначала пустой массив [] преобразуется в пустую строку '', которая, в свою очередь, при конкатенации со строкой 'false' дает ''false''. Далее вычитается null, который преобразуется в 0, получаем ''false' - 0', что дает 'false'. После попытки вычесть из строки 'false' число, результатом становится NaN. И, наконец, прибавление true (которое преобразуется в 1) к NaN всё ещё дает NaN.",
+        "en": "This expression returns 'NaN'. In JavaScript, when performing operations with different types, implicit type conversion occurs. First, the empty array [] is converted to an empty string '', which then concatenates with the string 'false' to produce ''false''. Then null is subtracted, which is converted to 0, resulting in ''false' - 0', which evaluates to 'false'. Attempting to subtract a number from the string 'false' results in NaN. Finally, adding true (which is converted to 1) to NaN still results in NaN.",
+        "uk": "Цей вираз повертає 'NaN'. У JavaScript, при виконанні операцій з різними типами, відбувається неявне перетворення типів. Спочатку порожній масив [] перетворюється на порожній рядок '', який потім конкатенується з рядком 'false' і дає ''false''. Далі віднімається null, який перетворюється в 0, отримуємо ''false' - 0', що дає 'false'. Після спроби відняти від рядка 'false' число результат стає NaN. Нарешті, додавання true (яке перетворюється в 1) до NaN все ще дає NaN."
+      }
+    },
+    {
+      "id": 65,
+      "text": {
+        "ru": "Что выведет следующий код JavaScript?\n\nif (function f(){}) {\n  alert(typeof f);\n}",
+        "en": "What will the following JavaScript code output?\n\nif (function f(){}) {\n  alert(typeof f);\n}",
+        "uk": "Що виведе наступний код JavaScript?\n\nif (function f(){}) {\n  alert(typeof f);\n}"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет 'undefined'. Функция f объявлена внутри условного выражения if и поэтому не доступна за его пределами. Поскольку f не определена в области видимости, где используется alert, результатом typeof f будет 'undefined'.",
+        "en": "This code will output 'undefined'. The function f is declared inside the if statement and is therefore not accessible outside of it. Since f is not defined in the scope where alert is used, the result of typeof f will be 'undefined'.",
+        "uk": "Цей код виведе 'undefined'. Функція f оголошена всередині умовного виразу if і тому не доступна за його межами. Оскільки f не визначена в області видимості, де використовується alert, результатом typeof f буде 'undefined'."
+      }
+    },
+    {
+      "id": 66,
+      "text": {
+        "ru": "Внимательно посмотрите на синтаксис этого кода. Что он выведет?\n\nlet f = function(x) {\n  alert(x)\n}\n\n(function() {\n  f(1)\n}())",
+        "en": "Carefully look at the syntax of this code. What will it output?\n\nlet f = function(x) {\n  alert(x)\n}\n\n(function() {\n  f(1)\n}())",
+        "uk": "Уважно подивіться на синтаксис цього коду. Що він виведе?\n\nlet f = function(x) {\n  alert(x)\n}\n\n(function() {\n  f(1)\n}())"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Этот код выведет '1'. Функция f объявлена как функциональное выражение и принимает один аргумент x. Затем выполняется немедленно вызываемая функция (IIFE), которая вызывает f с аргументом 1. В результате alert внутри f выводит 1.",
+        "en": "This code will output '1'. The function f is declared as a function expression and takes one argument x. Then, an immediately invoked function expression (IIFE) is executed, which calls f with the argument 1. As a result, the alert inside f outputs 1.",
+        "uk": "Цей код виведе '1'. Функція f оголошена як функціональний вираз і приймає один аргумент x. Потім виконується негайно викликаний функціональний вираз (IIFE), який викликає f з аргументом 1. В результаті alert всередині f виводить 1."
+      }
+    },
+    {
+      "id": 67,
+      "text": {
+        "ru": "Есть ли разница между выражениями в JavaScript?\n\n!!(a && b)\n(a && b)",
+        "en": "Is there a difference between these expressions in JavaScript?\n\n!!(a && b)\n(a && b)",
+        "uk": "Чи є різниця між цими виразами в JavaScript?\n\n!!(a && b)\n(a && b)"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Да, между этими выражениями есть разница. Выражение !!(a && b) преобразует результат логической операции a && b в булево значение. Если оба a и b истинные (truthy), результат будет true, иначе — false. Выражение (a && b) возвращает значение a, если оно ложное (falsy), или значение b, если a истинное (truthy).",
+        "en": "Yes, there is a difference between these expressions. The expression !!(a && b) converts the result of the logical operation a && b into a boolean value. If both a and b are truthy, the result will be true, otherwise false. The expression (a && b) returns the value of a if it is falsy, or the value of b if a is truthy.",
+        "uk": "Так, між цими виразами є різниця. Вираз !!(a && b) перетворює результат логічної операції a && b у булеве значення. Якщо обидва a та b є істинними (truthy), результат буде true, в іншому випадку — false. Вираз (a && b) повертає значення a, якщо воно хибне (falsy), або значення b, якщо a є істинним (truthy)."
+      }
+    },
+    {
+      "id": 68,
+      "text": {
+        "ru": "Есть ли разница между выражениями в JavaScript?\n\n!!(a && b)\n(a && b)",
+        "en": "Is there a difference between these expressions in JavaScript?\n\n!!(a && b)\n(a && b)",
+        "uk": "Чи є різниця між цими виразами в JavaScript?\n\n!!(a && b)\n(a && b)"
+      },
+      "hasOptions": false,
+      "answer": {
+        "ru": "Да, между этими выражениями есть разница. Выражение !!(a && b) преобразует результат логической операции a && b в булево значение. Если оба a и b истинные (truthy), результат будет true, иначе — false. Выражение (a && b) возвращает значение a, если оно ложное (falsy), или значение b, если a истинное (truthy).",
+        "en": "Yes, there is a difference between these expressions. The expression !!(a && b) converts the result of the logical operation a && b into a boolean value. If both a and b are truthy, the result will be true, otherwise false. The expression (a && b) returns the value of a if it is falsy, or the value of b if a is truthy.",
+        "uk": "Так, між цими виразами є різниця. Вираз !!(a && b) перетворює результат логічної операції a && b у булеве значення. Якщо обидва a та b є істинними (truthy), результат буде true, в іншому випадку — false. Вираз (a && b) повертає значення a, якщо воно хибне (falsy), або значення b, якщо a є істинним (truthy)."
+      }
     }
   ],
   "react": [
