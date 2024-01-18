@@ -143,8 +143,7 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
     // Создаем клавиатуру с вариантами ответов или кнопкой для показа ответа
     let inlineKeyboard = new InlineKeyboard();
 
-    if (question.hasOptions) {
-      // Если у вопроса есть варианты ответов
+    if (question.hasOptions && Array.isArray(question.options)) {
       question.options.forEach((option) => {
         inlineKeyboard = inlineKeyboard
           .text(
