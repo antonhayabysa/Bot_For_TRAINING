@@ -234,7 +234,7 @@
           "isCorrect": false
         }
       ]
-    },    
+    },
     {
       "id": 6,
       "text": {
@@ -260,9 +260,9 @@
       "answer": {
         "ru": "Для создания непронумерованного списка в HTML используется тег &lt;ul&gt;, а для определения каждого пункта списка - тег &lt;li&gt;.",
         "en": "To create an unordered list in HTML, the &lt;ul&gt; tag is used, and the &lt;li&gt; tag is used to define each item in the list.",
-        "uk": "Для створення ненумерованого списку в HTML використовується тег &lt;ul&gt;, а для визначення кожного пункту списку - тег &lt;li&gt;."        
+        "uk": "Для створення ненумерованого списку в HTML використовується тег &lt;ul&gt;, а для визначення кожного пункту списку - тег &lt;li&gt;."
       }
-    },    
+    },
     {
       "id": 8,
       "text": {
@@ -290,7 +290,7 @@
         "en": "The &lt;!DOCTYPE&gt; tag is a mandatory declaration at the beginning of an HTML document, informing the browser of the HTML or XHTML version for correct page rendering. It affects the browser's rendering mode (standard or compatibility) and ensures cross-browser compatibility, conforming to web development standards.",
         "uk": "Тег &lt;!DOCTYPE&gt; - це обов'язкова декларація на початку HTML-документа, яка повідомляє браузер про версію HTML або XHTML для правильного відображення сторінки. Він впливає на режим відображення у браузері (стандартний або сумісності) та забезпечує крос-браузерну сумісність, відповідаючи стандартам веб-розробки."
       }
-    },    
+    },
     {
       "id": 10,
       "text": {
@@ -722,7 +722,7 @@
         "en": "It's an approach to web design that allows web pages to display and function properly on different devices, including mobile phones, tablets, and desktop computers, by using flexible layouts, flexible images, and CSS media queries to adapt the design to various screen sizes and device features.",
         "uk": "Це підхід до веб-дизайну, який дозволяє веб-сторінкам правильно відображатися та функціонувати на різних пристроях, включаючи мобільні телефони, планшети та настільні комп'ютери, за допомогою гнучких макетів, гнучких зображень та CSS медіа-запитів для адаптації дизайну до різних розмірів екрану та характеристик пристроїв."
       }
-    },    
+    },
     {
       "id": 22,
       "text": {
@@ -1172,7 +1172,7 @@
         "en": "HTML5 introduced new APIs, including:\n- Drag and Drop: Dragging and dropping elements within the web interface.\n- Local Storage: Long-term storage of data on the client side.\n- Session Storage: Storing data for the duration of a browser session.\n- Canvas: Creating graphics using JavaScript.\n- WebSocket: Real-time two-way communication between client and server.\n- Geolocation: Determining the user's geographical location.",
         "uk": "HTML5 представив нові API, включаючи:\n- Drag and Drop: Перетягування елементів у веб-інтерфейсі.\n- Local Storage: Довготривале зберігання даних на стороні клієнта.\n- Session Storage: Зберігання даних на час сесії браузера.\n- Canvas: Створення графіки за допомогою JavaScript.\n- WebSocket: Двостороннє спілкування між клієнтом та сервером у реальному часі.\n- Geolocation: Визначення географічного положення користувача. "
       }
-    },      
+    },
     {
       "id": 40,
       "text": {
@@ -1228,7 +1228,7 @@
         "en": "HTML5 semantic elements like 'article', 'section', 'nav', 'header', 'footer' improve code readability, facilitate SEO optimization, enhance accessibility, and help create a more structured and organized document. These elements clearly define various parts of a web page, making them easier to understand for both users and search engines.",
         "uk": "Семантичні елементи HTML5, такі як 'article', 'section', 'nav', 'header', 'footer', покращують читабельність коду, полегшують SEO-оптимізацію, сприяють кращій доступності та допомагають створити більш структурований та організований документ. Ці елементи чітко визначають різні частини веб-сторінки, що полегшує їх розуміння як користувачами, так і пошуковими системами."
       }
-    },  
+    },
     {
       "id": 44,
       "text": {
@@ -1275,7 +1275,7 @@
           "isCorrect": true
         }
       ]
-    },    
+    },
     {
       "id": 45,
       "text": {
@@ -1289,7 +1289,7 @@
         "en": "The 'lang' attribute is used to specify the language of content in an HTML document and is typically applied in the <html> tag to define the document's primary language.",
         "uk": "Атрибут 'lang' використовується для вказівки мови вмісту в HTML-документі і зазвичай застосовується у тегу <html>, щоб визначити основну мову документа."
       }
-    },    
+    },
     {
       "id": 46,
       "text": {
@@ -1411,7 +1411,7 @@
         "en": "The <iframe> element is used to embed another HTML page within the current HTML document, allowing the display of external content within a specific area of the page.",
         "uk": "Елемент <iframe> використовується для вбудовування іншої HTML-сторінки в поточний HTML-документ, що дозволяє відображати зовнішній вміст всередині певної області сторінки."
       }
-    },    
+    },
     {
       "id": 50,
       "text": {
@@ -1458,7 +1458,7 @@
           "isCorrect": false
         }
       ]
-    }    
+    }
   ],
   "css": [
     {
@@ -1514,7 +1514,7 @@
       "answer": {
         "ru": "Стили рекомендуется подключать в &lt;head&gt; для того, чтобы страница как можно быстрее приняла свой внешний вид. Скрипты подключенные в &lt;head&gt; могут затормозить этот процесс, в связи с этим их рекомендуется подключать перед закрывающим тегом &lt;/body&gt;. Исключением являются скрипты аналитики, для определения количества посетителей, которые не дождались загрузки страницы. В этом случае скрипт должен быть подключен в &lt;head&gt;.",
         "en": "It is recommended to include styles in the &lt;head&gt; so that the page takes on its appearance as quickly as possible. Scripts included in the &lt;head&gt; can slow down this process, so it is advisable to include them before the closing &lt;/body&gt; tag. An exception is analytics scripts, which are used to track the number of visitors who did not wait for the page to load. In this case, the script should be included in the &lt;head&gt;.",
-        "uk": "Стилі рекомендується підключати в &lt;head&gt;, щоб сторінка якомога швидше набрала свій зовнішній вигляд. Скрипти, підключені в &lt;head&gt;, можуть сповільнити цей процес, тому їх рекомендується включати перед закриваючим тегом &lt;/body&gt;. Винятком є скрипти аналітики, які використовуються для відстеження кількості відвідувачів, які не дочекалися завантаження сторінки. У цьому випадку скрипт слід підключити в &lt;head&gt;."        
+        "uk": "Стилі рекомендується підключати в &lt;head&gt;, щоб сторінка якомога швидше набрала свій зовнішній вигляд. Скрипти, підключені в &lt;head&gt;, можуть сповільнити цей процес, тому їх рекомендується включати перед закриваючим тегом &lt;/body&gt;. Винятком є скрипти аналітики, які використовуються для відстеження кількості відвідувачів, які не дочекалися завантаження сторінки. У цьому випадку скрипт слід підключити в &lt;head&gt;."
       }
     },
     {
@@ -2017,7 +2017,7 @@
         "en": "The 'position' property in CSS determines how an element is positioned in the document. The main values of the property are: 'static' — default positioning, 'relative' — positioned relative to its normal position, 'absolute' — absolutely positioned relative to the nearest positioned ancestor, 'fixed' — fixed positioning relative to the browser window, 'sticky' — a 'sticky' positioning, a combination of relative and fixed.",
         "uk": "Властивість 'position' у CSS визначає спосіб позиціонування елемента в документі. Основні значення властивості: 'static' — стандартне позиціонування, 'relative' — позиціонується відносно свого звичайного положення, 'absolute' — абсолютно позиціонується відносно найближчого позиціонованого предка, 'fixed' — фіксоване позиціонування відносно вікна браузера, 'sticky' — 'липке' позиціонування, комбінація відносного і фіксованого."
       }
-    },    
+    },
     {
       "id": 22,
       "text": {
@@ -3256,7 +3256,7 @@
           "isCorrect": false
         }
       ]
-    }    
+    }
   ],
   "javascript": [
     {
@@ -3286,7 +3286,7 @@
         "en": "A closure in programming is a function that remembers its lexical environment (external variables) at the time of creation, even if it is executed outside its lexical context. This allows the function to access these variables regardless of where it is called.",
         "uk": "Замикання в програмуванні — це функція, яка запам'ятовує своє лексичне оточення (зовнішні змінні) на момент створення, навіть якщо вона виконується поза своїм лексичним контекстом. Це дозволяє функції отримувати доступ до цих змінних незалежно від місця її виклику."
       }
-    },    
+    },
     {
       "id": 3,
       "text": {
@@ -3699,7 +3699,7 @@
         "en": "Scope in JavaScript is the context that determines the accessibility of variables. There are two types of scopes: global and local. Global scope means a variable is accessible from any part of the code. Local scope, on the other hand, limits the accessibility of a variable to the function or block of code in which it is declared. JavaScript also supports closures, which allow functions to remember and access variables that were available at the time of their creation.",
         "uk": "Область видимості в JavaScript - це контекст, який визначає доступність змінних. Існує два типи областей видимості: глобальна та локальна. Глобальна область видимості означає, що змінна доступна з будь-якої частини коду. Локальна область видимості, у свою чергу, обмежує доступність змінної межами функції або блоку коду, в якому вона була оголошена. JavaScript також підтримує замикання, які дозволяють функціям запам'ятовувати та доступатися до змінних, які були доступні на момент їх створення."
       }
-    },    
+    },
     {
       "id": 16,
       "text": {
@@ -3769,7 +3769,7 @@
         "en": "Event bubbling in JavaScript is a mechanism where an event initiated on one of the child elements automatically propagates up the DOM tree, reaching all the parent elements in sequence. This means a handler set on a parent element can intercept events fired on child elements, even if they don’t have their own handler.",
         "uk": "Всплеск подій у JavaScript - це механізм, при якому подія, ініційована на одному з дочірніх елементів, автоматично передається вгору по дереву DOM, досягаючи послідовно всіх батьківських елементів. Це означає, що обробник подій, встановлений на батьківський елемент, може перехоплювати події, запущені на дочірніх елементах, навіть якщо вони не мають свого обробника."
       }
-    },    
+    },
     {
       "id": 21,
       "text": {
@@ -4004,7 +4004,7 @@
           "isCorrect": false
         }
       ]
-    },    
+    },
     {
       "id": 26,
       "text": {
@@ -4709,7 +4709,7 @@
           "isCorrect": false
         }
       ]
-    },   
+    },
     {
       "id": 41,
       "text": {
@@ -5149,7 +5149,7 @@
           "text": {
             "ru": "let a = 'a,b'.split(',')" ,
             "en": "let a = 'a,b'.split(',')" ,
-            "uk": "let a = 'a,b'.split(',')" 
+            "uk": "let a = 'a,b'.split(',')"
           },
           "isCorrect": true
         }
@@ -5280,7 +5280,7 @@
         "en": "The correct options for embedding a script are:\n1. &lt;script type=\"text/javascript\" src=\"my.js\"&gt;&lt;/script&gt;\n2. &lt;script src=\"my.js\"&gt;&lt;/script&gt;\nThe 'text/javascript' type in the first option is deprecated and optional in HTML5, but its use is still valid. The second option is the standard way of embedding scripts. The third option (&lt;script src=\"my.js\"/&gt;) is not valid in HTML, as the &lt;script&gt; tag needs to be closed. The fourth option does not conform to HTML standards.",
         "uk": "Коректними варіантами підключення скрипта є:\n1. &lt;script type=\"text/javascript\" src=\"my.js\"&gt;&lt;/script&gt;\n2. &lt;script src=\"my.js\"&gt;&lt;/script&gt;\nТип 'text/javascript' у першому варіанті є застарілим та необов'язковим в HTML5, але його використання все ще коректно. Другий варіант є стандартним способом підключення скриптів. Третій варіант (&lt;script src=\"my.js\"/&gt;) не є валідним в HTML, оскільки тег &lt;script&gt; має бути закритим. Четвертий варіант не відповідає стандартам HTML."
       }
-    },       
+    },
     {
       "id": 70,
       "text": {
@@ -5298,9 +5298,9 @@
     {
       "id": 71,
       "text": {
-        "ru": "Чему равна переменная name?\n\nlet name = \"пупкин\".replace(\"п\", \"д\")",
-        "en": "What is the value of the variable name?\n\nlet name = \"пупкин\".replace(\"п\", \"д\")",
-        "uk": "Якому значенню дорівнює змінна name?\n\nlet name = \"пупкин\".replace(\"п\", \"д\")"
+        "ru": "Чему равна переменная name?\n\n```js\n\nlet name = \"пупкин\".replace(\"п\", \"д\")```",
+        "en": "What is the value of the variable name?\n\n```js\n\nlet name = \"пупкин\".replace(\"п\", \"д\")```",
+        "uk": "Якому значенню дорівнює змінна name?\n\n```js\n\nlet name = \"пупкин\".replace(\"п\", \"д\")```"
       },
       "hasOptions": false,
       "answer": {
@@ -5364,7 +5364,7 @@
         "en": "To get the margin-top size of a &lt;div&gt;, you should use the getComputedStyle method. The correct call is getComputedStyle(div).marginTop. This method returns the computed styles of the element, including styles set through CSS. The properties of the style object are only available for inline styles and will not work in this case, as the style is set via CSS.",
         "uk": "Щоб отримати розмір відступу margin-top у &lt;div&gt;, слід використовувати метод getComputedStyle. Правильним викликом є getComputedStyle(div).marginTop. Цей метод повертає вирахувані стилі елемента, включаючи стилі, задані через CSS. Властивості об'єкта style доступні лише для інлайнових стилів і не працюватимуть у цьому випадку, оскільки стиль заданий через CSS."
       }
-    },    
+    },
     {
       "id": 76,
       "text": {
@@ -5378,7 +5378,7 @@
         "en": "There is an error in the code. The second call p.appendChild(div) will result in an error, as an element cannot be both a child and a parent relative to another element. At the time of executing this line of code, &lt;p&gt; is already a child of &lt;div&gt;, so attempting to add &lt;div&gt; as a child of &lt;p&gt; will lead to a logical conflict in the DOM.",
         "uk": "У коді помилка. Другий виклик p.appendChild(div) призведе до помилки, оскільки елемент не може бути одночасно дитиною та батьком відносно іншого елемента. На момент виконання цього рядка коду, &lt;p&gt; вже є дитиною &lt;div&gt;, тому спроба додати &lt;div&gt; як дитину &lt;p&gt; призведе до логічного конфлікту в DOM."
       }
-    },    
+    },
     {
       "id": 77,
       "text": {
@@ -5476,7 +5476,7 @@
         "en": "The value in the input element can be changed in the following ways:\n1. input.value = \"Goodbye\" - this will update the current value of the input.\n3. input.setAttribute(\"value\", \"Goodbye\") - this will change the initial value (value attribute) of the input element, but not necessarily the current displayed value.\nThe other options will not change the displayed value of the input. The method input.setValue does not exist in the standard API, input.dataset.value changes custom data, and input[\"Goodbye\"] = true does not correspond to the ways of setting values for input elements.",
         "uk": "Значення в елементі input можна змінити такими способами:\n1. input.value = \"Бувай\" - це оновить поточне значення input.\n3. input.setAttribute(\"value\", \"Бувай\") - це змінить початкове значення (атрибут value) елемента input, але не обов'язково поточне відображуване значення.\nІнші варіанти не змінять відображуване значення input. Метод input.setValue не існує у стандартному API, input.dataset.value змінює користувацькі дані, а input[\"Бувай\"] = true не відповідає способам встановлення значень для елементів input."
       }
-    }         
+    }
   ],
   "react": [
     {
@@ -5520,7 +5520,7 @@
         "en": "The 'children' prop in React allows components to automatically receive any child elements passed into their JSX. This makes the components more flexible, allowing users to define the content that should be rendered inside the component. For instance, in &lt;MyComponent&gt;&lt;Child /&gt;&lt;/MyComponent&gt;, 'Child' is accessible in 'MyComponent' as 'props.children'. This is particularly useful in template components, such as modals, tabs, and lists, where the content is user-defined.",
         "uk": "Проп 'children' у React дозволяє компонентам автоматично приймати будь-які дочірні елементи, передані у їх JSX. Це робить компоненти більш гнучкими, дозволяючи користувачам визначати вміст, який повинен відображатися всередині компонента. Наприклад, у компоненті &lt;MyComponent&gt;&lt;Child /&gt;&lt;/MyComponent&gt;, 'Child' буде доступний у 'MyComponent' як 'props.children'. Це особливо корисно в шаблонних компонентах, таких як модальні вікна, вкладки та списки, де вміст визначається користувачем."
       }
-    },       
+    },
     {
       "id": 4,
       "text": {

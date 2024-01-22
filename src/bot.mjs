@@ -169,7 +169,7 @@ bot.hears(["🌐 HTML", "🎨 CSS", "💻 JavaScript", "⚛️ React"], async (c
     }
 
     // Отправляем локализованный вопрос пользователю
-    await ctx.reply(localizedQuestionText, { reply_markup: inlineKeyboard });
+    await ctx.reply(localizedQuestionText, { reply_markup: inlineKeyboard, parse_mode: "MarkdownV2" });
   } catch (error) {
     // Обработка ошибок
     await ctx.reply(`Произошла ошибка: ${error.message}`);
