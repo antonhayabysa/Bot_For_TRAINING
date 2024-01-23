@@ -3266,11 +3266,12 @@
         "en": "What is a pure function?",
         "uk": "Що таке чиста функція?"
       },
+      "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV87Gr4WE16b0e_Hk7QBP77wYAWclskvyzuEhcUVL2pSBud0EDWMTSSzR5roFUySYWYxvyd--h-Kq-agRPfJAQZuWI0Q5sGL8SboFKHG6Vo6En-5zBhxJis3TKLPWDS9L9dXbi_uKchwrvGr1uojQ5CdrVCIVDDpxjHw0VWmGxRs-HBtWsIugtz6aikXza_u_gwbCR0k0XWXqXadaP-gRY4vhPbs75HeFmbotLKAi41pcjsqX1K_k-FcJcADWTGMPLTcKQluFhXUwMEIXl79gBxLsDWK8Y-3et7Yu7nX83j4F20t2UVFrXfWzJ3j1gPUkc10SZoMGnnVJNPBUnNPeEqwytQJY-ZfmxzWlDJgiiDScZqoazVjg-tSOGsPsShROBoUZ8fta5Fj0pa9WfqPzTSwrSADf5qPRL4mW7N3WGM5VmkMtVPSTk90143dlGiCTGUwMwEoSC3X9L3rQv8z_gDub93jdvW52qo_odx6UNn58o3Qap_MhZzqpqHD_vUytDhd8Nxh-rSQf2nahMv6M5bnA3X4GZFNJbr-4C0M2mCKObBRfLSz8jBkElSQfD6gLli4m_bH40FU1EYw3FWSqb3rmwEWFkXs6B7MuN_bjocodtDytUNHa5Qpnkm7b-mmD1F9PbWPYDbzEyLsIWU9fkSbR1y7PJGaBRnF88NSk51K_5kGKA0gqofMwc5IPOQ_-LCbrTZxNmriZQBoaH5-slaBYUgH2uu2qoQJ8n9lGM0449HVe33fPKPdZFFzHc96flYP94d9ysxjXsHR1hO0HX8kfvRrWV_fRHqm3FWuYOnFi1appFAIF0X4AJ0eAAsQw8YXMb0_LGAsT3q1PEp2cDelVxh2TiuIn1er3m7PLW9VMAF6FLICD7XsFiy0t74T3eR6e2g=w900-h336-s-no?authuser=0",
       "hasOptions": false,
       "answer": {
-        "ru": "Это функция, которая возвращает одинаковый результат, когда вызывается с одним и тем же набором аргументов, а также не имеет побочных эффектов (side effects).",
-        "en": "It is a function that returns the same result when called with the same set of arguments and does not have any side effects.",
-        "uk": "Це функція, яка повертає однаковий результат, коли викликається з однаковим набором аргументів, і не має побічних ефектів (side effects)."
+        "ru": "Это функция, которая возвращает одинаковый результат, когда вызывается с одним и тем же набором аргументов.\n\n  🖼️ Пример кода: В этом примере функция `add` принимает два аргумента и возвращает их сумму. Это чистая функция, так как она всегда возвращает одинаковый результат для одних и тех же входных данных.",
+        "en": "It is a function that returns the same result when called with the same set of arguments.\n\n  🖼️ Code example: In this example, the `add` function takes two arguments and returns their sum. This is a pure function as it always returns the same result for the same inputs.",
+        "uk": "Це функція, яка повертає однаковий результат, коли викликається з однаковим набором аргументів.\n\n  🖼️ Приклад коду: У цьому прикладі функція `add` приймає два аргументи і повертає їх суму. Це чиста функція, оскільки вона завжди повертає однаковий результат для одних і тих самих вхідних даних."
       }
     },
     {
@@ -3280,11 +3281,12 @@
         "en": "What is a closure?",
         "uk": "Що таке замикання?"
       },
+      "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV87IuE-WG_XnP3alVMXvJ3yB8qcEksGDhWkcwOFYv7sX_Fe78hJ4qGCr1S5ckDK4CgY0HPPa7WYpuOgt7zaiPcPlhaBFcQPrk_qWMpKUmcjuzJ7Q8O6V5O-4Wrr2fO1gOIU-H40bgaP5V9VoBi_lOxpf5QlSYq7gzlVRpAKj68v0-0j9v1ORopG1NmDt_JFCMqshX8UfbtiypOQCsOnSHDDtcrZieu2VuJBDN7cUsHAGRo_wqwGsi40tIUC7SQCmcRBErQlZUEGAF3BqcHxiGUHyoNzMjdMAUVU9g8N0GbLnkAEve0Lu1K6fgH5Er9ts0B7Fg1ix6GLvwcPo0jIQJ8oFOFST25rlJXPTtsZFqZhSvHxARxQ5iiH2788HCW7Jndb-i-YP_kb6j2h2_Qqt7kW8jHwhueYpf3TKUBtD-eBK5BNsuh19DQEaPIVRQeEjdDe488YiMD_d7KgcxWvm9uZsmA2O8mrRS9LujAt2nYhn7PudWzhaXl3RfYxuWFoRzrjZJzdVAdy7qx79fQrgfHDSSU7iyaXCPNhV5RAK_ZX7UeQ8giBfdJGIF2nhEhqF3HjVrzMO0d6NYbHgFtuH1KTo1JioUQVZPTj5tnuc7aKTuGqYq5Y8wVIDgApICeq32IDqHVGWsz_6aYWepd6sHq8-E6ZXTSB32jnBeawr8xAc5ds0z6UDH-N38vpA5dw520Xp4BS8nfZpHGGU8ZXR-XtYcXV7OhkgyMZs6SfZwUl3vklogBvaydwAMUc7zxTRs_jaYnwM4pnQ_gauxIDP53krH-bwuG8OKqz-SzgDipA_LHyDxRUjezDlqNidngEAfdOD9i1RjJmZLtTMpwhqAJV6hrdK8UQRHp67dF5O15Q4es1suom85sYydFzdpoQVWW3Igg=w916-h588-s-no?authuser=0",
       "hasOptions": false,
       "answer": {
-        "ru": "Замыкание в программировании — это функция, которая запоминает своё лексическое окружение (внешние переменные) на момент создания, даже если она выполняется вне своего лексического контекста. Это позволяет функции получать доступ к этим переменным вне зависимости от места её вызова.",
-        "en": "A closure in programming is a function that remembers its lexical environment (external variables) at the time of creation, even if it is executed outside its lexical context. This allows the function to access these variables regardless of where it is called.",
-        "uk": "Замикання в програмуванні — це функція, яка запам'ятовує своє лексичне оточення (зовнішні змінні) на момент створення, навіть якщо вона виконується поза своїм лексичним контекстом. Це дозволяє функції отримувати доступ до цих змінних незалежно від місця її виклику."
+        "ru": "Замыкание в программировании — это функция, которая запоминает своё лексическое окружение на момент создания.\n\n  🖼️ Пример кода: В этом примере функция `createCounter` возвращает другую функцию, которая увеличивает и возвращает переменную `count`. Это замыкание, так как внутренняя функция запоминает переменную `count` из своего лексического окружения.",
+        "en": "A closure in programming is a function that remembers its lexical environment at the time of creation.\n\n  🖼️ Code example: In this example, the `createCounter` function returns another function that increases and returns the variable `count`. This is a closure as the inner function remembers the `count` variable from its lexical environment.",
+        "uk": "Замикання в програмуванні — це функція, яка запам'ятовує своє лексичне оточення на момент створення.\n\n  🖼️ Приклад коду: У цьому прикладі функція `createCounter` повертає іншу функцію, яка збільшує і повертає змінну `count`. Це замикання, оскільки внутрішня функція запам'ятовує змінну `count` зі свого лексичного оточення."
       }
     },    
     {
@@ -3308,11 +3310,12 @@
         "en": "What are promises in JavaScript?",
         "uk": "Що таке проміси (Promises) в JavaScript?"
       },
+      "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV87qOd6nyjMTf_bHapBAfI9FpLOgU3YjRlRMsyPGn7_lldDJvfP6V1_AuZ6EG7SNP5YtrelfUwTwHRAAFPrTw4TjnPRESE2xxdap4uhdC_JYBtJFGqdaMBzURRjIWr4ohBVBVjoJ_2BmLR1OSY6Ti4BrCtKZUVpyoQ3xUrSnkA3Xp2bUk7PwVtTKD-e6HDmASJpBvkQxa2aPiQq2ZcUVSyhg8mmfgSNYbg9Z_nvOtSG1Gh-UP5LOiKWA68k8LNWKe7aXLRqnKPWc5plfbn9fiOpxdeXLM3yj0PjtF2CwrQ6TiLAEh7HKkHLh0Q8EbvcXje2q0MMD1R1B53UNxQHDPdveBPWT2rfRwRFD9nxmu16jWTe4VKjeyXTdKHOK67NUGqUCGa7O04DqNC5mqenB5iJSkmBWlr15mdbRxqjDk2Bu7aND794hyFeo6McktAWzubd0QNz2gKanMPV17E7Zvjgjpa-Jm9amtFW4VF_aklNQquKwDiFIVFs8AL0Bz88Q0wDV8PdMHJO59q8XB7nuX0llvVICUXqBkfJV0ANikftnoY-kIJgqUygcrCWm4lDzXCu2f74zIhUH3Kuzso7P0YN9ohMhiMF4G8YZmOm_lwCZaeLJ4fU35v59_eVZDXwamQLn4wrAK6ephvCOjQHWMP6ZPZGccbI6YueObW_iZXeIvDprNN2OJAkQVzuM7qqsggENn9Q4pbIT7T4s6a_RvyV18nCpNh4ipmM4mdmXrnRloqfkN9c4Gk75BGjmItuL3HazkwfTqtEoTgGtdInmu3o5CtFh9Yf8CqQCTyw0GJOH1gufqQK0DpLEeV1i4LVUiGU6loaCCGMuJg07r35Ca4UM6icS7oa5RgmHqOl0hFbG_Oo-l2wUK5pZzMd4sbEcTLG5Nw=w2202-h976-s-no?authuser=0",
       "hasOptions": false,
       "answer": {
-        "ru": "Промисы – это объекты, которые представляют результат асинхронной операции. Они могут находиться в одном из трех состояний: ожидание (pending), выполнено (fulfilled) или отклонено (rejected).",
-        "en": "Promises are objects that represent the result of an asynchronous operation. They can be in one of three states: pending, fulfilled, or rejected.",
-        "uk": "Проміси – це об'єкти, які представляють результат асинхронної операції. Вони можуть перебувати в одному з трьох станів: очікування (pending), виконано (fulfilled) або відхилено (rejected)."
+        "ru": "Промисы – это объекты, которые представляют результат асинхронной операции. Они могут находиться в одном из трех состояний: ожидание (pending), выполнено (fulfilled) или отклонено (rejected).\n\n  🖼️ Пример кода: В этом примере сначала создается новый промис. Внутри промиса установлен таймер, который через 1 секунду изменяет состояние промиса на 'fulfilled' и возвращает результат 'data loaded'. Далее, метод 'then' применяется к промису для обработки результата после его выполнения. Первая функция в 'then' обрабатывает успешное выполнение промиса и выводит результат в консоль. Вторая функция для обработки ошибок в этом примере не выполняется, так как промис успешно завершился.",
+        "en": "Promises are objects that represent the result of an asynchronous operation. They can be in one of three states: pending, fulfilled, or rejected.\n\n  🖼️ Code example: In this example, a new promise is first created. Inside the promise, a timer is set that after 1 second changes the promise's state to 'fulfilled' and returns the result 'data loaded'. Then, the 'then' method is applied to the promise to handle the result after it is fulfilled. The first function in 'then' handles the successful completion of the promise and logs the result to the console. The second function for error handling is not executed in this example, as the promise is successfully resolved.",
+        "uk": "Проміси – це об'єкти, які представляють результат асинхронної операції. Вони можуть перебувати в одному з трьох станів: очікування (pending), виконано (fulfilled) або відхилено (rejected).\n\n  🖼️ Приклад коду: У цьому прикладі спочатку створюється новий проміс. Усередині проміса встановлено таймер, який через 1 секунду змінює стан проміса на 'fulfilled' і повертає результат 'data loaded'. Далі, метод 'then' застосовується до проміса для обробки результату після його виконання. Перша функція в 'then' обробляє успішне завершення проміса і виводить результат у консоль. Друга функція для обробки помилок у цьому прикладі не виконується, оскільки проміс успішно завершений."
       }
     },
     {
@@ -3336,13 +3339,14 @@
         "en": "What are arrow functions in JavaScript?",
         "uk": "Що таке стрілкові функції в JavaScript?"
       },
+      "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV86TdI_r4xnLOw5UJUKrM9Tf8tg-11La5Fv4bN0HZFJPg0N-ZABkvXnB17mgECdzlhc9uw4YyQhPor-Q-K_kuRav_7uQhF0-HagtncHn0LUpDse_V0zuHPpxVWuCRVg4o5aon0SmdWlBqEOdoL8j7xb30uuPG2FWphtd_vkMyaMNa0yajWfUPvLXxZF6yYG-lP7jcMVaWdWSQ4K5Rdm5X0PrGfZMnm40IxLs1fQY5cyVShS94qgiF8sZVRkXbb1WsyInoHtpBQFNi1o4FkMOQMMSH3HQFcLJxkDQ7sHmmbB4ZaU5CgbisOw5wAKIYttWjqPucO-WOi6EAOV-5IjzpzsgE6Y_yWVDtj3KUH_mILBmCZjwum887pifc5Tj0wM2VMD8kB29NzGX598Wof7WcqIc1UEg_9nh_WpqYrQTLE2jcfBv7mmEpm2h8jq7OXuKIjf90dAOYB12GCV2YNdqGYrxeIi9kaVuGl0G4LRyHcbUeOh8IgNPyjd4Zd2k3NGMHONZXwB_BqmN-3mtt80kpm_bBlJPP4ix4178tEK3dpGL-95CFzEXEUFA8xICGTvzYC6cWfFuxukb4528zw_fbjcdoKnAwk4y6XGU9prUkdXlNbd8FA8DlMYmhSQSK6Brz6mHg7wHUI99Mdp7uPlkns77AZd-s7GaRdIQQhRIyMTGpkQgTzPDx_mfikw4TNkwHOJflzeQAR4foJBPsATaXvrkVLTZK2Lqy2j_eIrMC4pSdfeJ11r7gXXdBDyc61hIJTrDfWoyC07-uqK7f_3x-0I3iSL1sPtvZ3XYRPZKNZkN4jKjv-5xz2yhvcOSwnzHOjr93mcMcfmXaYWzShdQZ5ltEcNtizcYaWNJatviQAY7VHm2oR4lNudC9f1wUwpy7UXzlQ=w580-h160-s-no?authuser=0",
       "hasOptions": false,
       "answer": {
-        "ru": "Стрелочные функции — это синтаксически компактный способ записи функций в JavaScript, который не имеет своего собственного 'this'. Они часто используются для создания анонимных функций.",
-        "en": "Arrow functions are a syntactically compact way to write functions in JavaScript that do not have their own 'this' context. They are often used for creating anonymous functions.",
-        "uk": "Стрілкові функції — це синтаксично компактний спосіб запису функцій в JavaScript, який не має власного 'this'. Їх часто використовують для створення анонімних функцій."
+        "ru": "Стрелочные функции — это синтаксически компактный способ записи функций в JavaScript, который не имеет своего собственного 'this'. Они часто используются для создания анонимных функций.\n\n  🖼️ Пример кода: В этом примере стрелочная функция `add` объявлена для суммирования двух чисел. Она принимает два аргумента и возвращает их сумму, используя краткий синтаксис без 'return'.",
+        "en": "Arrow functions are a syntactically compact way to write functions in JavaScript that do not have their own 'this' context. They are often used for creating anonymous functions.\n\n  🖼️ Code example: In this example, the arrow function `add` is declared to sum two numbers. It takes two arguments and returns their sum, using a concise syntax without 'return'.",
+        "uk": "Стрілкові функції — це синтаксично компактний спосіб запису функцій в JavaScript, який не має власного 'this'. Їх часто використовують для створення анонімних функцій.\n\n  🖼️ Приклад коду: У цьому прикладі стрілкова функція `add` оголошена для сумування двох чисел. Вона приймає два аргументи і повертає їх суму, використовуючи лаконічний синтаксис без 'return'."
       }
-    },
+    },    
     {
       "id": 7,
       "text": {
@@ -3350,13 +3354,14 @@
         "en": "What is hoisting in JavaScript?",
         "uk": "Що таке hoisting в JavaScript?"
       },
+      "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV85QlyfARPIilYH43s7EyWkRfvGlGftCowHVOgllbNwuPHoHMgWZy7pf0W7eVmj5afGHGbzcQI_BoWMxkxFL5pfLiuad9Aeok1hJBD3cbe95N_VmB_-ZM2cIj8pzAuTlu5kuOwqDqDGMllJaB522c5__VoSjrjojnUnJkROFZpeks6-2MOOdKtFSjVO2BlPvjl4PaDQSGUFGSZif27AbDXQ81Ai0vFVMfmR4ykQf3GPqoiCj9wOOMrIwXGdgW4xEnUAuzSMIh8AgaWg0FlPf5XAfSF2K99NGkyqCWUuwE1Zi-gXdGmuGgsaTWxMlrDVwhXVuLjFu9cKAj-5S67pSc8iW00u0HkXrKmkCG0295HHZAfgO9T7YotATb0au4iiiJr5H_PwKY5IsSXltIQ6QgbNFfRzkP7lHlI2KQs-tn0wsA9Q0FzrOK7A8ZkyQEhXgq1_yIdhCLDEIQ9aJ5hemK7FQzqTUOKR09N11CrKuLxSWJvPLSFHvR9tT9Jq-yx2Dn3p-44Y15PD-hNZT4MUuwMfL0ezL_N3m8Jy_3LO0UyRyWx7DR1tLwKDFDbIYJtGL1-oBH4LtCk7Z2SBa_bdNE6uOeJFsd0cPba2y9RtU-pXmTDT5zPTAaiRLd46HcHFD4vkVEv02SAydOFZrOTGuBFT937PKch3rk7XIjTyuRD1wFgAN7cmae8_A9BcbqlNBM2xuX-L12cmr19tnH5mLoVEywG89nurmf8O3SpSLm-7UUC1T4bzApAG3jA0kGN_l_ITlpCKvACcOgKLUa6cX_aSa3GxxSEbfgY1GZWjHwfHHeI3EHqVVTY4I_kVCUzWyyagrM5qyYR8KmmzmhZHyLqdHkjmOwIcjmzR94Tve2hWvrEhAC7UctoLDGvB9hEUkn0Fc-Q=w614-h206-s-no?authuser=0",
       "hasOptions": false,
       "answer": {
-        "ru": "Hoisting — это механизм в JavaScript, при котором переменные и объявления функций перемещаются на верх своей области видимости перед выполнением кода.",
-        "en": "Hoisting is a mechanism in JavaScript where variables and function declarations are moved to the top of their scope before code execution.",
-        "uk": "Hoisting — це механізм в JavaScript, при якому змінні та оголошення функцій переміщуються на верх своєї області видимості перед виконанням коду."
+        "ru": "Hoisting — это механизм в JavaScript, при котором переменные и объявления функций перемещаются на верх своей области видимости перед выполнением кода.\n\n  🖼️ Пример кода: В этом примере, при первом вызове `console.log(myVar)`, переменная `myVar` уже объявлена из-за hoisting, но ее значение еще не определено, поэтому выводится `undefined`. После инициализации `myVar = 5`, значение переменной доступно, и второй вызов `console.log(myVar)` выводит `5`.",
+        "en": "Hoisting is a mechanism in JavaScript where variables and function declarations are moved to the top of their scope before code execution.\n\n  🖼️ Code example: In this example, at the first call of `console.log(myVar)`, the variable `myVar` is already declared due to hoisting, but its value is not yet defined, thus `undefined` is output. After the initialization `myVar = 5`, the value of the variable is accessible, and the second call of `console.log(myVar)` outputs `5`.",
+        "uk": "Hoisting — це механізм в JavaScript, при якому змінні та оголошення функцій переміщуються на верх своєї області видимості перед виконанням коду.\n\n  🖼️ Приклад коду: У цьому прикладі, при першому виклику `console.log(myVar)`, змінна `myVar` вже оголошена через hoisting, але її значення ще не визначено, тому виводиться `undefined`. Після ініціалізації `myVar = 5`, значення змінної доступне, і другий виклик `console.log(myVar)` виводить `5`."
       }
-    },
+    },    
     {
       "id": 8,
       "text": {
