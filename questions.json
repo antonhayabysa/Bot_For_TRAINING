@@ -6495,6 +6495,796 @@
           "isCorrect": false
       }
   ]
+},
+{
+  "id": 26,
+  "text": {
+    "ru": "Что такое Redux?",
+    "en": "What is Redux?",
+    "uk": "Що таке Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Redux - это библиотека для управления состоянием приложений на JavaScript. Она предоставляет централизованное хранилище для всех компонентов приложения и управляет изменениями состояния в едином и предсказуемом порядке.",
+    "en": "Redux is a JavaScript library for managing application state. It provides a centralized store for all components of an application and manages state changes in a single and predictable order.",
+    "uk": "Redux - це бібліотека для управління станом додатків на JavaScript. Вона надає централізоване сховище для всіх компонентів додатка і керує змінами стану в єдиному і передбачуваному порядку."
+  }
+},
+{
+  "id": 27,
+  "text": {
+    "ru": "Как работают редьюсеры в Redux?",
+    "en": "How do reducers work in Redux?",
+    "uk": "Як працюють редуктори в Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Редьюсеры в Redux - это чистые функции, которые принимают предыдущее состояние и действие, и возвращают новое состояние. Один из примеров - функция `todoReducer`.\n\n🖼️ Пример кода: `todoReducer` управляет списком задач. Она начинается с инициализации состояния пустым массивом. Когда в редьюсер поступает действие, выполняются следующие операции:\n\n- `ADD_TODO`: Добавляет новую задачу в массив. Новый элемент содержит текст задачи и флаг невыполнения.\n- `TOGGLE_TODO`: Изменяет статус задачи на противоположный. Функция перебирает массив, и когда находит задачу с соответствующим индексом, меняет её статус.\n- По умолчанию: Если тип действия не узнан, возвращается текущее состояние без изменений.\n\nЭта функция демонстрирует, как редьюсеры обрабатывают различные действия и обновляют состояние.",
+    "en": "Reducers in Redux are pure functions that take the previous state and an action, and return a new state. One example is the `todoReducer` function.\n\n🖼️ Code example: `todoReducer` manages a todo list. It starts with the state initialized as an empty array. When an action is dispatched to the reducer, the following operations occur:\n\n- `ADD_TODO`: Adds a new task to the array. The new item contains the task text and an incomplete status flag.\n- `TOGGLE_TODO`: Toggles the status of a task to its opposite. The function iterates over the array, and when it finds a task with the matching index, it changes its status.\n- Default: If the action type is unrecognized, it returns the current state without changes.\n\nThis function demonstrates how reducers process different actions and update the state.",
+    "uk": "Редуктори в Redux - це чисті функції, які приймають попередній стан і дію, і повертають новий стан. Один з прикладів - функція `todoReducer`.\n\n🖼️ Приклад коду: `todoReducer` керує списком завдань. Вона починається з ініціалізації стану порожнім масивом. Коли дія надходить до редуктора, відбуваються такі операції:\n\n- `ADD_TODO`: Додає нове завдання до масиву. Новий елемент містить текст завдання та прапорець невиконання.\n- `TOGGLE_TODO`: Змінює статус завдання на протилежний. Функція перебирає масив, і коли знаходить завдання з відповідним індексом, змінює його статус.\n- За замовчуванням: Якщо тип дії не розпізнаний, повертається поточний стан без змін.\n\nЦя функція демонструє, як редуктори обробляють різні дії та оновлюють стан."
+  },
+  "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV84NX0BFlLuWg7_EqDbqpJBISEaNKUtPEUpq29VS4QCsvDn4VsfXarMZ7mBxNxst5ETkCHMjbWgh5lFYJhQjXQqPlijzXypojbzQs6-aHPiD_nUUO_OdWO4bvc82wiIeJ2EnEXg1H1Bn1naUrkjvGYnSheIKaWXbVm1nEc5C9w2293XpTQ_oG4FwI3j20KjdBN2I3G-0zXbJfzWfexZ6zJiI9gypkoJkSM6BOlR2eah4fFsMMz6HISJ_iZ8ewiln3jDbTqQl0G-6MUmtCq-lLj7TRFstpb-8VZN4PnuED1ikrGrYr4qAM8BXOkws_nIsPHVhVukjTREZXsRYdSaviKxLNEEFnQ2Hy7GLQ6mwQf0hfCtbIHdJQ45qGFaapg-v0OUHgsb-s9EwdQOMFW_zFSI1serTEvQt5c3taoNKsamRH5jv8ISJBjaxKu2diqJHcbFAc8nLzi1gINK3w22sJRddkP9TlUWlvbg_Ocyu0OpdaJm2ASLj7rTfLlubZ1VMJxYRuL-8I_qzxPQgQHMtScIh2G_gwS5ke-EyGPr72EYoSSTt-K5p_5oU9jU3vOkLxerZOmQ2gffdTHnUgviAAvEvRPXYYDqoW6ccbGm9bxmk64A6TwcudR_QTLfGTszq9Y81CsYYnYbWmKp_u_tC4s37vr7QBwepAOUQjOxzO2P1VNkEE5PoO3J6rS8TdTZlgVJ_FaPJCVzNZP4Cb3mU8ZYxPmyVGEgLGYKovwY-Af58Mw8jUTc9lYGG1VQDHSBkXo0Lk4AGGKEC6ktsXa4m8pFvezTMdN_5CJG35gwzCY23wFtK4Y2F5DvQhZp4qe5J4BCMWdgeXMHDhROjl02gv373D2QfQ8kvF2oSld_7hQ7yk5M8w-uoMp7DRHiCA3Y6XC7NWg=w1154-h708-s-no?authuser=0"
+},
+{
+  "id": 28,
+  "text": {
+    "ru": "Что такое действия (actions) в Redux?",
+    "en": "What are actions in Redux?",
+    "uk": "Що таке дії (actions) в Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Действия в Redux - это объекты, которые передают данные из вашего приложения в хранилище Redux. Они являются единственным источником информации для хранилища и отправляются с помощью метода store.dispatch(). Действия содержат тип и могут содержать дополнительные данные (payload), необходимые для обновления состояния.\n\n🖼️ Пример кода: Функция `updateUserStatus` является функцией создания действия, которая принимает идентификатор пользователя и новый статус в качестве аргументов и возвращает действие с этой информацией. Пример использования: `const action = updateUserStatus(1, 'active'); store.dispatch(action);`. Этот код создает действие с типом 'UPDATE_USER_STATUS' и отправляет его в хранилище, чтобы обновить статус пользователя с идентификатором 1 на 'active'.",
+    "en": "Actions in Redux are objects that send data from your application to the Redux store. They are the only source of information for the store and are sent using the store.dispatch() method. Actions contain a type and may include additional data (payload) needed for updating the state.\n\n🖼️ Code example: The `updateUserStatus` function is an action creator that takes a user ID and a new status as arguments and returns an action with that information. Usage example: `const action = updateUserStatus(1, 'active'); store.dispatch(action);`. This code creates an action with the type 'UPDATE_USER_STATUS' and dispatches it to the store to update the status of the user with ID 1 to 'active'.",
+    "uk": "Дії в Redux - це об'єкти, які передають дані з вашого додатка в сховище Redux. Вони є єдиним джерелом інформації для сховища і відправляються за допомогою методу store.dispatch(). Дії містять тип і можуть включати додаткові дані (payload), необхідні для оновлення стану.\n\n🖼️ Приклад коду: Функція `updateUserStatus` є створювачем дії, який приймає ідентифікатор користувача та новий статус як аргументи та повертає дію з цією інформацією. Приклад використання: `const action = updateUserStatus(1, 'active'); store.dispatch(action);`. Цей код створює дію з типом 'UPDATE_USER_STATUS' і відправляє її в сховище, щоб оновити статус користувача з ідентифікатором 1 на 'active'."
+  },
+  "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV87sAxkPgANzbLE1uJmckwda4uDgJ_zd9UgVqSAkSv25NkagGGP0cZWXsMIzT1VgkWGyfx5uxDlwQ0IDqih5nwbx8KfeIbXRcOHbgiK5lw55J6ToD4XqER467aitM2sD-VXX9qSX0y04lo3pIRZh9pkDgX9cBPSiBhWSVixs8WWxTD1e0lEM3_mDDvAz38CHfBSHVt3phNBBQX8H7A34FwUnFlm-0hOc93mouJlzD-r1qKnGvv7U3vZguwr7w3_YJN7QAl1l6JUlVi1U4P4Jso1XIPVb7QnhYbIHJIiIvIk3nTMVWEftiZH75gO3PJTG8Ag64363AOsgN-2T45r-IWrLCiEuKC1rji8tI_YZt-qov1VXMO_DwbQJwPNTfisjZReSpQspVPWBNTWDB4iGiuLi_JXAKH1is7adH6NqqwMQIi6QAAFQqlDvdbaWHwUg9SBnNMG41fGrMszFwfq8GdMr21JktlwA4P_TxgDl5chtxM061MZndmGZUYQFxRIR7izTJGDVRaxqvInlYMS0jrid6uT-uMKY5VexVT07ZhWbKpV2Tt7mBpVXZ0vvR-yRYGyUaSHCRLBP9D2ZCdPBO_K8tB1AIoA_358Kn5Vh12eu4ToIEQIJJLEnaIRRqrYwKoFoZiQV3gq7OYDcC91bryr-FJ7tE1a4B14eO5EhI34xfk-4U-RF-h0Y5yfF339iaYPgES1Ual_YHBDvKNw7urqtA07RnMl9d5jGpxr9FWvrDzgQzLHs-ZqTiVCC1ZWXA_Wqye3ZhVqKqarSa1y0rkQTuqHVR5DuWI3-Z4e5lHr8xMetO48Wo5D9z6PH4DVldygyWSVcr_jGGVb_0Qzhy-V2nE_OHc5Id_qcV6rdUstttOlGgCTFmddsEAZfArwfV20wRA=w1120-h584-s-no?authuser=0"
+},
+{
+  "id": 29,
+  "text": {
+    "ru": "Что такое хранилище (store) в Redux?",
+    "en": "What is the store in Redux?",
+    "uk": "Що таке сховище (store) в Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Хранилище в Redux - это объект, который соединяет вместе действия и редьюсеры. Оно содержит состояние приложения, предоставляет доступ к состоянию, позволяет обновлять состояние и регистрировать слушателей.",
+    "en": "The store in Redux is an object that brings actions and reducers together. It holds the application state, provides access to the state, allows the state to be updated, and registers listeners.",
+    "uk": "Сховище в Redux - це об'єкт, який об'єднує дії та редуктори. Воно містить стан додатка, надає доступ до стану, дозволяє оновлювати стан і реєструвати слухачів."
+  }
+},
+{
+  "id": 30,
+  "text": {
+    "ru": "Какие преимущества использования Redux?",
+    "en": "What are the benefits of using Redux?",
+    "uk": "Які переваги використання Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Преимущества использования Redux включают упрощение управления состоянием, особенно в крупных приложениях, улучшение отслеживания изменений состояния и управления данными, и обеспечение согласованности состояния по всему приложению.",
+    "en": "The benefits of using Redux include simplifying state management, especially in large applications, enhancing state change tracking and data handling, and ensuring state consistency throughout the application.",
+    "uk": "Переваги використання Redux включають спрощення управління станом, особливо в великих додатках, покращення відстеження змін стану та управління даними, і забезпечення послідовності стану по всьому додатку."
+  }
+},
+{
+  "id": 31,
+  "text": {
+    "ru": "Как работает принцип однонаправленного потока данных в Redux?",
+    "en": "How does the principle of unidirectional data flow work in Redux?",
+    "uk": "Як працює принцип односпрямованого потоку даних в Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "В Redux поток данных однонаправленный: состояние хранится в хранилище, действия отправляются для изменения состояния, редьюсеры обрабатывают эти действия и обновляют состояние, а изменения состояния затем отражаются в пользовательском интерфейсе.",
+    "en": "In Redux, the data flow is unidirectional: the state is stored in the store, actions are sent to change the state, reducers process these actions and update the state, and state changes are then reflected in the user interface.",
+    "uk": "У Redux потік даних односпрямований: стан зберігається в сховищі, дії відправляються для зміни стану, редуктори обробляють ці дії та оновлюють стан, а зміни стану потім відображаються в користувацькому інтерфейсі."
+  }
+},
+{
+  "id": 32,
+  "text": {
+    "ru": "Как использовать Redux в сочетании с React?",
+    "en": "How to use Redux in combination with React?",
+    "uk": "Як використовувати Redux у поєднанні з React?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Для использования Redux с React необходимо создать хранилище Redux и предоставить его компонентам React с помощью провайдера (Provider). Затем, используя функции connect или хуки useSelector и useDispatch, можно подключить компоненты React к этому хранилищу для доступа к состоянию и диспетчеризации действий.",
+    "en": "To use Redux with React, you need to create a Redux store and provide it to React components using the Provider. Then, using the connect functions or the useSelector and useDispatch hooks, React components can be connected to this store to access the state and dispatch actions.",
+    "uk": "Для використання Redux з React необхідно створити сховище Redux і надати його компонентам React за допомогою провайдера (Provider). Потім, використовуючи функції connect або хуки useSelector та useDispatch, можна підключити компоненти React до цього сховища для доступу до стану та диспетчеризації дій."
+  }
+},
+{
+  "id": 33,
+  "text": {
+    "ru": "Что такое мидлвары в Redux и для чего они используются?",
+    "en": "What are middlewares in Redux and what are they used for?",
+    "uk": "Що таке мідлвари в Redux і для чого вони використовуються?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Мидлвары в Redux - это прослойки, которые могут изменять, задерживать или даже останавливать передачу действий перед тем, как они достигнут редьюсеров. Они часто используются для выполнения асинхронных операций, логирования, отправки запросов к API и других побочных эффектов.",
+    "en": "Middlewares in Redux are layers that can modify, delay, or even stop the dispatch of actions before they reach reducers. They are often used for performing asynchronous operations, logging, making API requests, and other side effects.",
+    "uk": "Мідлвари в Redux - це прослойки, які можуть змінювати, затримувати або навіть зупиняти передачу дій перед тим, як вони досягнуть редукторів. Вони часто використовуються для виконання асинхронних операцій, логування, відправки запитів до API та інших побічних ефектів."
+  }
+},
+{
+  "id": 34,
+  "text": {
+    "ru": "Как управлять асинхронными операциями в Redux?",
+    "en": "How to manage asynchronous operations in Redux?",
+    "uk": "Як управляти асинхронними операціями в Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Для управления асинхронными операциями в Redux часто используются такие библиотеки, как Redux Thunk или Redux Saga. Они позволяют диспетчеризовать асинхронные действия и обрабатывать их в мидлварах, обеспечивая более удобную работу с асинхронными запросами и побочными эффектами.",
+    "en": "To manage asynchronous operations in Redux, libraries like Redux Thunk or Redux Saga are commonly used. They allow dispatching asynchronous actions and handling them in middlewares, providing a more convenient way to work with asynchronous requests and side effects.",
+    "uk": "Для управління асинхронними операціями в Redux часто використовуються такі бібліотеки, як Redux Thunk або Redux Saga. Вони дозволяють диспетчеризувати асинхронні дії та обробляти їх у мідлварах, забезпечуючи більш зручну роботу з асинхронними запитами та побічними ефектами."
+  }
+},
+{
+  "id": 35,
+  "text": {
+    "ru": "Какой паттерн проектирования лежит в основе Redux?",
+    "en": "What design pattern is at the core of Redux?",
+    "uk": "Який паттерн проектування лежить в основі Redux?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "В основе Redux лежит паттерн проектирования Flux. Он предполагает использование однонаправленного потока данных, где информация проходит через строго определенные этапы: действия, диспетчеризация, редьюсеры и хранилище.",
+    "en": "The Flux design pattern is at the core of Redux. It involves a unidirectional data flow, where information goes through strictly defined stages: actions, dispatching, reducers, and the store.",
+    "uk": "В основі Redux лежить паттерн проектування Flux. Він передбачає використання односпрямованого потоку даних, де інформація проходить через строго визначені етапи: дії, диспетчеризація, редуктори та сховище."
+  }
+},
+{
+  "id": 36,
+  "text": {
+    "ru": "Какую роль играет функция combineReducers в Redux?",
+    "en": "What role does the combineReducers function play in Redux?",
+    "uk": "Яку роль відіграє функція combineReducers в Redux?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Создает несколько хранилищ",
+        "en": "Creates multiple stores",
+        "uk": "Створює декілька сховищ"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "Объединяет несколько редьюсеров в один",
+        "en": "Combines multiple reducers into one",
+        "uk": "Об'єднує декілька редукторів в один"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Разделяет хранилище на части",
+        "en": "Splits the store into parts",
+        "uk": "Розділяє сховище на частини"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "Управляет асинхронными операциями",
+        "en": "Manages asynchronous operations",
+        "uk": "Керує асинхронними операціями"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 37,
+  "text": {
+    "ru": "Какое утверждение о Redux верно?",
+    "en": "Which statement about Redux is true?",
+    "uk": "Яке твердження про Redux є вірним?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Redux может использоваться только с React",
+        "en": "Redux can only be used with React",
+        "uk": "Redux можна використовувати лише з React"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "Redux заменяет внутреннее состояние компонентов",
+        "en": "Redux replaces the internal state of components",
+        "uk": "Redux замінює внутрішній стан компонентів"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Redux является независимой от фреймворка библиотекой",
+        "en": "Redux is a framework-agnostic library",
+        "uk": "Redux є бібліотекою, незалежною від фреймворку"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "В Redux не используется концепция редьюсеров",
+        "en": "Reducers are not used in Redux",
+        "uk": "У Redux не використовується концепція редукторів"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 38,
+  "text": {
+    "ru": "Чем отличается Redux Thunk от Redux Saga?",
+    "en": "What is the difference between Redux Thunk and Redux Saga?",
+    "uk": "Чим відрізняється Redux Thunk від Redux Saga?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Thunk не поддерживает асинхронные операции",
+        "en": "Thunk does not support asynchronous operations",
+        "uk": "Thunk не підтримує асинхронні операції"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "Saga использует генераторы JavaScript",
+        "en": "Saga uses JavaScript generators",
+        "uk": "Saga використовує генератори JavaScript"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Thunk и Saga являются взаимозаменяемыми",
+        "en": "Thunk and Saga are interchangeable",
+        "uk": "Thunk і Saga є взаємозамінними"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "Saga предназначена только для больших приложений",
+        "en": "Saga is only intended for large applications",
+        "uk": "Saga призначена лише для великих додатків"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 39,
+  "text": {
+    "ru": "Какой из этих хуков не является частью Redux?",
+    "en": "Which of these hooks is not a part of Redux?",
+    "uk": "Який з цих хуків не є частиною Redux?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "useSelector",
+        "en": "useSelector",
+        "uk": "useSelector"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "useDispatch",
+        "en": "useDispatch",
+        "uk": "useDispatch"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "useState",
+        "en": "useState",
+        "uk": "useState"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "useReducer",
+        "en": "useReducer",
+        "uk": "useReducer"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 40,
+  "text": {
+    "ru": "Какова основная функция Redux Thunk?",
+    "en": "What is the primary function of Redux Thunk?",
+    "uk": "Яка основна функція Redux Thunk?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Redux Thunk - это мидлвар для Redux, который позволяет писать создателей действий, возвращающих функцию вместо действия. Это используется для обработки асинхронных операций в приложениях Redux.",
+    "en": "Redux Thunk is a middleware for Redux that enables writing action creators that return a function instead of an action. It is used to handle asynchronous operations within Redux applications.",
+    "uk": "Redux Thunk - це мідлвар для Redux, який дозволяє писати творців дій, які повертають функцію замість дії. Це використовується для обробки асинхронних операцій у додатках Redux."
+  }
+},
+{
+  "id": 41,
+  "text": {
+    "ru": "Каковы основные преимущества использования Redux Saga?",
+    "en": "What are the main advantages of using Redux Saga?",
+    "uk": "Які основні переваги використання Redux Saga?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Основные преимущества Redux Saga включают улучшенное управление асинхронными операциями с помощью генераторов JavaScript, более удобную организацию кода и лучший контроль над побочными эффектами.",
+    "en": "The main advantages of Redux Saga include improved management of asynchronous operations using JavaScript generators, more convenient code organization, and better control over side effects.",
+    "uk": "Основні переваги Redux Saga включають поліпшене управління асинхронними операціями за допомогою генераторів JavaScript, більш зручну організацію коду та кращий контроль над побічними ефектами."
+  }
+},
+{
+  "id": 42,
+  "text": {
+    "ru": "В чем разница между Redux Thunk и Redux Saga в управлении асинхронными действиями?",
+    "en": "What is the difference between Redux Thunk and Redux Saga in managing asynchronous actions?",
+    "uk": "У чому різниця між Redux Thunk і Redux Saga у керуванні асинхронними діями?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Redux Thunk предоставляет более простой подход к асинхронным действиям, позволяя возвращать функции из создателей действий. Redux Saga же использует генераторы JavaScript для более сложного управления асинхронными процессами и побочными эффектами.",
+    "en": "Redux Thunk offers a simpler approach to asynchronous actions by allowing functions to be returned from action creators. Redux Saga, on the other hand, uses JavaScript generators for more complex management of asynchronous processes and side effects.",
+    "uk": "Redux Thunk пропонує більш простий підхід до асинхронних дій, дозволяючи повертати функції з творців дій. Redux Saga, з іншого боку, використовує генератори JavaScript для більш складного управління асинхронними процесами та побічними ефектами."
+  }
+},
+{
+  "id": 43,
+  "text": {
+    "ru": "Какие типы эффектов используются в Redux Saga для управления асинхронными задачами?",
+    "en": "What types of effects are used in Redux Saga for managing asynchronous tasks?",
+    "uk": "Які типи ефектів використовуються в Redux Saga для керування асинхронними завданнями?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "В Redux Saga используются различные типы эффектов, такие как 'take', 'put', 'call', и 'fork', для управления асинхронными задачами, обработки действий и создания неблокирующих вызовов.",
+    "en": "Redux Saga uses various types of effects such as 'take', 'put', 'call', and 'fork' to manage asynchronous tasks, handle actions, and create non-blocking calls.",
+    "uk": "У Redux Saga використовуються різні типи ефектів, такі як 'take', 'put', 'call', та 'fork', для керування асинхронними завданнями, обробки дій та створення неблокуючих викликів."
+  }
+},
+{
+  "id": 44,
+  "text": {
+    "ru": "Как Redux Thunk обеспечивает асинхронную обработку действий?",
+    "en": "How does Redux Thunk facilitate asynchronous action handling?",
+    "uk": "Як Redux Thunk забезпечує асинхронну обробку дій?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Redux Thunk позволяет писать создателей действий, которые возвращают функцию вместо обычного действия. Эта функция может затем выполнять асинхронные операции и диспетчеризовать другие действия в зависимости от результата асинхронного вызова.",
+    "en": "Redux Thunk allows writing action creators that return a function instead of a regular action. This function can then perform asynchronous operations and dispatch other actions based on the result of the asynchronous call.",
+    "uk": "Redux Thunk дозволяє писати творців дій, які повертають функцію замість звичайної дії. Ця функція може потім виконувати асинхронні операції та диспетчеризувати інші дії на основі результату асинхронного виклику."
+  }
+},
+{
+  "id": 45,
+  "text": {
+    "ru": "Что такое TypeScript и почему он используется?",
+    "en": "What is TypeScript and why is it used?",
+    "uk": "Що таке TypeScript і чому він використовується?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "TypeScript - это надмножество JavaScript, добавляющее строгую типизацию и объектно-ориентированные концепции. Он используется для улучшения читаемости и поддерживаемости кода, а также для упрощения отладки и рефакторинга.",
+    "en": "TypeScript is a superset of JavaScript that adds strict typing and object-oriented concepts. It is used to improve code readability and maintainability, as well as to simplify debugging and refactoring.",
+    "uk": "TypeScript - це надмножина JavaScript, яка додає строгу типізацію та об'єктно-орієнтовані концепції. Він використовується для поліпшення читабельності та підтримки коду, а також для спрощення відладки та рефакторингу."
+  }
+},
+{
+  "id": 46,
+  "text": {
+    "ru": "Как в TypeScript определяются пользовательские типы данных?",
+    "en": "How are custom data types defined in TypeScript?",
+    "uk": "Як у TypeScript визначаються користувацькі типи даних?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "В TypeScript пользовательские типы данных определяются с помощью 'interfaces' или 'type aliases'. Это позволяет создавать сложные типы, комбинируя существующие примитивные и объектные типы.",
+    "en": "In TypeScript, custom data types are defined using 'interfaces' or 'type aliases'. This allows for creating complex types by combining existing primitive and object types.",
+    "uk": "У TypeScript користувацькі типи даних визначаються за допомогою 'interfaces' або 'type aliases'. Це дозволяє створювати складні типи, комбінуючи існуючі примітивні та об'єктні типи."
+  }
+},
+{
+  "id": 47,
+  "text": {
+    "ru": "Как TypeScript обеспечивает безопасность типов?",
+    "en": "How does TypeScript ensure type safety?",
+    "uk": "Як TypeScript забезпечує безпеку типів?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "TypeScript обеспечивает безопасность типов путем проверки типов во время компиляции. Это предотвращает ошибки, связанные с несоответствием типов, еще до выполнения кода.",
+    "en": "TypeScript ensures type safety by performing type checking during compilation. This prevents errors related to type mismatches even before the code is executed.",
+    "uk": "TypeScript забезпечує безпеку типів шляхом перевірки типів під час компіляції. Це запобігає помилкам, пов'язаним з невідповідністю типів, ще до виконання коду."
+  }
+},
+{
+  "id": 48,
+  "text": {
+    "ru": "Чем отличаются интерфейсы от классов в TypeScript?",
+    "en": "How do interfaces differ from classes in TypeScript?",
+    "uk": "Чим відрізняються інтерфейси від класів у TypeScript?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Интерфейсы в TypeScript используются для определения формы объектов и не влияют на сгенерированный JavaScript. Классы, в свою очередь, создают реальные сущности в сгенерированном коде и могут иметь реализацию методов и конструкторов.",
+    "en": "Interfaces in TypeScript are used to define the shape of objects and do not affect the generated JavaScript. Classes, on the other hand, create real entities in the generated code and can have implementations of methods and constructors.",
+    "uk": "Інтерфейси в TypeScript використовуються для визначення форми об'єктів і не впливають на згенерований JavaScript. Класи, у свою чергу, створюють реальні сутності у згенерованому коді і можуть мати реалізацію методів і конструкторів."
+  }
+},
+{
+  "id": 49,
+  "text": {
+    "ru": "Какова роль декораторов в TypeScript?",
+    "en": "What is the role of decorators in TypeScript?",
+    "uk": "Яка роль декораторів у TypeScript?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Декораторы в TypeScript - это специальные виды объявлений, которые могут быть прикреплены к классам, методам, аксессорам, свойствам или параметрам. Они используются для модификации или аннотирования классов и их членов.",
+    "en": "Decorators in TypeScript are special kinds of declarations that can be attached to classes, methods, accessors, properties, or parameters. They are used for modifying or annotating classes and their members.",
+    "uk": "Декоратори в TypeScript - це спеціальні види оголошень, які можна прикріпити до класів, методів, аксесорів, властивостей або параметрів. Вони використовуються для модифікації або анотування класів та їх членів."
+  }
+},
+{
+  "id": 50,
+  "text": {
+    "ru": "Как TypeScript улучшает работу с массивами?",
+    "en": "How does TypeScript improve working with arrays?",
+    "uk": "Як TypeScript покращує роботу з масивами?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "TypeScript добавляет строгую типизацию для массивов, позволяя определять тип элементов массива. Это улучшает безопасность типов и помогает предотвратить ошибки, связанные с несоответствием типов элементов.",
+    "en": "TypeScript adds strict typing for arrays, allowing the definition of the type of array elements. This enhances type safety and helps prevent errors related to mismatched types of elements.",
+    "uk": "TypeScript додає строгу типізацію для масивів, дозволяючи визначати тип елементів масиву. Це покращує безпеку типів та допомагає запобігти помилкам, пов'язаним з невідповідністю типів елементів."
+  }
+},
+{
+  "id": 51,
+  "text": {
+    "ru": "Как в TypeScript реализованы перегрузки функций?",
+    "en": "How are function overloads implemented in TypeScript?",
+    "uk": "Як у TypeScript реалізовані перевантаження функцій?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "В TypeScript перегрузки функций реализуются путем предоставления нескольких сигнатур функций для одного и того же имени функции. Это позволяет функции принимать разные типы аргументов и возвращать разные типы.",
+    "en": "In TypeScript, function overloads are implemented by providing multiple function signatures for the same function name. This allows a function to accept different types of arguments and return different types.",
+    "uk": "У TypeScript перевантаження функцій реалізовані шляхом надання декількох сигнатур функцій для одного і того ж імені функції. Це дозволяє функції приймати різні типи аргументів та повертати різні типи."
+  }
+},
+{
+  "id": 52,
+  "text": {
+    "ru": "Что такое типы объединения и пересечения в TypeScript?",
+    "en": "What are union and intersection types in TypeScript?",
+    "uk": "Що таке типи об'єднання та перетину в TypeScript?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Типы объединения в TypeScript позволяют переменной быть одним из нескольких типов (например, `string | number`). Типы пересечения позволяют комбинировать несколько типов в один (например, `Type1 & Type2`), объединяя их свойства.",
+    "en": "Union types in TypeScript allow a variable to be one of several types (e.g., `string | number`). Intersection types allow combining multiple types into one (e.g., `Type1 & Type2`), merging their properties.",
+    "uk": "Типи об'єднання в TypeScript дозволяють змінній бути одним з декількох типів (наприклад, `string | number`). Типи перетину дозволяють комбінувати декілька типів в один (наприклад, `Type1 & Type2`), об'єднуючи їх властивості."
+  }
+},
+{
+  "id": 53,
+  "text": {
+    "ru": "Как TypeScript работает с типами null и undefined?",
+    "en": "How does TypeScript work with null and undefined types?",
+    "uk": "Як TypeScript працює з типами null і undefined?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "TypeScript обрабатывает `null` и `undefined` как отдельные типы. При строгой проверке типов (`strictNullChecks` включен), переменные должны явно быть аннотированы как `null` или `undefined`, чтобы принимать эти значения.",
+    "en": "TypeScript treats `null` and `undefined` as separate types. With strict type checking (`strictNullChecks` enabled), variables must be explicitly annotated as `null` or `undefined` to accept these values.",
+    "uk": "TypeScript обробляє `null` та `undefined` як окремі типи. При суворій перевірці типів (`strictNullChecks` включено), змінні повинні бути явно анотовані як `null` або `undefined`, щоб приймати ці значення."
+  }
+},
+{
+  "id": 54,
+  "text": {
+    "ru": "Что такое декларативные файлы в TypeScript и для чего они используются?",
+    "en": "What are declaration files in TypeScript and what are they used for?",
+    "uk": "Що таке декларативні файли в TypeScript і для чого вони використовуються?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Декларативные файлы в TypeScript (с расширением `.d.ts`) используются для определения типов и структуры для JavaScript-библиотек, не написанных на TypeScript. Это позволяет TypeScript-проектам использовать эти библиотеки, сохраняя при этом безопасность типов.",
+    "en": "Declaration files in TypeScript (with the `.d.ts` extension) are used to define types and structures for JavaScript libraries not written in TypeScript. This allows TypeScript projects to use these libraries while maintaining type safety.",
+    "uk": "Декларативні файли в TypeScript (з розширенням `.d.ts`) використовуються для визначення типів і структури для JavaScript-бібліотек, не написаних на TypeScript. Це дозволяє TypeScript-проектам використовувати ці бібліотеки, зберігаючи при цьому безпеку типів."
+  }
+},
+{
+  "id": 55,
+  "text": {
+    "ru": "Что делает ключевое слово 'readonly' в TypeScript?",
+    "en": "What does the 'readonly' keyword do in TypeScript?",
+    "uk": "Що робить ключове слово 'readonly' у TypeScript?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Делает все поля класса неизменяемыми",
+        "en": "Makes all class fields immutable",
+        "uk": "Робить усі поля класу незмінними"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "Указывает, что свойство объекта не может быть переназначено",
+        "en": "Indicates that an object property cannot be reassigned",
+        "uk": "Вказує, що властивість об'єкта не може бути перепризначена"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Ограничивает видимость свойства только для чтения",
+        "en": "Limits the property visibility to read-only",
+        "uk": "Обмежує видимість властивості лише для читання"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "Автоматически создает геттеры для свойств",
+        "en": "Automatically creates getters for properties",
+        "uk": "Автоматично створює геттери для властивостей"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 56,
+  "text": {
+    "ru": "Какой интерфейс TypeScript позволяет определить индексируемый тип?",
+    "en": "Which TypeScript interface allows you to define an indexable type?",
+    "uk": "Який інтерфейс TypeScript дозволяє визначити індексований тип?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Iterable",
+        "en": "Iterable",
+        "uk": "Iterable"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "Enumerator",
+        "en": "Enumerator",
+        "uk": "Enumerator"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Indexable",
+        "en": "Indexable",
+        "uk": "Indexable"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "Dictionary",
+        "en": "Dictionary",
+        "uk": "Dictionary"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 57,
+  "text": {
+    "ru": "Как в TypeScript создается тип, сочетающий два или более других типов?",
+    "en": "How do you create a type in TypeScript that combines two or more other types?",
+    "uk": "Як у TypeScript створюється тип, що поєднує два або більше інших типів?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Используя ключевое слово 'extend'",
+        "en": "Using the keyword 'extend'",
+        "uk": "Використовуючи ключове слово 'extend'"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "С помощью объединения типов",
+        "en": "By using type unions",
+        "uk": "За допомогою об'єднання типів"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Через наследование интерфейсов",
+        "en": "Through interface inheritance",
+        "uk": "Через наслідування інтерфейсів"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "Используя генерики",
+        "en": "Using generics",
+        "uk": "Використовуючи генерики"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 58,
+  "text": {
+    "ru": "Для чего в TypeScript используется ключевое слово 'never'?",
+    "en": "What is the purpose of the 'never' keyword in TypeScript?",
+    "uk": "Для чого у TypeScript використовується ключове слово 'never'?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Для указания недостижимого кода",
+        "en": "To indicate unreachable code",
+        "uk": "Для вказівки недосяжного коду"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "Для создания бесконечных циклов",
+        "en": "To create infinite loops",
+        "uk": "Для створення нескінченних циклів"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Для объявления констант",
+        "en": "To declare constants",
+        "uk": "Для оголошення констант"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "Для определения типа, который не может быть присвоен",
+        "en": "To define a type that cannot be assigned",
+        "uk": "Для визначення типу, який не може бути призначений"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 59,
+  "text": {
+    "ru": "Каковы последствия частого использования типа 'any' в TypeScript?",
+    "en": "What are the consequences of frequently using the 'any' type in TypeScript?",
+    "uk": "Які наслідки частого використання типу 'any' у TypeScript?"
+  },
+  "hasOptions": true,
+  "options": [
+    {
+      "id": 1,
+      "text": {
+        "ru": "Улучшение производительности",
+        "en": "Improved performance",
+        "uk": "Покращення продуктивності"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "text": {
+        "ru": "Потеря преимуществ строгой типизации",
+        "en": "Loss of the benefits of strong typing",
+        "uk": "Втрата переваг суворої типізації"
+      },
+      "isCorrect": true
+    },
+    {
+      "id": 3,
+      "text": {
+        "ru": "Автоматическое исправление ошибок",
+        "en": "Automatic error correction",
+        "uk": "Автоматичне виправлення помилок"
+      },
+      "isCorrect": false
+    },
+    {
+      "id": 4,
+      "text": {
+        "ru": "Более строгая проверка типов",
+        "en": "Stricter type checking",
+        "uk": "Суворіша перевірка типів"
+      },
+      "isCorrect": false
+    }
+  ]
+},
+{
+  "id": 60,
+  "text": {
+    "ru": "Что такое дженерики в TypeScript?",
+    "en": "What are generics in TypeScript?",
+    "uk": "Що таке дженерики в TypeScript?"
+  },
+  "hasOptions": false,
+  "answer": {
+    "ru": "Дженерики в TypeScript - это мощный инструмент для создания компонентов, способных работать с различными типами, сохраняя при этом строгую типизацию. Они позволяют функциям и классам легко адаптироваться к разным типам данных без потери типовой безопасности.\n\n  🖼️ Пример кода: В этом примере функция 'identity' использует дженерик тип &lt;T&gt;, позволяя функции принимать и возвращать значение любого типа, сохраняя его исходный тип. `function identity&lt;T&gt;(arg: T): T { return arg; }`",
+    "en": "Generics in TypeScript are a powerful tool for creating components that can work with various types while maintaining strict typing. They allow functions and classes to easily adapt to different data types without losing type safety.\n\n  🖼️ Code example: In this example, the 'identity' function uses a generic type &lt;T&gt;, allowing the function to take and return a value of any type, preserving its original type. `function identity&lt;T&gt;(arg: T): T { return arg; }`",
+    "uk": "Дженерики в TypeScript - це потужний інструмент для створення компонентів, здатних працювати з різними типами, зберігаючи при цьому сувору типізацію. Вони дозволяють функціям та класам легко адаптуватися до різних типів даних без втрати типової безпеки.\n\n  🖼️ Приклад коду: У цьому прикладі функція 'identity' використовує дженерик тип &lt;T&gt;, дозволяючи функції приймати і повертати значення будь-якого типу, зберігаючи його початковий тип. `function identity&lt;T&gt;(arg: T): T { return arg; }`"
+  },
+  "codeImage": "https://lh3.googleusercontent.com/pw/ABLVV879ppQTJUyKPSotxq9KTAvAPSYceto_A5-Sb86-VYPXnxghqXUPmbiYVoBdGGKuli2olMDHlreH5tR8UUbgm4FtSAjZi6eS0cYQVA8x6lJHQICVPdu7uKeUoB8ApCLkQViuBe6r3FeOt8djr7ARckXyp99cFUPxb5lvLeQycpqW9xXHUlHEU4fdvBcljFOb7aBiDgJnG_G_JGOrGBRS-PyjT2yd1PIpXue5lD9ki6LXdBfKcvO34kO1rl55hw1Z4cPTaLn4bWShiimUcU7MAirLTwgIux20FFHCC_Hl7S6msOFQmNFScOl_nF21V_-CZleaMH-Bcs-xs0gSSHWCZ65t0KSOdHsrjUiEVRH1yDflgZXfaK0wrpnDRR38w1OFwT9_wYwnv-BNrZPemoZtuBW6vdtIPYIetBEgDRuDrhZ8riz5tdrpVfNaTyVCFl7juSt27bLr1BOOmgNSQgYw54QATpNYC4GEu6yexjRmc6akGm9FvYhRSQ1oHjJ4hMaov7Iyqs-jI5wDngp1WK1kn3vo96DnApeRnDv5JZeTfdCOrZdD7AHBTLG0JMgEOUGzKpp9O-vYagQivCnSvYC-euT54QABUzFGdf_8J4eOOvrBUGRrsMrV8nrKW94tO4PejwzfYYdvmwCLTe4E1pdZTKEWvn1No5EfyfOo29aZu5tS2qmKBRrNltaHPofER3Dn0LQjdnLr6eRbdHg5uN8y-e5sx1iW9lfqa6aXSYEGWE9gN4C8HCKm52l_KvCb2vKkXHEq9Fb4uIUGBoZPKnzeEmhz022B2ryoWBDD5Jo9AV0Qv_3-wXimhFcs_hG6j4rddNIphWzg3wt0MbQZWl2nM6B61t3Fmv_br5ColWDxvthte7xow5xHGLjKI0n2N2GfWKzd9A=w1216-h342-s-no?authuser=0"
 }
   ]
 }
