@@ -4,7 +4,7 @@ import bot from "../src/bot.mjs";
 const { VERCEL_ENV } = process.env;
 
 // Список разрешенных окружений
-const allowedEnvs = ["production", "preview"];
+const allowedEnvs = ["production"];
 
 // Выход, если окружение не подходит
 if (!allowedEnvs.includes(VERCEL_ENV)) {
