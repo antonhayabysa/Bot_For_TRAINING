@@ -14,7 +14,7 @@
   "dependencies": {
   "@grammyjs/storage-mongodb": "^2.4.2",
   "dotenv": "^17.3.1",
-  "grammy": "^1.31.0",
+  "grammy": "^1.41.1",
   "mongodb": "^7.1.1",
   "random-js": "^2.1.0",
   "vercel-grammy": "^1.0.0"
